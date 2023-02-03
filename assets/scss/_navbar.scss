@@ -1,0 +1,3698 @@
+.navbar{
+    background-color: $white;
+    // box-shadow: 0px 20px 34px lighten($black, 96);
+    position: relative;
+    & .studylogoanchor{
+        & .studylogo{
+            width: 150px;
+            height: 50px;
+        }
+    }
+    & .webnavbar{
+        display: flex;
+        justify-content: center !important;
+        flex-basis: auto;
+        & .navbar-nav{
+            & .nav-item{
+                padding: 0px 10px 0px 0px !important;
+                &:hover .dropdown-menu{
+                    display: block;
+                    }
+                    & .dropdownposition{
+                        position: absolute;
+                        top:52px !important;
+                    }
+                & .nav-link{
+                    &.homedesign{
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                }
+                &.dropdown{
+                    &.centerDropdown{
+                        position: static !important;
+                    }
+                    & .dropdown-toggle{
+                        &::after{
+                            display: none !important;
+                        }
+                    }
+                    & .dropdown-menu{
+                        position:absolute;
+                        top:100%;
+                        left: 50%;
+                        transform: translatex(-50%);
+                        padding: 20px;
+                        & .drophead1{
+                            font-size: 15px;
+                            color: $gray-700;
+                            font-weight: 600;
+                        }
+                        & .divider{
+                            width: 100%;
+                            height: 1px;
+                            background-color: $gray-200;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                        & .txt{
+                            font-size: 14px;
+                            color: $gray-700;
+                            font-weight: 600;
+                            padding: 10px 0px;
+                            &.space{
+                                padding: 10px 100px 10px 10px ;
+                            }
+                            &.pagelist{
+                                padding: 10px 10px 10px 10px;
+                            }
+                            &:hover{
+                                color: $theme1;
+                                cursor: pointer;
+                            }
+                            & .comepill{
+                                border: none !important;
+                                background: linear-gradient(to right,$theme1 , $theme2) !important;
+                                color: $white;
+                                font-size: 12px;
+                            }
+                        }
+                        & .dropimgcontainer{
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+                            & .dropimg{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            }
+                        }
+                        & .drophead2{
+                            font-size: 18px;
+                            color: $gray-700;
+                            font-weight: 700;
+                            
+                        }
+                        & .dropbottom{
+                            width: 100%;
+                            background: linear-gradient(to right, $theme1 , $theme2);
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            & .dropbottomtxt{
+                            color: $white;
+                            font-size: 20px;
+                            font-weight: 800;
+                            padding: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+& .navendcontainer{
+    display: flex;
+    justify-content:center;
+    align-items: center ;
+    & .navmenuicon{
+        & .menuimg{
+            width: 15px;
+            height: 15px;
+            margin-right: 15px;
+        }
+    }
+    & .searchicon{
+        & .searchimg{
+        width: 20px;
+        height: 20px;
+        &:hover{
+            cursor: pointer;
+        }
+        }
+    }
+    & .carticon{
+        & .cartimg{
+            width: 20px;
+            height: 20px;
+            filter: brightness(0.1);
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    & .adminicon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        & .proimg{
+        width: 100%;
+        height: 100%;
+        &:hover{
+            cursor: pointer;
+        }
+        }
+    }
+    & .prodropimg{
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 50%;
+        & .dropimg{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    & .droptexthead{
+            font-size: 15px;
+            font-weight: 700;
+            color: $gray-700;
+    }
+    & .droptxtsub{
+        font-size: 10px;
+        font-weight: 700;
+        color: $theme1;   
+    }
+    & .dropproul{
+        list-style: none !important;
+        & .dropproli{
+            padding-top: 0.4rem !important;
+            padding-bottom: 0.4rem !important;
+            & .dropproicon{
+                width: 15px;
+                // height: 20px;
+                // overflow: hidden;
+                & .dropprosvg{
+                    width:100% ;
+                    height: 100%;
+                    // object-fit: cover;
+                }
+            }
+            & .dropprotxt{
+                font-size: 12px;
+                font-weight: 700;
+                color: $gray-600;
+            }
+        }
+    }
+    & .dropdownpositionn{
+        position: absolute;
+        position: absolute;
+        right: 0;
+        left: unset !important;
+        top: 155%;
+        width: 15rem;
+        padding: 20px 20px 10px 10px;
+    }
+}
+}
+.searchoffcanvas{
+    height: 500px !important;
+    background-color: $white;
+    & .closebtntxt{
+        font-size: 18px;
+        font-weight: 600;
+        color: $gray-600;
+    }
+    & .inp{
+        height: 50px !important;
+    }
+    .form-control:focus{
+        color: $gray-800 !important;
+        background-color: unset !important;
+        border-color: $gray-300 !important;
+        outline: 0;
+        font-size: 15px;
+        font-weight: 400;
+        box-shadow: unset !important;
+    }
+    & .searchbtn{
+        border:none !important;
+        background: linear-gradient(to right, $theme1, $theme2);
+        border-radius: 5px;
+        color: $white;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 13px 25px;
+    }
+    & .coursescontainer{
+        font-size: 15px;
+        font-weight: 700;
+        padding: 20px 0 20px 0;
+        color: $gray-600;
+    }
+    & .cardborder{
+        border:none !important;
+        .cardimgcontainer{
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+            border-radius: 5px;
+            padding: 10px;
+            // box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41);
+        }
+    }
+    
+    & .card-body{
+        padding: 10px 10px 10px 0 ;
+        & .cardmainhead{
+            font-size: 15px;
+            font-weight: 800;
+        }
+        & .reviewscontainer{
+            & .reviewul{
+                list-style: none;
+                & .reviewli{
+                    & .starscontainer{
+                        & .starimg{
+                            width: 10px;
+                            height: 10px;
+                        }
+                        & .totalreview{
+                            font-size: 10px;
+                            font-weight: 700;
+                            color: $gray-600;
+                        }
+                    }
+                }
+            }   
+        }
+        & .bottom{
+            font-size: 15px;
+            font-weight: 800;
+            color: $gray-600;
+            padding-top: 0px;
+            & .dollar{
+                font-size: 15px;
+                font-weight: 800;
+                color: $gray-400;
+                margin-left: 8px;
+                padding-top: 0px;
+            }
+    }   
+    }
+    & .cardpic{
+        border-radius: 5px !important;
+    }
+
+    
+}
+.mymodal{
+    width: 300px !important;
+    & .contentt{
+        & .modal-header{
+            display: flex !important;
+            border-bottom: unset !important;
+            // justify-content: center !important;
+            align-items: center !important;
+            &.headerr{
+                display: flex !important;
+                justify-content: center !important;
+                & .formhead{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                & .modalhone{
+                    & .mytabs{
+                        display: flex !important;
+                        justify-content: center !important;
+                        // width: 100%;
+                    }
+                    & .btndesign{
+                        background-color: red !important;
+                    }
+                }
+                
+            }
+        }
+        
+        & .bodayofmodal{
+            & .form-label{
+                margin-bottom: 0 !important;
+            }
+            & .modallabel{
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 5px!important;
+            }
+            
+            & .modalinp{
+                margin-bottom: 20px;
+                font-size: 14px;
+                color: $gray-700;
+                margin-bottom: 20px;
+                padding-left: 30px;
+            }
+            & .mailll{
+                position: absolute;
+                top: 10px;
+                left: 8px;
+                /* width: 40px; */
+                height: 16px;
+                z-index: 7;
+
+            }
+            & .holder{
+                & .formcontainer{
+                    margin-bottom: 20px;
+                    & .aa{
+                        font-size: 14px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            & .remember{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            & .rememberanchor{
+                font-size: 14px;
+                margin-bottom: 20px;
+                // text-decoration: none;
+            }
+            & .regbtn{
+                background-image: linear-gradient(to right, $theme1, $theme2);
+                border:none;
+                color: $white;
+                font-size: 14px;
+                border-radius: 5px;
+                padding: 7px 8px;
+                width: 100%;
+                margin-bottom: 0;
+            }
+            & .loginwith{
+                font-size: 14px;
+                font-weight: 300;
+                text-align: center;
+                margin-top: 20px;
+            }
+            & .btncontainer{
+                margin-top: 10px;
+                text-align: center;
+                & .facebookbtn{
+                    border:1px solid $black;
+                }
+                & .googlebtn{
+                    border:1px solid $black;
+                }
+            }
+            & .member{
+                margin-top: 20px;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 40px;
+                & .signanchor{
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+            }
+            & .modal-footer{
+                border-top: none !important;
+                padding-top: 0 !important;
+            }
+        }
+    }
+}
+.secondmodal{
+    width: 300px !important;
+    & .modal-content{
+        & .modal-header{
+            border-top: none;
+        }
+    }
+}
+
+.cartoffcanvas{
+    width: 400px !important;
+    & .cartoffcanvasheader{
+        padding: unset !important;
+        width: 100%;
+        & .shoppingcartheading{
+            font-size: 18px;
+            font-weight: 800;
+            color: $gray-600;
+            padding: 20px;
+        }
+    }
+    & .cartoffcanvasbody{
+        padding: 0 20px 20p x 20px;
+            & .courseimgcontainer{
+                width: 100px;
+                height: 80px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                background-color: $white;
+                &:hover{
+                    cursor: pointer;
+                }
+                // box-shadow:0px 0px 11px 0px $theme1;
+                & .courseimg{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                    object-fit: cover;
+                    
+                }
+            }
+            & .coursename{
+                font-size: 15px;
+                font-weight: 800;
+                color: $gray-600;
+                margin-left: 20px;
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                    list-style: none;
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                width: 10px;
+                                height: 10px;
+                            }
+                            & .totalreview{
+                                font-size: 10px;
+                                font-weight: 700;
+                                color: $gray-600;
+                            }
+                        }
+                    }
+                }   
+            }
+            & .courseprice{
+                font-size: 15px;
+                font-weight: 500;
+                color: $gray-600;
+                & .paise{
+                    font-size: 12px;
+                    padding-left: 5px;
+                }
+            }
+    }
+    & .cartoffcanvasbtn{
+        background: linear-gradient(to right, $theme1, $theme2);
+        border:none;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        padding: 12px 24px;
+        color: $white;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        
+        & .cartarrowcontainer{
+            & .cartarrow{
+                width: 15px;
+                height: 15px;
+                margin-left: 5px;
+                transform: translateX(0);
+                transition: 0.3s ease-in-out;
+                
+            }
+        }
+            &:hover { 
+                & .cartarrow{
+                    transform: translateX(16px);
+                    
+                }
+            }
+        }
+    & .cartoffcanvasfooter{
+        padding: 20px;
+        margin-top: 0 !important;
+        & .total{
+            font-size: 15px;
+            font-weight: 700;
+            color: $gray-600;
+        }
+        & .amount{
+            display: flex;
+            justify-content: end;
+            font-size: 15px;
+            font-weight: 700;
+            color: $gray-600;
+        }
+        & .footerdivider{
+            width: 100%;
+            height: 1px;
+            background-color: $gray-300;
+        }
+    }
+}
+.menuoffcanvas{
+    width: 300px !important;
+    & .menuoffcanvasheader{
+        width: 50%;
+        // height: 50px;
+    }
+    & .menuclosebtn{
+        width: 10px;
+        height: 10px;
+    }
+    & .menuoffcanvasbody{
+        padding: 10px 0px 0px 0;
+    & .menucollapseone{
+        &:not(.collapsed) {
+            & .menudownarrow{
+                transform: rotate(0deg);
+            }
+        }
+    }
+    & .menuhead{
+        font-size: 15px;
+        font-weight: 500;
+        
+    } 
+    & .menudownarrow{
+            width: 15px;
+            height: 15px;
+            transition: 0.3s ease-in-out;
+            transform: rotate(180deg);
+        }
+    & .menucollapse{
+        border: unset !important;
+        padding: 0px 0px 0px 0px;
+        & .menucollapseul{
+            list-style: none;
+            padding: 0px 0px 0px 10px;
+            & .menucollapseli{
+                font-size: 12px;
+                font-weight: 600;
+                padding: 6px 0px 6px 10px !important;
+            }
+        }
+    }
+    }
+    .offcanvas-footer{
+        & .menulogout{
+            text-decoration: none;
+            color: $gray-700;
+            font-weight: 700;
+            font-size: 15px;
+            &:hover{
+                color: $danger;
+            }
+                & .menulogoutimg{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                    & .menulogouttxt{
+                    }
+                }
+            }
+    }
+}
+@mixin navbar-mixin-min-sm(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+               
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+       
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin navbar-mixin-min-md(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+               
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+       
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin navbar-mixin-min-lg(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+               
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+                    
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+       
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin navbar-mixin-min-xl(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+               
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+       
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin navbar-mixin-min-xxl(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+               
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+       
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin navbar-mixin-max-xl(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+               
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+                    width: 20px;
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+       
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin navbar-mixin-max-1300(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+               
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+                    width: 20px;
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+       
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin navbar-mixin-max-lg(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+               
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+                    width: 20px;
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+       
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin navbar-mixin-max-md(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+               
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+                    width: 20px;
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+       
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin navbar-mixin-max-sm(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+                width: 120px !important;
+                height: 40px !important;
+            
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+                    width: 20px;
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+        & .card-top-pic{
+            height: 100%;
+            object-fit: cover;
+    }
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            padding: 0px 0px 0px 15px !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin navbar-mixin-max-xs(){
+    .navbar{
+   
+        & .studylogoanchor{
+            & .studylogo{
+               
+            }
+        }
+        & .webnavbar{
+            
+            & .navbar-nav{
+                & .nav-item{
+                    
+                    &:hover .dropdown-menu{
+                       
+                        }
+                        & .dropdownposition{
+                            
+                        }
+                    & .nav-link{
+                        &.homedesign{
+                          
+                        }
+                    }
+                    &.dropdown{
+                        &.centerDropdown{
+                            
+                        }
+                        & .dropdown-toggle{
+                            &::after{
+                                
+                            }
+                        }
+                        & .dropdown-menu{
+                           
+                            & .drophead1{
+                               
+                            }
+                            & .divider{
+                                
+                            }
+                            & .txt{
+                                
+                                &.space{
+                                   
+                                }
+                                &.pagelist{
+                                  
+                                }
+                                &:hover{
+                                   
+                                }
+                                & .comepill{
+                                   
+                                }
+                            }
+                            & .dropimgcontainer{
+                                
+                                & .dropimg{
+                               
+                                }
+                            }
+                            & .drophead2{
+                              
+                                
+                            }
+                            & .dropbottom{
+                               
+                                & .dropbottomtxt{
+                               
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    & .navendcontainer{
+       
+        & .navmenuicon{
+            & .menuimg{
+              
+            }
+        }
+        & .searchicon{
+            & .searchimg{
+          
+            }
+        }
+        & .carticon{
+            & .cartimg{
+               
+            }
+        }
+        & .adminicon{
+          
+            & .proimg{
+           
+            }
+        }
+        & .prodropimg{
+            
+            & .dropimg{
+               
+            }
+        }
+        & .droptexthead{
+               
+        }
+        & .droptxtsub{
+           
+        }
+        & .dropproul{
+            
+            & .dropproli{
+               
+                & .dropproicon{
+                    width: 20px;
+                   
+                    & .dropprosvg{
+                       
+                    }
+                }
+                & .dropprotxt{
+                   
+                }
+            }
+        }
+        & .dropdownpositionn{
+            
+        }
+    }
+    }
+    .searchoffcanvas{
+       height: 100% !important;
+        & .inp{
+            
+        }
+        .form-control:focus{
+           
+        }
+        & .searchbtn{
+           
+        }
+        & .coursescontainer{
+            
+        }
+        & .cardborder{
+            
+            .cardimgcontainer{
+                
+            }
+        }
+        
+        & .card-body{
+            
+            & .cardmainhead{
+               
+            }
+            & .reviewscontainer{
+                & .reviewul{
+                   
+                    & .reviewli{
+                        & .starscontainer{
+                            & .starimg{
+                                
+                            }
+                            & .totalreview{
+                               
+                            }
+                        }
+                    }
+                }   
+            }
+            & .bottom{
+              
+                & .dollar{
+                   
+                }
+        }   
+        }
+    }
+    .cartoffcanvas{
+       
+        & .cartoffcanvasheader{
+            
+            & .shoppingcartheading{
+                
+            }
+        }
+        & .cartoffcanvasbody{
+           
+                & .courseimgcontainer{
+                   
+                    & .courseimg{
+                       
+                        
+                    }
+                }
+                & .coursename{
+                   
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                       
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                   
+                                }
+                                & .totalreview{
+                                   
+                                }
+                            }
+                        }
+                    }   
+                }
+                & .courseprice{
+                    
+                    & .paise{
+                        
+                    }
+                }
+        }
+        & .cartoffcanvasbtn{
+           
+            
+            & .cartarrowcontainer{
+                & .cartarrow{
+                    
+                    
+                }
+            }
+                &:hover { 
+                    & .cartarrow{
+                        
+                        
+                    }
+                }
+            }
+        & .cartoffcanvasfooter{
+           
+            & .total{
+               
+            }
+            & .amount{
+               
+            }
+            & .footerdivider{
+               
+            }
+        }
+    }
+    .menuoffcanvas{
+       
+        & .menucollapseone{
+            &:not(.collapsed) {
+                & .menudownarrow{
+                   
+                }
+            }
+        }
+        & .menuhead{
+            
+        } 
+        & .menudownarrow{
+                
+            }
+        & .menucollapse{
+            
+            & .menucollapseul{
+              
+                & .menucollapseli{
+                    
+                }
+            }
+        }
+    }
+}
+
+

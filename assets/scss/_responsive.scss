@@ -1,0 +1,158 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  @include navbar-mixin-min-sm();
+  @include herosection-mixin-min-sm();
+  @include categorysection-mixin-min-sm();
+  @include topcourses-mixin-min-sm();
+  @include chooseussection-mixin-min-sm();
+  @include eventsection-mixin-min-sm();
+  @include ourteacherssechtion-mixin-min-sm();
+  @include footer-mixin-min-sm();
+  @include newsletter-mixin-min-sm();
+  // @include heading-fs-12-mixin-min-sm();
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  @include navbar-mixin-min-md();
+  @include navbar-mixin-min-md();
+  @include categorysection-mixin-min-md();
+  @include topcourses-mixin-min-md();
+  @include chooseussection-mixin-min-md();
+  @include eventsection-mixin-min-md();
+  @include ourteacherssechtion-mixin-min-md();
+  @include footer-mixin-min-md();
+  @include newsletter-mixin-min-md();
+  // @include heading-fs-12-mixin-min-md();
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  @include navbar-mixin-min-lg();
+  @include herosection-mixin-min-lg();
+  @include categorysection-mixin-min-lg();
+  @include topcourses-mixin-min-lg();
+  @include chooseussection-mixin-min-lg();
+  @include eventsection-mixin-min-lg();
+  @include ourteacherssechtion-mixin-min-lg();
+  @include footer-mixin-min-lg();
+  @include newsletter-mixin-min-lg();
+  // @include heading-fs-12-mixin-min-lg();
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  @include navbar-mixin-min-xl();
+  @include herosection-mixin-min-xl();
+  @include categorysection-mixin-min-xl();
+  @include topcourses-mixin-min-xl();
+  @include chooseussection-mixin-min-xl();
+  @include eventsection-mixin-min-xl();
+  @include ourteacherssechtion-mixin-min-xl();
+  @include footer-mixin-min-xl();
+  @include newsletter-mixin-min-xl();
+  // @include heading-fs-12-mixin-min-xl();
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  @include navbar-mixin-min-xxl();
+  @include herosection-mixin-min-xxl();
+  @include categorysection-mixin-min-xxl();
+  @include topcourses-mixin-min-xxl();
+  @include chooseussection-mixin-min-xxl();
+  @include eventsection-mixin-min-xxl();
+  @include ourteacherssechtion-mixin-min-xxl();
+  @include footer-mixin-min-xxl();
+  @include newsletter-mixin-min-xxl();
+  // @include heading-fs-12-mixin-min-xxl();
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+  @include navbar-mixin-max-xl();
+  @include herosection-mixin-max-xl();
+  @include categorysection-mixin-max-xl();
+  @include topcourses-mixin-max-xl();
+  @include chooseussection-mixin-max-xl();
+  @include eventsection-mixin-max-xl();
+  @include ourteacherssechtion-mixin-max-xl();
+  @include footer-mixin-max-xl();
+  @include newsletter-mixin-max-xl();
+  // @include heading-fs-12-mixin-max-xl();
+}
+
+// Large devices (desktops, less than 1300px)
+@media (max-width: 1299.98px) {
+  @include navbar-mixin-max-1300();
+  @include herosection-mixin-max-1300();
+  @include categorysection-mixin-max-1300();
+  @include topcourses-mixin-max-1300();
+  @include chooseussection-mixin-max-1300();
+  @include eventsection-mixin-max-1300();
+  @include ourteacherssechtion-mixin-max-1300();
+  @include footer-mixin-max-1300();
+  @include newsletter-mixin-max-1300();
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  @include navbar-mixin-max-lg();
+  @include herosection-mixin-max-lg();
+  @include categorysection-mixin-max-lg();
+  @include topcourses-mixin-max-lg();
+  @include chooseussection-mixin-max-lg();
+  @include eventsection-mixin-max-lg();
+  @include ourteacherssechtion-mixin-max-lg();
+  @include footer-mixin-max-lg();
+  @include newsletter-mixin-max-lg();
+  // @include heading-fs-12-mixin-max-lg();
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  @include navbar-mixin-max-md();
+  @include herosection-mixin-max-md();
+  @include categorysection-mixin-max-md();
+  @include topcourses-mixin-max-md();
+  @include chooseussection-mixin-max-md();
+  @include eventsection-mixin-max-md();
+  @include ourteacherssechtion-mixin-max-md();
+  @include footer-mixin-max-md();
+  @include newsletter-mixin-max-md();
+  // @include heading-fs-12-mixin-max-md();
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  @include navbar-mixin-max-sm();
+  @include herosection-mixin-max-sm();
+  @include categorysection-mixin-max-sm();
+  @include topcourses-mixin-max-sm();
+  @include chooseussection-mixin-max-sm();
+  @include eventsection-mixin-max-sm();
+  @include ourteacherssechtion-mixin-max-sm();
+  @include footer-mixin-max-sm();
+  @include newsletter-mixin-max-sm();
+  // @include heading-fs-12-mixin-max-sm();
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  @include navbar-mixin-max-xs();
+  @include herosection-mixin-max-xs();
+  @include categorysection-mixin-max-xs();
+  @include topcourses-mixin-max-xs();
+  @include chooseussection-mixin-max-xs();
+  @include eventsection-mixin-max-xs();
+  @include ourteacherssechtion-mixin-max-xs();
+  @include footer-mixin-max-xs();
+  @include newsletter-mixin-max-xs();
+  // @include heading-fs-12-mixin-max-xs();
+}
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width

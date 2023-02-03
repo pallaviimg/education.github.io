@@ -1,0 +1,6491 @@
+// Hero section
+.herobackground{
+    background-image: url(../img/homebackground.webp) !important;
+    width: 100%;
+    // position: absolute;
+    overflow: hidden;
+    padding-bottom: 35px;
+    position: relative;
+    &::after{
+        content: "";
+        background-image: url(../img/CURVE.svg);
+        position: absolute;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw;
+        z-index: 99;
+        height: 145px;
+    }
+    & .heropagerytimgcontainer{
+        // width: 500px;
+        // height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // &::after{
+        //     content: '';
+        //     background-image: url(../img/shape-01.png);
+        //     background-repeat: no-repeat;
+        //     z-index: 5;
+        //     width: 500px;
+        //     height: 500px;
+        //     position: absolute !important;
+        //     top: 20% !important;
+        // }
+        & .heropagerytimg{
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+    }
+    & .heropagelftside{
+        display: flex;
+        flex-direction: column;
+        & .tiltText {
+            color: $gray-900;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        & .herotrophy{
+            background-color: $white;
+            width: 50%;
+            height: 50px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            & .trophyimg{
+                width: 30px;
+                height: 30px;
+            }
+            & .trophytxt{
+                font-size: 15px;
+                font-weight: 600;
+                padding-left: 5px;
+            }
+        }
+        & .leftmaintxt{
+                font-size: 55px;
+                font-weight: 700;
+                line-height: 65px;
+        }
+        & .leftsubtxt{
+                font-size: 17px;
+                font-weight: 500;
+                color: $gray-900;
+                margin-top: 15px;
+        }
+        & .heroleftbtncontainer{
+            position: relative;
+
+            & .heroleftbtn{
+                background: linear-gradient(to right, $theme1, $theme2);
+                border: none;
+                border-radius: 5px;
+                color: $white;
+                font-size: 15px;
+                font-weight: 600;
+                padding: 15px 30px;
+                margin-top: 20px;
+            }
+            
+        }
+    }
+
+}
+
+@mixin herosection-mixin-min-sm(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-min-md(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-min-lg(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-min-xl(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-min-xxl(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-max-xl(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    margin-bottom: 20px !important;
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-max-1300(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-max-lg(){
+    .herobackground{
+   
+        &::after{
+           
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                width: unset !important;
+                height: unset !important;
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+                width: 100% !important;
+                
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                    font-size: 15px !important;
+                }
+            }
+            & .leftmaintxt{
+                    font-size: 44px;
+                    line-height: 54px;
+            }
+            & .leftsubtxt{
+                    font-size: 15px !important;
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    padding: 8px 16px !important;
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-max-md(){
+    .herobackground{
+        padding-bottom: 0 !important;
+        &::after{
+            background-image: unset !important;
+            display: none !important;
+        }
+        & .herocontainerrow{
+           
+            & .heropagerytimgcontainer{
+               
+                &::after{
+                    
+                }
+                & .heropagerytimg{
+                    
+                }
+            }
+            & .heropagelftside{
+                
+                & .herotrophy{
+                   
+                    & .trophyimg{
+                       
+                    }
+                    & .trophytxt{
+                       
+                    }
+                }
+                & .tiltText {
+                    font-size: 15px;
+                }
+                & .leftmaintxt{
+                    font-size: 36px ;
+                    line-height: 45px;
+                }
+                & .leftsubtxt{
+                }
+                & .heroleftbtncontainer{
+                    padding-bottom: 12px !important;
+        
+                    & .heroleftbtn{
+                        
+                    }
+                    
+                }
+            }
+        
+        }
+       
+    }
+}
+@mixin herosection-mixin-max-sm(){
+    .herobackground{
+        padding-bottom: 0 !important;
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+            align-items: end !important;
+            width: unset !important;
+            height: unset !important;
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                height: auto;
+                width: 85%;
+            }
+        }
+        & .heropagelftside{
+            text-align: center;
+            & .herotrophy{
+                width: 100% !important;
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                    font-size: 12px !important;
+                }
+            }
+            & .leftmaintxt{
+                    font-size: 30px !important;
+                    line-height: 38px !important;
+            }
+            & .leftsubtxt{
+                    font-size: 15px !important;
+                    margin-top: 5px;
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    padding: 8px 16px !important;
+                    font-size: 13px !important;
+                    margin-top: 10px !important;
+                    margin-bottom: 20px !important;
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-max-xs(){
+    .herobackground{
+   
+    &::after{
+        
+    }
+    & .heropagerytimgcontainer{
+       
+        &::after{
+            
+        }
+        & .heropagerytimg{
+            width: 72% !important;
+        }
+    }
+    & .heropagelftside{
+        
+        & .herotrophy{
+            margin-top: 30px;
+            & .trophyimg{
+               
+            }
+            & .trophytxt{
+                font-size: 16px !important;
+            }
+        }
+        & .leftmaintxt{
+                font-size: 30px !important;
+                text-align: center;
+        }
+        & .leftsubtxt{
+                font-size: 15px !important;
+                text-align: center;
+        }
+        & .heroleftbtncontainer{
+            text-align: center;
+
+            & .heroleftbtn{
+                padding: 11px 15px !important;
+            }
+            
+        }
+    }
+
+}
+}
+// category section
+ .categoriescontainer{
+    flex-direction: column;
+    position: relative;
+    & .categorybtncontainer{
+        & .categorybtn{
+            border: none;
+            background: linear-gradient(to right, $theme1, $theme2);
+            color: $white;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 11px 45px;
+        }
+    }
+    & .categorymainheading{
+        font-size: 35px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: normal;
+        
+    }
+}
+.cardcontainer{
+    box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41);
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 40px;
+    & .cardanchor{
+        text-decoration: none;
+        & .cardinner{
+            flex-direction: column;
+            & .cardiconscontainer{
+                width: 100px;
+                height: 70px;
+                text-align: center;
+                & .cardimg{
+                    vertical-align: middle;
+                    max-width: 100%;
+                    height: 70px;
+                }
+            }
+            & .cardmainheading{
+                color: $black;
+                font-size: 18px;
+                font-weight: 700;
+                width: 100%;
+                padding-top: 10px;
+            }
+            & .cardsubheading{
+                font-size: 14px;
+                font-weight: 600;
+                color: $black;
+                & .cardarrowcontainer{
+                    & .arrowimg{
+                        width: 10px;
+                        height: 10px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@mixin categorysection-mixin-min-sm(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-min-md(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-min-lg(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-min-xl(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-min-xxl(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-xl(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-1300(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-lg(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+                padding: 8px 16px !important;
+            }
+        }
+        & .categorymainheading{
+            font-size: 28px;
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-md(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+                margin-top: 35px;
+            }
+        }
+        & .categorymainheading{
+            font-size: 22px;
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-sm(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+                // padding: 8px 16px !important;
+                // font-size: 12px !important;
+                display: none;
+            }
+        }
+        & .categorymainheading{
+            
+            font-size: 22px !important;
+            margin-top: 30px !important;
+        }
+    }
+    .cardcontainer{
+        padding: 35px 40px !important;
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                    font-size: 15px !important;
+                }
+                & .cardsubheading{
+                    font-size: 12px !important;
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-xs(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            font-size: 24px!important;
+            margin-top: 30px !important;
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    height: 50px;
+                    & .cardimg{
+                        height: 50px;
+                    }
+                }
+                & .cardmainheading{
+                   text-align: center;
+                   font-size: 13px !important;
+                }
+                & .cardsubheading{
+                    font-size: 11px !important;
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// top courses section
+.topcoursesbg{
+    background-image: url(../img/homebackground.webp);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    & .topcoursebtncontainer{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        & .topcoursebtn{
+            background: linear-gradient(to right, $theme1, $theme2);
+            border:none;
+            color: $white;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 11px 45px;
+        }
+    }
+    & .topcoursemainhead{
+        font-size: 50px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    & .cardborder{
+        padding: 10px 10px 0px 10px !important;
+        & .lessonsandpeoplecontainer{
+            padding-top: 10px;
+            & .lessons{
+                font-size: 15px;
+                color: $gray-600;
+                font-weight: 500;
+                & .bookicon{
+                    width: 25px !important;
+                    height: 25px !important;
+                    margin-right:5px;
+                }
+            }
+            & .people{
+                font-size: 15px;
+                color: $gray-600;
+                font-weight: 500;
+                & .peopleicon{
+                    width: 25px !important;
+                    height: 25px !important;
+                    margin-left: 20px;
+                    margin-right:5px;
+                }
+            }
+        }
+        & .cardimgcontainer{
+            text-decoration: none;
+            color: $black;
+            & .card-body{
+                padding: 10px 10px 0px 0 ;
+                & .cardmainhead{
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-top: 5px;
+                }
+                & .cardpara{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $gray-600;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                        list-style: none;
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                                & .totalreview{
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    color: $gray-600;
+                                }
+                            }
+                        }
+                        & .bookmarkclass{
+                            width: 20px;
+                            height: 15px;
+                            margin-left: auto;
+                            margin-top: 10px;
+                            filter: brightness(0.1);
+                        }
+                    }   
+                }
+                & .bottomdata{
+                    margin-top: 20px;
+                }  
+            }
+        }
+       
+        &:hover .cardhover{
+            display: block !important;
+        }
+    }
+   & .cardhover{
+    padding: 20px;
+    & .cardmainhead{
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+    & .bottom{
+        font-size: 15px;
+        font-weight: 800;
+        color: $gray-600;
+        padding-top: 0px;
+        & .dollar{
+            font-size: 15px;
+            font-weight: 800;
+            color: $gray-400;
+            margin-left: 8px;
+            padding-top: 0px;
+        }
+    } 
+    & .cartimgg{
+        width: 15px;
+        height: 15px;
+        filter: brightness(0.1);
+    }
+    & .cartclass{
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 5px;
+    }
+     & .toplearnclass{
+        background: linear-gradient(to right, $theme1, $theme2);
+        border:none;
+        border-radius: 5px;
+        padding: 10px 26px;
+        color: $white;
+        font-size: 15px;
+        font-weight: 600;
+        margin-right: 5px !important;
+        & .rightarrowbottom{
+            width: 10px;
+            height: 10px;
+        }
+    }
+    & .cardpara{
+        font-size: 15px;
+        font-weight: 500;
+        color: $gray-600;
+        margin-top: 7px;
+        margin-bottom: 15px;
+        &.text-ellipsis--2{
+            text-overflow:ellipsis;
+            overflow:hidden;
+            // Addition lines for 2 line or multiline ellipsis
+            display: -webkit-box !important;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+          }
+    }
+    & .icontxt{
+        font-size: 15px;
+        font-weight: 600;
+        // margin-left: 5px;
+        & .signalpic{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+        & .menupicc{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+
+        }
+        & .clockpic{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+        & .wishpic{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+
+        }
+    }
+    & .cardproimgcontainer{
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        overflow: hidden;
+        & .cardproimg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    }
+    & .prosidetxt{
+        font-size: 15px;
+        font-weight: 600;
+        color: $gray-600    ;
+    }
+    & .lessonsandpeoplecontainer{
+        margin-top: 10px;
+        & .lessons{
+            font-size: 15px;
+            color: $gray-600;
+            font-weight: 500;
+            & .bookicon{
+                width: 15px !important;
+                height: 15px !important;
+                margin-right:5px;
+            }
+        }
+        & .people{
+            font-size: 15px;
+            color: $gray-600;
+            font-weight: 500;
+            & .peopleicon{
+                width: 15px !important;
+                height: 15px !important;
+                margin-left: 20px;
+                margin-right:5px;
+            }
+        }
+    }
+   }
+    }
+
+
+
+@mixin topcourses-mixin-min-sm(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-min-md(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-min-lg(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-min-xl(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+            font-size: 14.5px !important;
+            -webkit-line-clamp: 4 !important;
+            
+        }
+        & .icontxt{
+            font-size: 14.5px !important;
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-min-xxl(){
+    .topcoursesbg{
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 35px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+            font-size: 15px !important;
+            -webkit-line-clamp: 5 !important;
+            
+        }
+        & .icontxt{
+            font-size: 15px !important;
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-xl(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 35px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-1300(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 35px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-lg(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 28px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-md(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 24px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+            -webkit-line-clamp: 6 !important;
+        
+            
+        }
+        & .icontxt{
+            font-size: 14px !important;
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+            
+            font-size: 14px !important;
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-sm(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 24px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+            -webkit-line-clamp: 4 !important;
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-xs(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 24px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+                
+                display: flex !important;
+                flex-direction: column;
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+            -webkit-line-clamp: 6 !important;
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+
+// About us section
+.aboutusfluid{
+    & .aboutussection{
+        & .aboutleftcontainer{
+            & .aboutimg1{
+                // position: absolute;
+            }
+            & .aboutimg2{
+                border-radius: 5px;
+                // position: absolute;
+
+            }
+            & .aboutimg3{
+                // position: absolute;
+
+            }
+        }
+    }
+}
+// choose us section
+.chooseusfluid{
+    background-image: url(../img/homebackground.webp);
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    & .colafter{
+        
+    }
+    & .hangerline{
+        position: relative;
+        &::before{
+            content: "";
+            width: 100%;
+            height: 4px;
+            left: 0;
+            top: 0;
+            background-image: linear-gradient(to right, $theme1, $theme2);
+            // background-image: radial-gradient(to right, $theme1, $theme2);
+        }
+        & .hangerCardWrapper {
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                border: 4px solid $theme1;
+                border-radius: 100%;
+                left: 50%;
+                // bottom: calc(100% + 41px);
+                bottom: 98%;
+                transform: translateX(-50%);
+                background: #f9f9ff;
+            }
+            
+            &::before{
+                content: "";
+                width: 3px;
+                height: 52px;
+                background-image: linear-gradient($theme1, $theme2);
+                left: 50%;
+                top: 0%;
+                position: absolute;
+                transform: translateX(-50%);
+                animation: hangStop 2s infinite linear;
+            }
+        }
+        & .hangingcard{
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            animation: hang 2s infinite linear;
+            & .hanginginpiccontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: $white;
+                box-shadow: 1px 1px 7px 0px  $gray-600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                & .hangingcardprofile{
+                    width: 80%;
+                    height: 80%;
+                    object-fit: cover;
+                }
+            }
+            & .counter{
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            & .hangingcardbottom{
+                font-size: 20px;
+                font-weight: 700;
+                color: $gray-600;
+            }
+        }
+        & .hangingcardd{
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            animation: hang 2s infinite linear;
+            // &::before{
+            //     content: "";
+            //     width: 3px;
+            //     height: 16px;
+            //     background-image: linear-gradient($theme1, $theme2);
+            //     left: 50%;
+            //     bottom: 100%;
+            //     position: absolute;
+            //     transform: translateX(-50%);
+            // }
+            // &::after{
+            //     position: absolute;
+            //     content: "";
+            //     width: 20px;
+            //     height: 20px;
+            //     border: 4px solid $theme1;
+            //     border-radius: 100%;
+            //     left: 50%;
+            //     bottom: calc(100% + 17px);
+            //     transform: translateX(-50%);
+            //     background: #f9f9ff;
+            // }
+            & .hanginginpiccontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: $white;
+                box-shadow: 1px 1px 7px 0px  $gray-600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                & .hangingcardprofile{
+                    width: 80%;
+                    height: 80%;
+                    object-fit: cover;
+                }
+            }
+            & .counter{
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            & .hangingcardbottom{
+                font-size: 20px;
+                font-weight: 700;
+                color: $gray-600;
+            }
+        }
+    }
+
+}
+
+@keyframes hang {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes hangStop {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-50%) rotate(5deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    75% {
+        transform: translateX(-50%) rotate(-5deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+}
+
+
+
+@mixin chooseussection-mixin-min-sm(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-min-md(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-min-lg(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-min-xl(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-min-xxl(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-xl(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-1300(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-lg(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-md(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+                display: none !important;
+            }
+            & .hangerCardWrapper{
+                & .hangingcard{
+        
+                    &::before{
+                        display: none !important;
+                        
+                    }
+                    &::after{
+                        display: none !important;
+                        
+                    }
+                    & .hanginginpiccontainer{
+                        
+                        & .hangingcardprofile{
+                    
+                        }
+                    }
+                    & .counter{
+                        
+                    }
+                    & .hangingcardbottom{
+                        
+                    }
+                }
+            }
+            & .hangerCardWrapper{
+                & .hangingcardd{
+                
+                    &::before{
+                        display: none !important;
+                        
+                    }
+                    &::after{
+                        display: none !important;
+                    }
+                    & .hanginginpiccontainer{
+                        
+                        & .hangingcardprofile{
+                            
+                        }
+                    }
+                    & .counter{
+                        
+                    }
+                    & .hangingcardbottom{
+                        
+                    }
+                }
+            }
+           
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-sm(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-xs(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+
+// event section
+.owlfliud{
+    & .demo{
+       & .owl-stage-outer{
+        height: 100%;
+        & .owl-stage{
+            height: 100%;
+           & .owl-item{
+            height: 100%;
+            & .item{
+                &::after{
+                    content: '';
+                    background-color: rgba($black, .3);
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+                & .owlimagecontainer{
+                    border-radius: 5px;
+                    & .owlimg{
+                        
+                    }
+                    & .eventdate{
+                        width: 75px;
+                        height: 70px;
+                        border-radius: 5px;
+                        background-color: $white;
+                        z-index: 999;
+                        position: absolute;
+                        top: 5%;
+                        right: 2%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & .eventdatebg{
+                            font-size: 15px;
+                            font-weight: 700;
+                        }
+                    }
+                    & .eventtiming{
+                        position: absolute;
+                        bottom: 15%;
+                        left: 2%;
+                        z-index: 999;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 600;
+                        & .eventtimingimg{
+                            width: 20px;
+                            height: 30px;
+                            margin-right: 5px;
+                        }
+                        & .locationimgg{
+                            width: 25px;
+                            height: 30px;
+                            margin-left: 20px;
+                            margin-right: 5px;
+                        }
+                    }
+                    & .bottomtxt{
+                        position: absolute;
+                        bottom: 5%;
+                        left: 2%;
+                        color: $white;
+                        font-size: 20px;
+                        font-weight: 600;
+                        z-index: 999;
+                    }
+                }
+            }
+           }
+        }
+       }
+    }
+}
+.owlcardcontainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    & .owlimg{
+        position: relative;
+    }
+    & .owlcardimg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &::after{
+        content: '';
+        background-color: rgba($black, .3);
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    & .owlcarddate{
+        position: absolute;
+        color: white;
+        z-index: 999;
+        top: 2%;
+        left: 5%;
+        font-size: 15px;
+        font-weight:600;
+    }
+    & .owlcardbottomhead{
+        position: absolute;
+        bottom: 10%;
+        color: white;
+        z-index: 999;
+        font-size: 15px;
+        font-weight: 600;
+        left: 5%;
+        & .owlcardbottomimg{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        }
+    }
+    & .owlcardbottomsubhead{
+        position: absolute;
+        bottom: 3%;
+        color: white;
+        z-index: 999;
+        font-size: 15px;
+        font-weight: 600;
+        left: 5%;
+        &.text-ellipsis--2{
+            text-overflow:ellipsis;
+            overflow:hidden;
+            // Addition lines for 2 line or multiline ellipsis
+            display: -webkit-box !important;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+          }
+    }
+}
+.owl-nav{
+    & .owl-prev{
+        position: absolute !important;
+        top: 50% !important;
+        top: 50% !important;
+        left: 2% !important;
+        opacity: 1 !important ;
+        // &::after{
+        //     content: '';
+        //     background-image: url(../img/whiteArrow-.svg);
+        //     opacity: 0.9 !important;
+        // }
+        
+    }
+    & .owl-next{
+        position: absolute !important;
+        top: 50% !important;
+        right: 2% !important;
+    }
+}
+.owlarrowsize{
+    width: 30px;
+    height: 30px;
+    font-weight: 600;
+    z-index: 999;
+}
+
+@mixin eventsection-mixin-min-sm(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-min-md(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-min-lg(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-min-xl(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-min-xxl(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-xl(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-1300(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-lg(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-md(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-sm(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-xs(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+
+// our teachers
+.topteachersfluid{
+    background:url(../img/homebackground.webp);
+    & .teambg{
+        padding: 20px;
+        background-color: $white;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        & .teamcontainer{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: $white;
+            & .teampic{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+    & .rightpartteamcontainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 7px;
+        background-color: $white;
+        border-radius: 5px;
+        & .rightteampic{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    & .teachername{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    & .subjectname{
+        font-size: 20px;
+        font-weight: 600;
+        color: $blue;
+        margin-bottom: 5px;
+
+    }
+    & .locationcontainer{
+        color: $gray-600;
+        margin-bottom: 15px;
+        font-weight: 600;
+        & .locimgg{
+            margin-right: 5px;
+        }
+    }
+    & .paragraph{
+        font-size: 15px;
+        font-weight: 600;
+        color: $gray-600;
+        margin-bottom: 15px;
+        &.text-ellipsis--2{
+            text-overflow:ellipsis;
+            overflow:hidden;
+            // Addition lines for 2 line or multiline ellipsis
+            display: -webkit-box !important;
+            -webkit-line-clamp: 10;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+          }
+    }
+    & .teamiconscontainer{
+        & .anchorclass{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $gray-200;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            & .teamiconimg{
+           
+            }
+        }
+    }
+    & .contactnumbercontainer{
+        & .contactanchor{
+            text-decoration: none;
+            color: $gray-600;
+            font-size: 14px;
+            font-weight: 600;
+            & .numberimg{
+            margin-right: 5px;
+            }
+        }
+    }
+}
+
+@mixin ourteacherssechtion-mixin-min-sm(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-min-md(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-min-lg(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-min-xl(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 7;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-min-xxl(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-xl(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            margin-bottom: 0 !important;
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+            margin-bottom: 10px !important;
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 7 !important;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-1300(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 7;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-lg(){
+    .topteachersfluid{
+        display: none !important;
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 7 !important;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-md(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-sm(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-xs(){  
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+
+
+// testimonials
+.testimonialsfluid{
+    background-image: url(../img/homebackground.webp);
+    // background-color:rgb(85, 85, 144);
+    & .testimonialscontainer{
+        background-color: $white;
+        // background-image: linear-gradient(to bottom, $theme1, $);
+        padding: 30px;
+        border-radius: 50px 5px 50px 5px;
+        &:hover{
+            .owl-prev{
+                transform: translateX(-50%);
+                // transition: 3s linear;
+            }
+        }
+        & .testimonialspara{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        & .userpiccontainer{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            & .userpic{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+        }
+        & .username{
+            font-size: 15x;
+            font-weight: 500;
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            position: absolute !important;
+            top: 45% !important;
+            left: -1% !important;
+            background-image: linear-gradient(to bottom, $theme1, $theme2) !important;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            transform: translateX(-1%);
+            transition: 0.3s linear;
+            // &:hover{
+            //     transform: translateX(-50%);
+            //     transition: 3s linear;
+            // }
+
+        }
+        & .owl-next{
+            position: absolute !important;
+            top: 45% !important;
+            right: -2% !important;
+            background-image: linear-gradient(to bottom, $theme1, $theme2) !important;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+
+
+@mixin ourteacherssechtion-mixin-min-sm(){}
+@mixin ourteacherssechtion-mixin-min-md(){}
+@mixin ourteacherssechtion-mixin-min-lg(){}
+@mixin ourteacherssechtion-mixin-min-xl(){}
+@mixin ourteacherssechtion-mixin-min-xxl(){}
+@mixin ourteacherssechtion-mixin-max-xl(){}
+@mixin ourteacherssechtion-mixin-max-1300(){}
+@mixin ourteacherssechtion-mixin-max-lg(){}
+@mixin ourteacherssechtion-mixin-max-md(){}
+@mixin ourteacherssechtion-mixin-max-sm(){}
+@mixin ourteacherssechtion-mixin-max-xs(){}
+
+// newsletter
+.newsletterfluid{
+    // background-image: url(../img/homebackground.webp);
+    background-image: url(../img/newsbg.png);
+    & .newsletterheading{
+            font-size: 50px;
+            font-weight:600;
+            color: $black;
+            text-align: center;
+    }
+    // & .newslettersubheading{
+    //         font-size: 25px;
+    //         text-align: center;
+    //         font-weight: 600;
+    // }
+    & .letterinp{
+            width: 100%;
+            height: 60px;
+            margin-top: 20px;
+            padding-left: 20px;
+            border: none;
+    }
+    & .newsbtn{
+            background-image: linear-gradient(to right, $theme1, $theme2);
+            border: 1px solid $gray-200;
+            padding: 16px 16px;
+            color: $white;
+            border-radius: 5px;
+            margin-top: 20px;
+
+    }
+    & label{
+        display: inline-block;
+    }
+    & .condition{
+        color: $gray-600;
+        font: 15px;
+    }
+}
+
+@mixin newsletter-mixin-min-sm(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+               
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+@mixin newsletter-mixin-min-md(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+               
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+@mixin newsletter-mixin-min-lg(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+               
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+@mixin newsletter-mixin-min-xl(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+               
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+@mixin newsletter-mixin-min-xxl(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+               
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+@mixin newsletter-mixin-max-xl(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+               
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+@mixin newsletter-mixin-max-1300(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+               
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+@mixin newsletter-mixin-max-lg(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+               
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+@mixin newsletter-mixin-max-md(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+               
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+@mixin newsletter-mixin-max-sm(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+            font-size: 38px;
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+@mixin newsletter-mixin-max-xs(){
+    .newsletterfluid{
+   
+        & .newsletterheading{
+                font-size: 30px;
+        }
+        
+        & .letterinp{
+                
+        }
+        & .newsbtn{
+               
+    
+        }
+        & label{
+           
+        }
+        & .condition{
+            
+        }
+    }
+}
+
+// footer
+.footerfluid{
+    background-color: $black;
+    padding: 10px ;
+    & .bookimg{
+        width: 100px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    & .footerfirstsection{
+        // background-image: url(../img/footerbook.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        background-position: center;
+        & .footerhead{
+            // font-size: 30px;
+            // font-weight: 700;
+            // margin-bottom: 40px;
+            // color: $white;
+           
+            & .footerheadd{
+                width: 150px;
+                height: 50px;
+            }
+        }
+        & .footersubhead{
+            font-size: 15px;
+            font-weight: 600;
+            // color: $gray-900;
+            color: $white;
+            z-index: 10;
+        }
+        & .footerdivider{
+            width: 100%;
+            height: 1px;
+            background-color: $white;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        & .emailcontainer{
+            text-decoration: none;
+            // color: $black;
+            color: $white;
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: 10px;
+            & .infoclass{
+                font-size: 15px;
+                color: $white;
+                font-weight: 600;
+                // color: $gray-600;
+                color: $white; 
+                margin-left: 5px !important;
+            }
+        }
+        & .office{
+                font-size: 15px;
+                color: $white;
+                font-weight: 600;
+        }
+        & .discription{
+            font-size: 14px;
+                color: $white;
+                font-weight: 500;
+                margin-top: 8px;
+        }
+        & .contactno{
+            color: $white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        & .copyryt{
+            color: $white;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+   
+    & .footerhead{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: $white;
+    }
+    & .categoryanchor{
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        padding-bottom: 10px;
+        // color: $gray-600;
+        display: inline;
+        color: $white;
+        &:hover{
+            color: red;
+            transform: translatex(10%);
+            transition: 0.3s ease;
+        }
+        // color: $black;
+        color: $white;
+        & .chevanclass{
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+        & .chevanclasss{
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        & .details{
+            text-decoration: none;
+        color: $white;
+        }
+    }
+    & .book2{
+        width: 200px;
+        height: 150px;
+    }
+}
+
+
+
+@mixin footer-mixin-min-sm(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-min-md(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-min-lg(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-min-xl(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-min-xxl(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-xl(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-1300(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-lg(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-md(){
+    .footerfluid{
+        & .bookimg{
+           display: none;
+        }
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-sm(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-xs(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+
+
+// @mixin footer-mixin-min-sm(){}
+// @mixin footer-mixin-min-md(){}
+// @mixin footer-mixin-min-lg(){}
+// @mixin footer-mixin-min-xl(){}
+// @mixin footer-mixin-min-xxl(){}
+// @mixin footer-mixin-max-xl(){}
+// @mixin footer-mixin-max-1300(){}
+// @mixin footer-mixin-max-lg(){}
+// @mixin footer-mixin-max-md(){}
+// @mixin footer-mixin-max-sm(){}
+// @mixin footer-mixin-max-xs(){}
+
+
+
+// @mixin footer-mixin-min-sm(){}
+// @mixin footer-mixin-min-md(){}
+// @mixin footer-mixin-min-lg(){}
+// @mixin footer-mixin-min-xl(){}
+// @mixin footer-mixin-min-xxl(){}
+// @mixin footer-mixin-max-xl(){}
+// @mixin footer-mixin-max-1300(){}
+// @mixin footer-mixin-max-lg(){}
+// @mixin footer-mixin-max-md(){}
+// @mixin footer-mixin-max-sm(){}
+// @mixin footer-mixin-max-xs(){}
+
