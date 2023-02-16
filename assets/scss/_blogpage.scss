@@ -1,0 +1,2127 @@
+.blogfluid{
+    background-color: $gray-100;
+    & .blogheading{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    & .cardscontainer{
+        & .card{
+            overflow: hidden;
+            border-radius: 15px 15px;
+            & .imganchor{
+                color: $white;
+                border-radius: 20px 20px 0px 0px;
+                display: flex;
+                height: 200px !important;
+                &:hover .imgoverlay{
+                    display: block;
+                }
+                // position: relative;
+                & .datecontainer{
+                    background-color: lighten($color: $orange, $amount: 10);
+                    padding: 10px 25px;
+                    border-radius: 14px 0px 30px 0px;
+                    & .date{
+                        font-size: 18px;
+                        font-weight: 500;
+                        & span{
+                            font-size: 15px;
+                            font-weight: 500;
+                            display: block;
+                            line-height: normal;
+                        }
+                        & .card-img-top{
+                            &.imggggg{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+                & .imgoverlay{
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    background: rgb($black, 0.3);
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                }
+            }
+            & .card-body{
+                background-color: $gray-100;
+                padding: 15px;
+                & .card-title{
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 4px;
+                }
+                & .para{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $gray-600;
+                    &.text-ellipsis--2{
+                        text-overflow:ellipsis;
+                        overflow:hidden;
+                        // Addition lines for 2 line or multiline ellipsis
+                        display: -webkit-box !important;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+    }
+    & .sidecontainer{
+        & .formclass{
+            & .forminp{
+                box-shadow: none !important;
+                border-color: $gray-300 !important;
+                background-color: $white;
+            }
+            & .searchimg{
+                position: absolute;
+                right: 2%;
+                top:31%;
+                // width: 20px;
+                height: 15px;
+            }
+        }
+        & .sideheading{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        & .directorinfo{
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            & .directorimgcontainer{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .dname{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $gray-600;
+            }
+            & .paraaa{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $gray-600;
+                    text-align: center;
+            }
+        }
+        & .sideimgcontainer{
+            width: 80px;
+            height: 80px;
+            
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px 8px 8px 8px;
+            }
+        }
+        & .head1{
+                font-size: 16px;
+                font-weight: 700;
+            color: $gray-600;
+        }
+        & .sub{
+            font-size: 14px;
+            font-weight: 500;
+            color: $gray-600;
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+            }
+        }
+        & .border{
+            border-bottom: $gray-200;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        & .popul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            & .popli{
+                font-size: 15px;
+                font-weight: 500;
+                padding: 5px 5px 5px 5px;
+                margin: 0px 10px 10px 0;
+                background-color: $white;
+                & .popanchor{
+                    color: $black;
+                    text-decoration: none;
+                    color: $gray-600;
+                }
+            }
+        }
+        & .instaimgcontainer{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+
+
+.blogdetailfluid{
+    background-color: $gray-100;
+    & .sideheading{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    & .detailtopimg{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        // margin-top: 15px;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+    & .daateautocontainerr{
+        & .dateauto{
+            background-color: $black;
+            color: $white;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 18px 20px;
+            border-radius: 5px;
+            & span{
+                font-size: 12px;
+                font-weight: 500;
+                display: block;
+            }
+        }
+    }
+    & .txtcontainer{
+        & .txt1{
+            font-size: 16px;
+            font-weight: 700;
+            // color: $gray-600;
+        }
+        & .imgicon{
+            width: 20px;
+            height: 20px;
+        }
+        & span{
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 5px;
+            // color: $gray-600;
+        }
+    }
+    & .sidecontainer{
+        & .formclass{
+            & .forminp{
+                box-shadow: none !important;
+                border-color: $gray-300 !important;
+                background-color: $white;
+            }
+            & .searchimg{
+                position: absolute;
+                right: 2%;
+                top:25%;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        & .sideheading{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        & .directorinfo{
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            & .directorimgcontainer{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .dname{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $gray-600;
+            }
+            & .paraaa{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $gray-600;
+                    text-align: center;
+            }
+        }
+        & .sideimgcontainer{
+            width: 80px;
+            height: 80px;
+            
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px 8px 8px 8px;
+            }
+        }
+        & .head1{
+                font-size: 16px;
+                font-weight: 700;
+            color: $gray-600;
+        }
+        & .sub{
+            font-size: 14px;
+            font-weight: 500;
+            color: $gray-600;
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+            }
+        }
+        & .border{
+            border-bottom: $gray-200;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        & .popul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            & .popli{
+                font-size: 15px;
+                font-weight: 500;
+                padding: 5px 5px 5px 5px;
+                margin: 0px 10px 10px 0;
+                background-color: $white;
+                & .popanchor{
+                    color: $black;
+                    text-decoration: none;
+                    color: $gray-600;
+                }
+            }
+        }
+        & .instaimgcontainer{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+    & .paragraph1{
+        font-size: 15px;
+        font-weight: 500;
+        color: $gray-600;
+    }
+    & blockquote{
+        border-left: 2px solid;
+        padding: 18px 0;
+        color: $gray-700;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    & .commentimgcontainer{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 10/10;
+            object-position: top center;
+        }
+    }
+    & .stdname{
+        font-size: 16px;
+        font-weight: 700;
+        color: $gray-600;
+    }
+    & .month{
+        font-size: 14px;
+        font-weight: 500;
+        color: $gray-600;
+    }
+    & .disc{
+        font-size: 14px;
+        font-weight: 500;
+        color: $gray-600;
+        &.text-ellipsis--2{
+            text-overflow:ellipsis;
+            overflow:hidden;
+            // Addition lines for 2 line or multiline ellipsis
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+    }
+    & .rowright{
+        margin-left: 50px;
+        background-color: $gray-200;
+        border-radius: 0px 25px 0px 25px;
+        // width: 80%;
+    }
+    & .reply{
+        font-size: 14px;
+        font-weight: 500;
+        color: $gray-600;
+    }
+    & .leave{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    & .form-control{
+        box-shadow: none !important;
+        border-color: $gray-200 !important;
+    }
+    & .txtarea{
+        border-color: $gray-200 !important;
+        color: $gray-600;
+        font-size: 14px;
+        font-weight: 500;
+        height: 200px !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+    & .submitbtn{
+        border:none;
+        background: linear-gradient(to right, $theme1, $theme2);
+        color: $white;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 5px;
+        padding: 12px 16px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+}
+
+
+
+@mixin blogdetailfluid-mixin-min-sm(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                   
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            
+        }
+        & .month{
+            
+        }
+        & .disc{
+           
+            &.text-ellipsis--2{
+                
+            }
+        }
+        & .rowright{
+           
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+@mixin blogdetailfluid-mixin-min-md(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                   
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            
+        }
+        & .month{
+            
+        }
+        & .disc{
+           
+            &.text-ellipsis--2{
+                
+            }
+        }
+        & .rowright{
+           
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+@mixin blogdetailfluid-mixin-min-lg(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                   
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            
+        }
+        & .month{
+            
+        }
+        & .disc{
+           
+            &.text-ellipsis--2{
+                
+            }
+        }
+        & .rowright{
+           
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+@mixin blogdetailfluid-mixin-min-xl(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                   
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            
+        }
+        & .month{
+            
+        }
+        & .disc{
+           
+            &.text-ellipsis--2{
+                
+            }
+        }
+        & .rowright{
+           
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+@mixin blogdetailfluid-mixin-min-xxl(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                   
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            
+        }
+        & .month{
+            
+        }
+        & .disc{
+           
+            &.text-ellipsis--2{
+                
+            }
+        }
+        & .rowright{
+           
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+@mixin blogdetailfluid-mixin-max-xl(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                   
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            
+        }
+        & .month{
+            
+        }
+        & .disc{
+           
+            &.text-ellipsis--2{
+                
+            }
+        }
+        & .rowright{
+           
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+@mixin blogdetailfluid-mixin-max-1300(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                   
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            
+        }
+        & .month{
+            
+        }
+        & .disc{
+           
+            &.text-ellipsis--2{
+                
+            }
+        }
+        & .rowright{
+           
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+@mixin blogdetailfluid-mixin-max-lg(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                   
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            
+        }
+        & .month{
+            
+        }
+        & .disc{
+           
+            &.text-ellipsis--2{
+                
+            }
+        }
+        & .rowright{
+           
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+@mixin blogdetailfluid-mixin-max-md(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                   
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            
+        }
+        & .month{
+            
+        }
+        & .disc{
+           
+            &.text-ellipsis--2{
+
+            }
+        }
+        & .rowright{
+            width: 100%;
+            margin-left: 0 !important;
+            background-color: none !important;
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+@mixin blogdetailfluid-mixin-max-sm(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                   
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            
+        }
+        & .month{
+            
+        }
+        & .disc{
+           
+            &.text-ellipsis--2{
+                
+            }
+        }
+        & .rowright{
+           
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+@mixin blogdetailfluid-mixin-max-xs(){
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                    
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+           
+            & img{
+                
+            }
+        }
+        & .stdname{
+            font-size: 12px !important;
+        }
+        & .month{
+            font-size: 12px !important;
+            
+        }
+        & .disc{
+        }
+        & .rowright{
+            width: 100% !important;
+            margin-left: unset !important;
+        }
+        & .reply{
+            
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                    
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+            height: 40px;
+            width: 40px;
+            & img{
+                
+            }
+        }
+        & .stdname{
+            font-size: 13px !important;
+        }
+        & .month{
+            font-size: 12px !important;
+            
+        }
+        & .disc{
+            font-size: 12px;
+        }
+        & .rowright{
+            width: 100% !important;
+            margin-left: unset !important;
+            & .col-auto {
+                &> img {
+                    height: 16px;
+                    margin-right: 3px;
+                }
+            }
+        }
+        & .reply{
+            font-size: 12px;
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@mixin blogdetailfluid-mixin-min-sm(){}
+@mixin blogdetailfluid-mixin-min-md(){}
+@mixin blogdetailfluid-mixin-min-lg(){}
+@mixin blogdetailfluid-mixin-min-xl(){}
+@mixin blogdetailfluid-mixin-min-xxl(){}
+@mixin blogdetailfluid-mixin-max-xl(){}
+@mixin blogdetailfluid-mixin-max-1300(){}
+@mixin blogdetailfluid-mixin-max-lg(){}
+@mixin blogdetailfluid-mixin-max-md(){}
+@mixin blogdetailfluid-mixin-max-sm(){}
+@mixin blogdetailfluid-mixin-max-xs(){}

@@ -1,0 +1,2946 @@
+.productlistingfluid{  
+    & .herocontainer{
+        background-color: $gray-100;
+        border-radius: 10px;
+        padding: 50px 20px 20px 50px;
+        & .mainheading{
+            font-size: 45px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+        & .subheading{
+            font-size: 15px;
+            line-height: 1.3;
+            margin-top: 20px;
+            color: $gray-600;
+        }
+        & .myform{
+            margin-top: 10px;
+            & .form-control{
+                box-shadow: none !important;
+                &.myinp{
+                    height: 55px;
+                    background: $white;
+                    border:none;
+                    font-size: 15px;
+                    color: $gray-600;
+                }
+            }
+            & .searchbtn{
+                position: absolute;
+                top: 4px;
+                right: 5px;
+                border: none;
+                padding: 12px 24px;
+                background-color: $theme1;
+                border-radius: 5px;
+                color: $white;
+                font-size: 15px;
+            }
+        }
+    }
+}
+.cardlistfluid{
+    & .rowanchor{
+        text-decoration: none;
+        color: $black;
+        border-radius: 5px;
+        & .listimgcontainer{
+            & img{
+                border-radius: 5px 5px 0 0;
+                width: 100%;
+            }
+        }
+        & .productbottomtxtcontainer{
+            & .cardtophead{
+                font-size: 14px;
+                font-weight: 500;
+                &.multiline-ellipsis {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+                    white-space: no-wrap; /* let the text wrap preserving spaces */
+                }
+            }
+            & .teachername{
+                font-size: 13px;
+                font-weight: 500;
+                color: $gray-600;
+                margin-top: 5px;
+            }
+            & .paise{
+                font-size: 13px;
+                font-weight: 500;
+                color: $green;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+.bottomfluid{
+    & .bottomrowbg{
+        background: lighten($color: $theme2, $amount: 30);
+        padding: 40px;
+        border-radius: 5px;
+        & .bottomimgcontainer{
+            height: 180px;
+            & img{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+        & .head1{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 5px;
+        }
+        & .teacherreview{
+        & .reviewul{
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            & .reviewli{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin: 1px;
+                }
+            }
+            }
+        }
+        & .head2{
+            font-size: 15px;
+            line-height: 1.1;
+            margin-top: 5px;
+            margin-bottom: 8px;
+        }
+        & .buybtnnn{
+            border:none;
+            background-color: $theme1;
+            color: $white;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+    }
+    & .bottomrowbgg{
+        background: lighten($color: $theme1, $amount: 30);
+        padding: 40px;
+        border-radius: 5px;
+        & .bottomimgcontainerr{
+            height: 180px;
+            & img{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+        & .head11{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 5px;
+        }
+        & .teacherreview{
+            & .reviewul{
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                & .reviewli{
+                    & img{
+                        width: 15px;
+                        height: 15px;
+                        margin: 1px;
+                    }
+                }
+                }
+            }
+            & .head22{
+                font-size: 15px;
+                line-height: 1.1;
+                margin-top: 5px;
+                margin-bottom: 8px;
+            }
+            & .buybtnnnn{
+                border:none;
+                background-color: $black;
+                color: $white;
+                font-size: 12px;
+                font-weight: 500;
+                padding: 8px 16px;
+                border-radius: 5px;
+            }
+    }
+}
+
+// productlistingfluid
+@mixin productlistingfluid-mixin-min-sm(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+               
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                       
+                    }
+                }
+                & .searchbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productlistingfluid-mixin-min-md(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+               
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                       
+                    }
+                }
+                & .searchbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productlistingfluid-mixin-min-lg(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+               
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                       
+                    }
+                }
+                & .searchbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productlistingfluid-mixin-min-xl(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+               
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                       
+                    }
+                }
+                & .searchbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productlistingfluid-mixin-min-xxl(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+               
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                       
+                    }
+                }
+                & .searchbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productlistingfluid-mixin-max-xl(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+               
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                       
+                    }
+                }
+                & .searchbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productlistingfluid-mixin-max-1300(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+               
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                       
+                    }
+                }
+                & .searchbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productlistingfluid-mixin-max-lg(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+               
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                       
+                    }
+                }
+                & .searchbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productlistingfluid-mixin-max-md(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+                font-size: 37px;
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                        height: 45px;
+                    }
+                }
+                & .searchbtn{
+                    padding: 6px 12px;
+                }
+            }
+        }
+    }
+}
+@mixin productlistingfluid-mixin-max-sm(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+                font-size: 26px !important;
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                       
+                    }
+                }
+                & .searchbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productlistingfluid-mixin-max-xs(){
+    .productlistingfluid{  
+        & .herocontainer{
+           
+            & .mainheading{
+               
+            }
+            & .subheading{
+                
+            }
+            & .myform{
+               
+                & .form-control{
+                    
+                    &.myinp{
+                       
+                    }
+                }
+                & .searchbtn{
+                   
+                }
+            }
+        }
+    }
+}
+
+
+.productdetailfluid{
+    & .leftpartcontainer{
+        padding: 10px;
+        & img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        & .btnnnnnnn1{
+            display: inline-block;
+            margin: 10px 0 0 0;
+            border: none;
+            color: $green;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            line-height: normal;
+            & img{
+                width: 15px;
+                height: 15px;
+                margin-right: 6px;
+            }
+        }
+        & .btnnnnnnn2{
+            display: inline-block;
+            margin: 10px 0 0 0;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            & img{
+                width: 15px;
+                height: 15px;
+                margin-right: 6px;
+            }
+        }
+    }
+    & .rightpartcontainer{
+        & .topheading{
+            font-size: 35px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+        & .raing{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        & .teacherreview{
+            & .reviewul{
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                & .reviewli{
+                    & img{
+                        width: 15px;
+                        height: 15px;
+                        margin: 1px;
+                    }
+                }
+                }
+            }
+            & .labelclass{
+                background: $gray-200;
+                border: 1px solid $gray-200;
+                padding: 10px 15px;
+                margin-top: 8px;
+                border-radius: 5px;
+                & .topdiv{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                & .bottomdiv{
+                    display: flex;
+                    align-items: center;
+                    & span {
+                        font-size: 16px;
+                        font-weight: 500;
+                        display: inline-flex;
+                        &:nth-child(2){
+                            margin-left: 7px;
+                            margin-right: 7px;
+
+                            color: $gray-600;
+                        }
+                        &:first-child{
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: $green;
+                        }
+                        &:last-child{
+                            font-size: 12px;
+                            font-weight: 500;
+                            background-color: $black;
+                            color: $white;
+                            padding: 3px 8px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                }
+            }
+            & .packageInput {
+                &:checked {
+                    &+ .labelclass {
+                        background: lighten($color: $green, $amount: 55);
+                        border: 1px solid $green;
+                    }
+                }
+            }
+            & .discriptionheading{
+                font-size: 20px;
+                font-weight: 700;
+                margin-top: 15px;
+            }
+            & .paragraph{
+                font-size: 15px;
+                color: $gray-600;
+            }
+            & .iconss{
+                & img{
+                    height: 15px;
+                    filter: brightness(.2);
+                }
+            }
+            & .txtttttt{
+                font-size: 13px;
+                font-weight: 500;
+                color: $gray-600;
+                & span{
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: $black;
+                }
+            }
+            & .paragraph2{
+                font-size: 15px;
+                color: $gray-600;
+            }
+            & .navtabs{
+                background-color: lighten($color: $theme1, $amount: 40);
+                width: 100%;
+                height: 56px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                & .mypills{
+                    padding-left: 10px ;
+                    & .navvlink{
+                        font-size: 14px;
+                    }
+                }
+            }
+            & .tab1{
+                & .tabimgcontainer{
+                    height: 230px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 8px;
+                        object-fit: cover;
+                        aspect-ratio: 10/10;
+                        object-position: top;
+                    }
+                }
+                & .tabtxtpart{
+                    & .head1111{
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                    & .subheaddd{
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: $gray-600;
+                    }
+                    & .bottompara{
+                        font-size: 15px;
+                        color: $gray-600;
+                    }
+                }
+            }
+            & .tab3{
+                & .tabparatop{
+                    font-size: 15px;
+                    color: $gray-600;
+                }
+                & .tab3bg{
+                    background-color: $gray-200;
+                    border-radius: 8px;
+                    text-align: center;
+                    & .boxcontainer{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        background-color: $gray-400;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: auto;
+                        & img{
+                            height: 50px;
+                            object-fit: cover;
+                        }
+                    }
+                    & .booktxt{
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-top: 10px;
+                    }
+                }
+                & .para22{
+                    font-size: 15px;
+                    color: $gray-600;
+                }
+            }
+            & .tab2{
+                & .reviewheading{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                & .ratingpoint{
+                    font-size: 50px;
+                    font-weight: 700;
+                }
+                & .teacherreview{
+                    & .reviewul{
+                        list-style: none;
+                        display: flex;
+                        margin: 0;
+                        padding: 0;
+                        & .reviewli{
+                            & img{
+                                width: 15px;
+                                height: 15px;
+                                margin: 1px;
+                            }
+                        }
+                        }
+                    }
+                & .ratingtxt{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $gray-600;
+                }
+                & .progresscontainer{
+                    & .progress{
+                        height: 5px;
+                        margin: 5px;
+                    }
+                }
+            }
+            & .reviewimgggcontainer{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .rytpart{
+                & .one{
+                    font-size: 20px;
+                    font-weight: 700;
+                    & .spanclass{
+                        & .teacherreview{
+                            & .reviewul{
+                                list-style: none;
+                                display: flex;
+                                margin: 0;
+                                padding: 0;
+                                margin-left: 6px;
+                                & .reviewli{
+                                    & img{
+                                        height: 20px;
+                                        margin: 1px;
+                                    }
+                                }
+                                }
+                            }
+                    }
+                }
+                & .two{
+                    font-size: 12px;
+                    color: $gray-600;
+                }
+                & .third{
+                    font-size: 15px;
+                    color: $gray-600; 
+                }
+            }
+            & .divider{
+                width: 100%;
+                height: 1px;
+                background-color: $gray-400;
+                margin-top: 20px;
+            }
+            & .comment{
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            & .form-control{
+                box-shadow: none !important;
+                border:1px solid $gray-500
+            }
+            & .txtarea{
+                border: 1px solid $gray-500;
+                border-radius: 5px;
+                padding-left: 10px;
+            }
+            & .postbtn{
+                border: none;
+                background-color: $theme1;
+                color: $white;
+                font-size: 12px;
+                border-radius: 5px;
+                padding: 8px 16px;
+            }
+    }
+}
+
+@mixin productdetailfluid-mixin-min-sm(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+               
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                               
+                            }
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                     
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                       
+                        & img{
+                           
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & img{
+                                   
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-min-md(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+               
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                               
+                            }
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                     
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                       
+                        & img{
+                           
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & img{
+                                   
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-min-lg(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+               
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                               
+                            }
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                     
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                       
+                        & img{
+                           
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & img{
+                                   
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-min-xl(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+               
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                               
+                            }
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                     
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                       
+                        & img{
+                           
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & img{
+                                   
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-min-xxl(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+               
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                               
+                            }
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                     
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                       
+                        & img{
+                           
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & img{
+                                   
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-xl(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+               
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                               
+                            }
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                     
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                       
+                        & img{
+                           
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & img{
+                                   
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-1300(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+               
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                               
+                            }
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                     
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                       
+                        & img{
+                           
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & img{
+                                   
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-lg(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+               
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                               
+                            }
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                     
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                       
+                        & img{
+                           
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & img{
+                                   
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-md(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+               
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                               
+                            }
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                     
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                       
+                        & img{
+                           
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & img{
+                                   
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-sm(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+               
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                               
+                            }
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                     
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                       
+                        & img{
+                           
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & img{
+                                   
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-xs(){
+    .productdetailfluid{
+        & .leftpartcontainer{
+            
+            & img{
+               
+            }
+            & .btnnnnnnn1{
+                font-size: 12px;
+                & img{
+                  
+                }
+            }
+            & .btnnnnnnn2{
+                font-size: 12px;
+                
+                & img{
+    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topheading{
+                font-size: 23px;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 8px;
+                margin-top: 20px;
+            }
+            & .raing{
+                
+            }
+            & .teacherreview{
+                & .reviewul{
+                    
+                    & .reviewli{
+                        & img{
+                           
+                        }
+                    }
+                    }
+                }
+                & .labelclass{
+                    padding: 5px 10px;
+                    & .topdiv{
+                        
+                    }
+                    & .bottomdiv{
+                       
+                        & span {
+                           
+                            &:nth-child(2){
+                                font-size: 12px;
+                            }
+                            &:first-child{
+                                font-size: 16px;
+                            }
+                            &:last-child{
+                                font-size: 9px;
+                                padding: 4px 8px;
+                            }
+                        }
+    
+                    }
+                }
+                & .packageInput {
+                    &:checked {
+                        &+ .labelclass {
+                           
+                        }
+                    }
+                }
+                & .discriptionheading{
+                    
+                }
+                & .paragraph{
+                   
+                }
+                & .iconss{
+                    & img{
+                        
+                    }
+                }
+                & .txtttttt{
+                    
+                    & span{
+                       
+                    }
+                }
+                & .paragraph2{
+                    
+                }
+                & .navtabs{
+                    
+                    & .mypills{
+                        flex-wrap: nowrap;
+                        white-space: nowrap;
+                        overflow-x: auto;
+                        &::-webkit-scrollbar {
+                            display: none !important;
+                        }
+                        & .navvlink{
+                            
+                        }
+                    }
+                }
+                & .tab1{
+                    & .tabimgcontainer{
+                        height: 100% ;
+                        & img{
+                       
+                        }
+                    }
+                    & .tabtxtpart{
+                        & .head1111{
+                            
+                        }
+                        & .subheaddd{
+                            
+                        }
+                        & .bottompara{
+                           
+                        }
+                    }
+                }
+                & .tab3{
+                    & .tabparatop{
+                       
+                    }
+                    & .tab3bg{
+                       
+                        & .boxcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .booktxt{
+                           
+                        }
+                    }
+                    & .para22{
+                        
+                    }
+                }
+                & .tab2{
+                    & .reviewheading{
+                        
+                    }
+                    & .ratingpoint{
+                        
+                    }
+                    & .teacherreview{
+                        & .reviewul{
+                            & .reviewli{
+                                & img{
+                                }
+                            }
+                            }
+                        }
+                    & .ratingtxt{
+                        
+                    }
+                    & .progresscontainer{
+                        & .progress{
+                            
+                        }
+                    }
+                }
+                & .reviewimgggcontainer{
+                    width: 50px;
+                    height: 50px;
+                    & img{
+                        
+                    }
+                }
+                & .rytpart{
+                    & .one{
+                        font-size: 15px;
+                        & .spanclass{
+                            & .teacherreview{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & img{
+                                           
+                                        }
+                                    }
+                                    }
+                                }
+                        }
+                    }
+                    & .two{
+                        
+                    }
+                    & .third{
+                        
+                    }
+                }
+                & .divider{
+                    
+                }
+        }
+    }
+}
+
+
+

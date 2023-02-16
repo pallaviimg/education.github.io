@@ -81,13 +81,14 @@
             position: relative;
 
             & .heroleftbtn{
-                background: linear-gradient(to right, $theme1, $theme2);
+                // background: linear-gradient(to right, $theme1, $theme2);
+                background-color: $theme1;
                 border: none;
                 border-radius: 5px;
                 color: $white;
                 font-size: 15px;
                 font-weight: 600;
-                padding: 15px 30px;
+                padding: 13px 33px;
                 margin-top: 20px;
             }
             
@@ -616,9 +617,9 @@
         }
     }
     & .categorymainheading{
-        font-size: 35px;
+        font-size: 32px;
         font-weight: 700;
-        margin-top: 20px;
+        // margin-top: 20px;
         margin-bottom: 30px;
         text-align: center;
         line-height: normal;
@@ -1045,7 +1046,7 @@
         & .categorymainheading{
             
             font-size: 22px !important;
-            margin-top: 30px !important;
+            margin-bottom: 10px !important;
         }
     }
     .cardcontainer{
@@ -1085,7 +1086,7 @@
         }
         & .categorymainheading{
             font-size: 24px!important;
-            margin-top: 30px !important;
+            // margin-top: 30px !important;
             
         }
     }
@@ -1121,10 +1122,10 @@
 // top courses section
 .topcoursesbg{
     background-image: url(../img/homebackground.webp);
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-size: cover;
     & .topcoursebtncontainer{
-        margin-top: 30px;
+        // margin-top: 30px;
         display: flex;
         flex-direction: column;
         & .topcoursebtn{
@@ -1139,10 +1140,12 @@
     & .topcoursemainhead{
         font-size: 50px;
         font-weight: 700;
-        margin-top: 20px;
+        margin-bottom: 30px;
     }
     & .cardborder{
         padding: 10px 10px 0px 10px !important;
+        text-decoration: none;
+        color: $gray-600;
         & .lessonsandpeoplecontainer{
             padding-top: 10px;
             & .lessons{
@@ -1214,13 +1217,17 @@
                 }  
             }
         }
-       
         &:hover .cardhover{
             display: block !important;
+            transform: scale(1);
+            opacity: 1;
         }
     }
-   & .cardhover{
+    & .cardhover{
     padding: 20px;
+    transform: scale(0.2);
+    opacity: 0;
+    transition: 0.3s linear;
     & .cardmainhead{
         font-size: 20px;
         font-weight: 800;
@@ -1277,7 +1284,7 @@
             -webkit-line-clamp: 5;
             -webkit-box-orient: vertical;
             white-space: normal;
-          }
+        }
     }
     & .icontxt{
         font-size: 15px;
@@ -1886,7 +1893,7 @@
             }
         }
         & .topcoursemainhead{
-            font-size: 35px !important;
+            font-size: 32px !important;
             font-weight: 700 !important;
         }
         & .cardborder{
@@ -2554,6 +2561,7 @@
         & .topcoursemainhead{
             font-size: 24px !important;
             font-weight: 700 !important;
+            margin-bottom: 10px !important;
         }
         & .cardborder{
             
@@ -2835,7 +2843,7 @@
 .chooseusfluid{
     background-image: url(../img/homebackground.webp);
     background-repeat: no-repeat;
-    margin-top: 50px;
+    // margin-top: 50px;
     & .colafter{
         
     }
@@ -2886,7 +2894,7 @@
             justify-content: center;
             align-items: center;
             background-color: $white;
-            animation: hang 2s infinite linear;
+            // animation: hang 2s infinite linear;
             & .hanginginpiccontainer{
                 width: 100px;
                 height: 100px;
@@ -2910,8 +2918,8 @@
                 margin-bottom: 10px;
             }
             & .hangingcardbottom{
-                font-size: 20px;
-                font-weight: 700;
+                font-size: 18px;
+                font-weight: 500;
                 color: $gray-600;
             }
         }
@@ -2923,7 +2931,7 @@
             justify-content: center;
             align-items: center;
             background-color: $white;
-            animation: hang 2s infinite linear;
+            // animation: hang 2s infinite linear;
             // &::before{
             //     content: "";
             //     width: 3px;
@@ -2969,8 +2977,8 @@
                 margin-bottom: 10px;
             }
             & .hangingcardbottom{
-                font-size: 20px;
-                font-weight: 700;
+                font-size: 18px;
+                font-weight: 500;
                 color: $gray-600;
             }
         }
@@ -3141,6 +3149,7 @@
                
             }
             & .hangingcard{
+            animation: hang 2s infinite linear;
                
                 &::before{
                     
@@ -3162,6 +3171,7 @@
                 }
             }
             & .hangingcardd{
+            animation: hang 2s infinite linear;
                 
                 &::before{
                     
@@ -3651,6 +3661,81 @@
     }
 }
 
+
+@media (max-width: 991px) {
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+                display: none !important;
+            }
+            & .hangerCardWrapper{
+                &::before{
+                    display: none !important;
+                    
+                }
+                &::after{
+                    display: none !important;
+                    
+                }
+                & .hangingcard{
+        
+                    &::before{
+                        display: none !important;
+                        
+                    }
+                    &::after{
+                        display: none !important;
+                        
+                    }
+                    & .hanginginpiccontainer{
+                        
+                        & .hangingcardprofile{
+                    
+                        }
+                    }
+                    & .counter{
+                        
+                    }
+                    & .hangingcardbottom{
+                        
+                    }
+                }
+            }
+            & .hangerCardWrapper{
+                & .hangingcardd{
+                
+                    &::before{
+                        display: none !important;
+                        
+                    }
+                    &::after{
+                        display: none !important;
+                    }
+                    & .hanginginpiccontainer{
+                        
+                        & .hangingcardprofile{
+                            
+                        }
+                    }
+                    & .counter{
+                        
+                    }
+                    & .hangingcardbottom{
+                        
+                    }
+                }
+            }
+           
+        }
+    
+    }
+}
+
 // event section
 .owlfliud{
     & .demo{
@@ -3676,8 +3761,8 @@
                         
                     }
                     & .eventdate{
-                        width: 75px;
-                        height: 70px;
+                        width: 90px;
+                        height: 40px;
                         border-radius: 5px;
                         background-color: $white;
                         z-index: 999;
@@ -4737,6 +4822,8 @@
 // our teachers
 .topteachersfluid{
     background:url(../img/homebackground.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     & .teambg{
         padding: 20px;
         background-color: $white;
@@ -5200,6 +5287,7 @@
 }
 @mixin ourteacherssechtion-mixin-max-1300(){
     .topteachersfluid{
+        display: none !important;
    
         & .teambg{
             
@@ -5236,7 +5324,7 @@
                 overflow:hidden;
                 // Addition lines for 2 line or multiline ellipsis
                 display: -webkit-box !important;
-                -webkit-line-clamp: 7;
+                -webkit-line-clamp: 7 !important;
                 -webkit-box-orient: vertical;
                 white-space: normal;
               }
@@ -5444,6 +5532,319 @@
     }
 }
 @mixin ourteacherssechtion-mixin-max-xs(){  
+    body {      
+        background-color: red;
+    }
+    .topteachersfluid{
+    display: none !important;
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9 !important;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            margin-bottom: 0 !important;
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+            margin-bottom: 10px !important;
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 7 !important;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1299) {
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 7 !important;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            font-size: 25px;
+        }
+        & .subjectname{
+            font-size: 18px;
+    
+        }
+        & .locationcontainer{
+            font-size: 16px;
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 4 !important;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 8 !important;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
     .topteachersfluid{
    
         & .teambg{
@@ -5505,6 +5906,66 @@
     }
 }
 
+@media (max-width: 575px) {
+    .topteachersfluid{
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9 !important;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
 
 // testimonials
 .testimonialsfluid{
@@ -5595,7 +6056,7 @@
     // background-image: url(../img/homebackground.webp);
     background-image: url(../img/newsbg.png);
     & .newsletterheading{
-            font-size: 50px;
+            font-size: 32px;
             font-weight:600;
             color: $black;
             text-align: center;
@@ -5613,7 +6074,8 @@
             border: none;
     }
     & .newsbtn{
-            background-image: linear-gradient(to right, $theme1, $theme2);
+            // background-image: linear-gradient(to right, $theme1, $theme2);
+            background-color: $theme1;
             border: 1px solid $gray-200;
             padding: 16px 16px;
             color: $white;
@@ -5854,7 +6316,7 @@
     .newsletterfluid{
    
         & .newsletterheading{
-                font-size: 30px;
+                font-size: 24px;
         }
         
         & .letterinp{
@@ -5876,7 +6338,6 @@
 // footer
 .footerfluid{
     background-color: $black;
-    padding: 10px ;
     & .bookimg{
         width: 100px;
         height: 50px;
@@ -5917,22 +6378,25 @@
             text-decoration: none;
             // color: $black;
             color: $white;
-            font-size: 20px;
+            font-size: 14px;
             font-weight: 700;
             margin-right: 10px;
             & .infoclass{
-                font-size: 15px;
+                font-size: 14px;
                 color: $white;
-                font-weight: 600;
+                font-weight: 500;
                 // color: $gray-600;
                 color: $white; 
                 margin-left: 5px !important;
             }
         }
         & .office{
-                font-size: 15px;
+                font-size: 14px;
                 color: $white;
-                font-weight: 600;
+                font-weight: 500;
+                & span {
+                    font-weight: 700;
+                }
         }
         & .discription{
             font-size: 14px;
@@ -5943,7 +6407,10 @@
         & .contactno{
             color: $white;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 500;
+            & span {
+                font-weight: 700;
+            }
         }
         & .copyryt{
             color: $white;
@@ -5956,28 +6423,25 @@
     & .footerhead{
         font-size: 20px;
         font-weight: 700;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         color: $white;
     }
     & .categoryanchor{
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 600;
         text-decoration: none;
-        padding-bottom: 10px;
-        // color: $gray-600;
+        padding: 8px 0;
         display: inline;
         color: $white;
+        transition: 0.3s ease-in-out;
         &:hover{
-            color: red;
-            transform: translatex(10%);
-            transition: 0.3s ease;
+            transform: translatex(10px);
         }
         // color: $black;
         color: $white;
         & .chevanclass{
-            width: 15px;
-            height: 15px;
-            margin-right: 10px;
+            height: 13px;
+            margin-right: 6px;
         }
         & .chevanclasss{
             width: 50px;
@@ -6462,18 +6926,5766 @@
     }
 }
 
+// course detail section
+.coursedetailherosection{
+    background-image: url(../img/homebackground.webp);
+    // height: 100%;
+    width: 100%;
+    & .detailherocontainer{
+        // margin: 0 !important;
+        padding-top: 80px;
+        & .heromainheading{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 30px;
+        }
+        & .herosubheading{
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        & .boxcontainer{
+            display: flex;
+            align-items: center;
+            & .box1{
+                font-size: 14px;
+                font-weight: 500;
+                background: linear-gradient(to right, $theme1, $theme2);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                padding: 10px;
+                margin-right: 10px;
+                border: 2px solid $white;
+                & .batchicon{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                }
+            }
+            & .rating{
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                line-height: 0;
+                font-weight: 500;
+                & .ratingul{
+                    list-style: none;
+                    display: flex;
+                    margin-left: 5px;
+                    & .ratingli{
+                        
+                        & .starimg{
+                            width: 15px;
+                            height: 15px;
+                            
+                        }
+                    }
+                }
+            }
+            & .raingcounting{
+                margin-left: 10px;
+                font-size: 14px;
+                font-weight: 500;
+                margin-right: 10px;
+                & .ratingclass{
+                    margin-left: 5px;
+                }
+            }
+        }
+        & .detailbottomimg{
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            & .imgcontainer{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 10px;
+                & .proimgg{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .propicdetail{
+                    font-size: 14px;
+                    font-weight: 500;
+            }
+        }
+        & .lastcontainer{
+            margin-top: 20px;
+            & .updateimg{
+                width: 18px;
+                height: 18px;
+                margin-left: 10px;
+            }
+            & .updateimgg{
+                width: 18px;
+                height: 18px;
+            }
+            & .lasttxt{
+                font-size: 14px;
+                font-weight: 500;
+                line-height: normal;
+                margin-left: 5px;
+            }
+        }
+    }
+    & .coursedetailrytpartcontainer{
+        border: 1px solid $gray-400;
+        padding: 20px;
+        border-radius: 5px;
+        width: 400px;
+        background-color: $white;
+        margin: auto;
+        & .righttoptxt{
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            & img{
+                margin-right: 8px;
+                height: 30px;
+            }
+            & span{
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+        }
+        & .enrollbtn{
+                border: none;
+                background-color: $theme1;
+                border-radius: 5px;
+                color: $white;
+                padding: 10px;
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 8px;
+        }
+        & .progresscontainerrr{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        & .progress{
+                height: 8px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+        }
+        & .people{
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+    }
+}
 
-// @mixin footer-mixin-min-sm(){}
-// @mixin footer-mixin-min-md(){}
-// @mixin footer-mixin-min-lg(){}
-// @mixin footer-mixin-min-xl(){}
-// @mixin footer-mixin-min-xxl(){}
-// @mixin footer-mixin-max-xl(){}
-// @mixin footer-mixin-max-1300(){}
-// @mixin footer-mixin-max-lg(){}
-// @mixin footer-mixin-max-md(){}
-// @mixin footer-mixin-max-sm(){}
-// @mixin footer-mixin-max-xs(){}
+@mixin coursedetailherosectionn-mixin-min-sm(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+          
+            & .heromainheading{
+                
+            }
+            & .herosubheading{
+                
+            }
+            & .boxcontainer{
+                
+                & .box1{
+                    
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                    
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+              
+                & .updateimg{
+                    
+                }
+                & .updateimgg{
+                   
+                }
+                & .lasttxt{
+                    
+                }
+            }
+        }
+        
+    }
+}
+@mixin coursedetailherosectionn-mixin-min-md(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+          
+            & .heromainheading{
+                
+            }
+            & .herosubheading{
+                
+            }
+            & .boxcontainer{
+                
+                & .box1{
+                    
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                    
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+              
+                & .updateimg{
+                    
+                }
+                & .updateimgg{
+                   
+                }
+                & .lasttxt{
+                    
+                }
+            }
+        }
+        
+    }
+}
+@mixin coursedetailherosectionn-mixin-min-lg(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+          
+            & .heromainheading{
+                
+            }
+            & .herosubheading{
+                
+            }
+            & .boxcontainer{
+                
+                & .box1{
+                    
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                    
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+              
+                & .updateimg{
+                    
+                }
+                & .updateimgg{
+                   
+                }
+                & .lasttxt{
+                    
+                }
+            }
+        }
+        
+    }
+}
+@mixin coursedetailherosectionn-mixin-min-xl(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+          
+            & .heromainheading{
+                
+            }
+            & .herosubheading{
+                
+            }
+            & .boxcontainer{
+                
+                & .box1{
+                    
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                    
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+              
+                & .updateimg{
+                    
+                }
+                & .updateimgg{
+                   
+                }
+                & .lasttxt{
+                    
+                }
+            }
+        }
+        
+    }
+}
+@mixin coursedetailherosectionn-mixin-min-xxl(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+          
+            & .heromainheading{
+                
+            }
+            & .herosubheading{
+                
+            }
+            & .boxcontainer{
+                
+                & .box1{
+                    
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                    
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+              
+                & .updateimg{
+                    
+                }
+                & .updateimgg{
+                   
+                }
+                & .lasttxt{
+                    
+                }
+            }
+        }
+        
+    }
+}
+@mixin coursedetailherosectionn-mixin-max-xl(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+          
+            & .heromainheading{
+                
+            }
+            & .herosubheading{
+                
+            }
+            & .boxcontainer{
+                
+                & .box1{
+                    
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                    
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+              
+                & .updateimg{
+                    
+                }
+                & .updateimgg{
+                   
+                }
+                & .lasttxt{
+                    
+                }
+            }
+        }
+        
+    }
+}
+@mixin coursedetailherosectionn-mixin-max-1300(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+          
+            & .heromainheading{
+                
+            }
+            & .herosubheading{
+                
+            }
+            & .boxcontainer{
+                
+                & .box1{
+                    
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                    
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+              
+                & .updateimg{
+                    
+                }
+                & .updateimgg{
+                   
+                }
+                & .lasttxt{
+                    
+                }
+            }
+        }
+        
+    }
+}
+@mixin coursedetailherosectionn-mixin-max-lg(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+          
+            & .heromainheading{
+                
+            }
+            & .herosubheading{
+                
+            }
+            & .boxcontainer{
+                
+                & .box1{
+                    
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                    
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+              
+                & .updateimg{
+                    
+                }
+                & .updateimgg{
+                   
+                }
+                & .lasttxt{
+                    
+                }
+            }
+        }
+        
+    }
+}
+@mixin coursedetailherosectionn-mixin-max-md(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+            padding: 0 !important;
+            padding-top: 50px !important;
+            padding-bottom: 50px !important;
+            & .heromainheading{
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            & .herosubheading{
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+            & .boxcontainer{
+                
+                & .box1{
+                    
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                   
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    font-size: 13px;
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                margin-top: 20px;
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+                margin-top: 10px;
+                & .updateimg{
+                    margin-right: 5px;
+                }
+                & .updateimgg{
+                    margin-right: 5px;
+                }
+                & .lasttxt{
+                    font-size: 14px;
+                }
+            }
+        }
+        
+    }
+}
+@mixin coursedetailherosectionn-mixin-max-sm(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+            padding: 0 !important;
+            padding: 50px 0 50px 0 !important;
+            margin-left: 20px !important;
+            & .heromainheading{
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+            & .herosubheading{
+                margin-bottom: 10px;
+                font-size: 15px;
+            }
+            & .boxcontainer{
+                
+                & .box1{
+                    
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                    
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    font-size: 12px;
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                margin-top: 10px;
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+              
+                & .updateimg{
+                    
+                }
+                & .updateimgg{
+                   
+                }
+                & .lasttxt{
+                    
+                }
+            }
+        }
+        
+    }
+}
+@mixin coursedetailherosectionn-mixin-max-xs(){
+    .coursedetailherosection{
+    
+        & .detailherocontainer{
+            padding: 0 !important;
+            padding: 20px !important;
+            margin-left: 0 !important;
+            & .heromainheading{
+                
+            }
+            & .herosubheading{
+                
+            }
+            & .boxcontainer{
+                flex-wrap: wrap;
+                & .box1{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    & .batchicon{
+                       
+                    }
+                }
+                & .rating{
+                    
+                    & .ratingul{
+                        
+                        & .ratingli{
+                            & .starimg{
+                               
+                                
+                            }
+                        }
+                    }
+                }
+                & .raingcounting{
+                    
+                    & .ratingclass{
+                        
+                    }
+                }
+            }
+            & .detailbottomimg{
+                
+                & .imgcontainer{
+                   
+                    & .proimgg{
+                       
+                    }
+                }
+                & .propicdetail{
+                       
+                }
+            }
+            & .lastcontainer{
+              
+                & .updateimg{
+                    
+                }
+                & .updateimgg{
+                   
+                }
+                & .lasttxt{
+                    
+                }
+            }
+        }
+        
+    }
+}
+
+ 
+.leftdatacontainer{
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $gray-300;
+        background-color: $white;
+        border-radius: 5px;
+        & .playbutton{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px;
+            background: white;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            @keyframes waves {
+                0% {
+                -webkit-transform: scale(0.2, 0.2);
+                transform: scale(0.2, 0.2);
+                opacity: 0;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                }
+                50% {
+                opacity: 0.9;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+                }
+                100% {
+                -webkit-transform: scale(0.9, 0.9);
+                transform: scale(0.9, 0.9);
+                opacity: 0;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                }
+            }
+            
+            .fa-play:before {
+                content: "\f04b";
+            }
+            
+            .waves {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background: $white;
+                opacity: 0;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                border-radius: 100%;
+                right: -50px;
+                bottom: -50px;
+                z-index: -1;
+                -webkit-animation: waves 3s ease-in-out infinite;
+                animation: waves 3s ease-in-out infinite;
+            }
+                    
+            .wave-1 {
+                -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+            }
+            
+            .wave-2 {
+                -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+            }
+            
+            .wave-3 {
+                -webkit-animation-delay: 2s;
+                animation-delay: 2s;
+            }
+            // background-color: lighten($color: $theme1, $amount: 30);
+        }
+    & .lefttopcontainer{
+        // border: 1px solid;
+        & .vediocontainer{
+            width: 100%;
+            height: 200px;
+            & .vedioimg{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    & .paise{
+        font-size: 20px;
+        font-weight: 600;
+        padding:20px 0px 20px 0;
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    & .bottomtxtsize{
+            font-size: 13.5px;
+            font-weight: 500;
+            color: $gray-700;
+    }
+    & .divider{
+        width: 100%;
+        height: 1px;
+        background-color: $gray-400;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            margin: 0 20px 0px 5px;
+        }
+    }
+}
+
+@mixin leftvediocontainer-mixin-min-sm(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+@mixin leftvediocontainer-mixin-min-md(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+@mixin leftvediocontainer-mixin-min-lg(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+@mixin leftvediocontainer-mixin-min-xl(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+@mixin leftvediocontainer-mixin-min-xxl(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+@mixin leftvediocontainer-mixin-max-xl(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+@mixin leftvediocontainer-mixin-max-1300(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+@mixin leftvediocontainer-mixin-max-lg(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+@mixin leftvediocontainer-mixin-max-md(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+@mixin leftvediocontainer-mixin-max-sm(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+@mixin leftvediocontainer-mixin-max-xs(){
+    
+.leftdatacontainer{
+    
+    & .lefttopcontainer{
+        
+        & .vediocontainer{
+           
+            & .vedioimg{
+                
+            }
+        }
+    }
+    & .paise{
+        
+    }
+    & .vediocontainerbottom{
+        & .bottomicons{
+           
+        }
+    }
+    & .bottomtxtsize{
+            
+    }
+    & .divider{
+       
+    }
+    & .imgbottomcontainer{
+        & .bottomimg{
+            
+        }
+    }
+    }
+}
+
+// navtabs
+.navtabsfliud{
+    & .navtabscontainer{
+        & .ulofnavtabs{
+            overflow: auto hidden;
+            flex-wrap: nowrap;
+            &.nav-pills{
+                background: none !important;
+                
+                & .navtabsli{
+                    flex: 1 1 auto;
+                    padding: 0px 5px 0 5px;
+                    width: 100%;
+                    & .nav-link {
+                        color: $theme1 !important;
+                        background-color: $white !important;
+                        border:1px solid;
+                        border-color: linear-gradient(to right, $theme1, $theme2) !important;
+                        width: 100%;
+                        &.active {
+                            background:linear-gradient(to right, $theme1, $theme2) !important;
+                            color: $white !important; 
+                            border:1px solid;
+                            border-color: linear-gradient(to right, $theme1, $theme2) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .tabcontentcontainer{
+        margin-top: 30px;
+        & .tab1contentcontainer{
+        margin-top: 30px;
+            & .tab1mainhead{
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            & .paratop{
+                font-size: 15px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            & .paramid{
+                margin-top: 10px;
+                & .rytimg{
+                    width: 18px;
+                    height: 18px;
+                }
+                & .middtxt{
+
+                }
+            }
+            & .parabottom{
+                font-size: 15px;
+                font-weight: 400;
+                margin-top: 20px
+            }
+        }
+        & .tab2contentcontainer{
+            & .tab2head{
+                font-size: 20px;
+                font-weight: 700;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            & .divider{
+                width: 100%;
+                height: 1px;
+                background-color: $gray-200;
+                margin-bottom: 10px;
+                margin-top: 20px;
+            }
+            & .collapsebtn1{
+                padding: 0 !important;
+                // color: $theme1;
+                font-size: 15px;
+                font-weight: 500;
+                background-repeat: no-repeat;
+                background-size: 15px;
+                background-position: right 10px top 50%;
+                width: 100%;
+                text-align: start;
+                &:active{
+                    border:none !important;
+                    box-shadow: none !important;
+                }
+                &:not(.collapsed){
+                    background-image: url(../img/icons8-subtract-30.png);
+                }
+                &.collapsed{
+                    background-image: url(../img/icons8-plus-math-24.png);
+                    
+                }
+            }
+            & .collapsebody{
+                padding: 0 !important;
+                border:none !important;
+                & .coursedetaincontainercol{
+                    text-decoration: none;
+                    color: $black;
+                    & .vedioimg{
+                        width: 15px;
+                        height: 15px;
+                    }
+                    & .imgtxt{
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+                & .timecontainer{
+                    text-decoration: none;
+                    color: $black;
+                    & .time{
+                        font-size: 14px;
+                        font-weight: 600;
+                        padding-right: 10px;
+                    }
+                    & .watchcontainer{
+                        // background:linear-gradient(to right, $theme1, $theme2);
+                        background-color: #E4E9FD;
+                        // color: $white;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 8px 16px;
+                        & .previweimg{
+                            width: 15px;
+                            height: 15px;
+                        }
+                        & .watchtxt{
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: $theme1;
+                        }
+                    }
+                }
+            }
+        }
+        & .colhead{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        & .divider{
+            width: 100%;
+            height: 1px;
+            background-color: $gray-100;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        & .paramid{
+            margin-top: 10px;
+            & .rytimg{
+                width: 18px;
+                height: 18px;
+            }
+            & .middtxt{
+
+            }
+        }
+    }
+    & .tab3contentcontainer{
+        font-size: 15px;
+        font-weight: 400;
+        margin:30px 0 20px 0;
+    }
+    & .tab4contentcontainer{
+        & .head{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        & .imgcontainer{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            aspect-ratio: 10/10;
+            object-position: top center;
+            & .teacherimg{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        & .teachername{
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        & .post{
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        & .teacherul{
+            list-style: none;
+            display: flex;
+            padding: 0;
+            & .teacherli{
+                & span{
+                font-size: 14px;
+                font-weight: 500;
+                padding: 0px 8px 0 0px;
+                }
+                & .starimgg{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                }
+                & .studentsicon{
+                    width: 15px;
+                    height: 15px;
+                    margin-left: 5px;
+                }
+                & .studentsiconn{
+                    width: 15px;
+                    height: 15px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        & .info{
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        & .bottomcontainer{
+            padding: 5px 10px 0 0;
+        }
+    }
+    & .tab5contentcontainer{
+        & .reviewhead{
+                font-size: 20px;
+                font-weight: 700;
+        }
+        & .dividerr{
+                width: 100%;
+                height: 1px;
+                background-color: $gray-200;
+                margin-top: 30px;
+        }
+        & .digit{
+                font-size: 50px;
+                font-weight: 700;
+                color: $white;
+        }
+        & .bg{
+            background:lighten($theme1, 20);
+            border-radius: 5px;
+            padding: 30px;
+            // width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // margin: 100px 0px 0 0;
+            & .reviewstarul{
+                list-style: none;
+                display: flex;
+                padding: 0;
+                margin-bottom: 5px;
+                & .reviewstarli{
+                    & .starimage{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            & .txt{
+                font-size: 20px;
+                font-weight: 700;
+                color: $white;
+            }
+        }
+        & .progressbarcontainer{
+            & .progress{
+            margin: 15px;
+            height: 5px;
+            margin: 0 15px;
+            }
+            & .progress-bar{
+                background:lighten($theme1, 20);
+            }
+        }
+        & .reviewstarul{
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin-bottom: 5px;
+            & .reviewstarli{
+                & .starimage{
+                    width: 15px;
+                    height: 12px;
+                }
+            }
+        }
+        & .percentage{
+            font-size: 12px;
+            font-weight: 500;
+            width: 10px;
+        }
+        & .puclicreviewscontainer{
+            & .userpiccontainer{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                & .userpic{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    aspect-ratio: 10/10;
+                    object-position: top center;
+                }
+            }
+            & .username{
+                    font-size: 15px;
+                    font-weight: 700;
+            }
+            & .raingholdercontainer{
+                background-color: lighten($theme1, 20);
+                width: 50px;
+                height: 20px;
+                border-radius: 5px;
+                padding: 15px 5px;
+                color: $white;
+                margin-top: 5px;
+                & .imggggggg{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+            }
+            & .hours{
+                color: $gray-500;
+                font-size: 14px;
+                font-weight: 500;
+                margin-left: 5px;
+            }
+            & .para{
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+        & .bottomline{
+            width: 100%;
+            height: 1px;
+            background-color: $gray-400;
+            margin-top: 15px;
+        }
+
+    }
+    & .bottomlinee{
+        width: 100%;
+        height: 1px;
+        background-color: $gray-400;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    & .topcoursescontainer{
+        & .heading{
+        font-size: 20px;
+        font-weight: 700;
+        }
+        & .viewbtn{
+            border:none;
+            background:linear-gradient(to right, $theme1, $theme2);
+            color: $white;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 5px;
+            padding: 4px 8px;
+        }
+    }
+    & .cardborder{
+        padding: 10px 10px 0px 10px !important;
+        & .lessonsandpeoplecontainer{
+            padding-top: 10px;
+            & .lessons{
+                font-size: 15px;
+                color: $gray-600;
+                font-weight: 500;
+                & .bookicon{
+                    width: 25px !important;
+                    height: 25px !important;
+                    margin-right:5px;
+                }
+            }
+            & .people{
+                font-size: 15px;
+                color: $gray-600;
+                font-weight: 500;
+                & .peopleicon{
+                    width: 25px !important;
+                    height: 25px !important;
+                    margin-left: 20px;
+                    margin-right:5px;
+                }
+            }
+        }
+        & .cardimgcontainer{
+            text-decoration: none;
+            color: $black;
+            & .card-body{
+                padding: 10px 10px 0px 0 ;
+                & .cardmainhead{
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-top: 5px;
+                }
+                & .cardpara{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $gray-600;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                        list-style: none;
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                                & .totalreview{
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    color: $gray-600;
+                                }
+                            }
+                        }
+                        & .bookmarkclass{
+                            width: 20px;
+                            height: 15px;
+                            margin-left: auto;
+                            margin-top: 10px;
+                            filter: brightness(0.1);
+                        }
+                    }   
+                }
+                & .bottomdata{
+                    margin-top: 20px;
+                }  
+            }
+        }
+    }
+    & .relatedcoursecontainer{
+        & .head{
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    & .relatedcoursecontainer{
+        & .head{
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        & .cardborder{
+            padding: 10px 10px 0px 10px !important;
+            & .lessonsandpeoplecontainer{
+                padding-top: 10px;
+                & .lessons{
+                    font-size: 15px;
+                    color: $gray-600;
+                    font-weight: 500;
+                    & .bookicon{
+                        width: 25px !important;
+                        height: 25px !important;
+                        margin-right:5px;
+                    }
+                }
+                & .people{
+                    font-size: 15px;
+                    color: $gray-600;
+                    font-weight: 500;
+                    & .peopleicon{
+                        width: 25px !important;
+                        height: 25px !important;
+                        margin-left: 20px;
+                        margin-right:5px;
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                text-decoration: none;
+                color: $black;
+                & .card-body{
+                    padding: 10px 10px 0px 0 ;
+                    & .cardmainhead{
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-top: 5px;
+                    }
+                    & .cardpara{
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $gray-600;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            list-style: none;
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        width: 15px;
+                                        height: 15px;
+                                    }
+                                    & .totalreview{
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                        color: $gray-600;
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                width: 20px;
+                                height: 15px;
+                                margin-left: auto;
+                                margin-top: 10px;
+                                filter: brightness(0.1);
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                        margin-top: 20px;
+                    }  
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@mixin navtabs-mixin-min-sm(){
+    .navtabsfliud{
+        & .navtabscontainer{
+            & .ulofnavtabs{
+                &.nav-pills{
+                   
+                    
+                    & .navtabsli{
+                       
+                        & .nav-link {
+                           
+                            &.active {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabcontentcontainer{
+            
+            & .tab1contentcontainer{
+           
+                & .tab1mainhead{
+                    
+                    
+                }
+                & .paratop{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                        
+                    }
+                    & .middtxt{
+    
+                    }
+                }
+                & .parabottom{
+                    
+                }
+            }
+            & .tab2contentcontainer{
+                & .tab2head{
+                    
+                }
+                & .divider{
+                   
+                }
+                & .collapsebtn1{
+                    
+                    &.active{
+                        
+                    }
+                    &:not(.collapsed){
+                        
+                    }
+                    &.collapsed{
+                        
+                        
+                    }
+                }
+                & .collapsebody{
+                    
+                    & .coursedetaincontainercol{
+                        
+                        & .vedioimg{
+                           
+                        }
+                        & .imgtxt{
+                            
+                        }
+                    }
+                    & .timecontainer{
+                        
+                        & .time{
+                           
+                        }
+                        & .watchcontainer{
+                            
+                            & .previweimg{
+                                
+                            }
+                            & .watchtxt{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            & .colhead{
+               
+            }
+            & .divider{
+                
+            }
+            & .paramid{
+               
+                & .rytimg{
+                   
+                }
+                & .middtxt{
+    
+                }
+            }
+        }
+        & .tab3contentcontainer{
+            
+        }
+        & .tab4contentcontainer{
+            & .head{
+                
+            }
+            & .imgcontainer{
+                
+                & .teacherimg{
+                   
+                }
+            }
+            & .teachername{
+               
+            }
+            & .post{
+                
+            }
+            & .teacherul{
+                
+                & .teacherli{
+                    & span{
+                    
+                    }
+                    & .starimgg{
+                        
+                    }
+                    & .studentsicon{
+                        
+                    }
+                    & .studentsiconn{
+                       
+                    }
+                }
+            }
+            & .info{
+                
+            }
+            & .bottomcontainer{
+               
+            }
+        }
+        & .tab5contentcontainer{
+            & .reviewhead{
+                    
+                    font-weight: 700;
+            }
+            & .dividerr{
+                   
+            }
+            & .digit{
+                   
+            }
+            & .bg{
+                
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                          
+                        }
+                    }
+                }
+                & .txt{
+                    
+                }
+            }
+            & .progressbarcontainer{
+                & .progress{
+                
+                }
+                & .progress-bar{
+                    
+                }
+            }
+            & .reviewstarul{
+                
+                & .reviewstarli{
+                    & .starimage{
+                       
+                    }
+                }
+            }
+            & .percentage{
+                
+            }
+            & .puclicreviewscontainer{
+                & .userpiccontainer{
+                   
+                    & .userpic{
+                        
+                    }
+                }
+                & .username{
+                       
+                }
+                & .raingholdercontainer{
+                   
+                    & .imggggggg{
+                       
+                    }
+                }
+                & .hours{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .bottomline{
+               
+            }
+    
+        }
+        & .bottomlinee{
+            
+        }
+        & .topcoursescontainer{
+            & .heading{
+          
+            }
+            & .viewbtn{
+                
+            }
+        }
+        & .cardborder{
+           
+            & .lessonsandpeoplecontainer{
+               
+                & .lessons{
+                    
+                    & .bookicon{
+                        
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+                       
+                    }
+                }
+            }
+            & .cardimgcontainer{
+               
+                & .card-body{
+                   
+                    & .cardmainhead{
+                        
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                       
+                    }  
+                }
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                           
+                        }
+                    }
+                    & .people{
+                       
+                        & .peopleicon{
+                            
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                               
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                   
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin navtabs-mixin-min-md(){
+    .navtabsfliud{
+        & .navtabscontainer{
+            & .ulofnavtabs{
+                &.nav-pills{
+                   
+                    
+                    & .navtabsli{
+                       
+                        & .nav-link {
+                           
+                            &.active {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabcontentcontainer{
+            
+            & .tab1contentcontainer{
+           
+                & .tab1mainhead{
+                    
+                    
+                }
+                & .paratop{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                        
+                    }
+                    & .middtxt{
+    
+                    }
+                }
+                & .parabottom{
+                    
+                }
+            }
+            & .tab2contentcontainer{
+                & .tab2head{
+                    
+                }
+                & .divider{
+                   
+                }
+                & .collapsebtn1{
+                    
+                    &.active{
+                        
+                    }
+                    &:not(.collapsed){
+                        
+                    }
+                    &.collapsed{
+                        
+                        
+                    }
+                }
+                & .collapsebody{
+                    
+                    & .coursedetaincontainercol{
+                        
+                        & .vedioimg{
+                           
+                        }
+                        & .imgtxt{
+                            
+                        }
+                    }
+                    & .timecontainer{
+                        
+                        & .time{
+                           
+                        }
+                        & .watchcontainer{
+                            
+                            & .previweimg{
+                                
+                            }
+                            & .watchtxt{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            & .colhead{
+               
+            }
+            & .divider{
+                
+            }
+            & .paramid{
+               
+                & .rytimg{
+                   
+                }
+                & .middtxt{
+    
+                }
+            }
+        }
+        & .tab3contentcontainer{
+            
+        }
+        & .tab4contentcontainer{
+            & .head{
+                
+            }
+            & .imgcontainer{
+                
+                & .teacherimg{
+                   
+                }
+            }
+            & .teachername{
+               
+            }
+            & .post{
+                
+            }
+            & .teacherul{
+                
+                & .teacherli{
+                    & span{
+                    
+                    }
+                    & .starimgg{
+                        
+                    }
+                    & .studentsicon{
+                        
+                    }
+                    & .studentsiconn{
+                       
+                    }
+                }
+            }
+            & .info{
+                
+            }
+            & .bottomcontainer{
+               
+            }
+        }
+        & .tab5contentcontainer{
+            & .reviewhead{
+                    
+                    font-weight: 700;
+            }
+            & .dividerr{
+                   
+            }
+            & .digit{
+                   
+            }
+            & .bg{
+                
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                          
+                        }
+                    }
+                }
+                & .txt{
+                    
+                }
+            }
+            & .progressbarcontainer{
+                & .progress{
+                
+                }
+                & .progress-bar{
+                    
+                }
+            }
+            & .reviewstarul{
+                
+                & .reviewstarli{
+                    & .starimage{
+                       
+                    }
+                }
+            }
+            & .percentage{
+                
+            }
+            & .puclicreviewscontainer{
+                & .userpiccontainer{
+                   
+                    & .userpic{
+                        
+                    }
+                }
+                & .username{
+                       
+                }
+                & .raingholdercontainer{
+                   
+                    & .imggggggg{
+                       
+                    }
+                }
+                & .hours{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .bottomline{
+               
+            }
+    
+        }
+        & .bottomlinee{
+            
+        }
+        & .topcoursescontainer{
+            & .heading{
+          
+            }
+            & .viewbtn{
+                
+            }
+        }
+        & .cardborder{
+           
+            & .lessonsandpeoplecontainer{
+               
+                & .lessons{
+                    
+                    & .bookicon{
+                        
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+                       
+                    }
+                }
+            }
+            & .cardimgcontainer{
+               
+                & .card-body{
+                   
+                    & .cardmainhead{
+                        
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                       
+                    }  
+                }
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                           
+                        }
+                    }
+                    & .people{
+                       
+                        & .peopleicon{
+                            
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                               
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                   
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin navtabs-mixin-min-lg(){
+    .navtabsfliud{
+        & .navtabscontainer{
+            & .ulofnavtabs{
+                &.nav-pills{
+                   
+                    
+                    & .navtabsli{
+                       
+                        & .nav-link {
+                           
+                            &.active {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabcontentcontainer{
+            
+            & .tab1contentcontainer{
+           
+                & .tab1mainhead{
+                    
+                    
+                }
+                & .paratop{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                        
+                    }
+                    & .middtxt{
+    
+                    }
+                }
+                & .parabottom{
+                    
+                }
+            }
+            & .tab2contentcontainer{
+                & .tab2head{
+                    
+                }
+                & .divider{
+                   
+                }
+                & .collapsebtn1{
+                    
+                    &.active{
+                        
+                    }
+                    &:not(.collapsed){
+                        
+                    }
+                    &.collapsed{
+                        
+                        
+                    }
+                }
+                & .collapsebody{
+                    
+                    & .coursedetaincontainercol{
+                        
+                        & .vedioimg{
+                           
+                        }
+                        & .imgtxt{
+                            
+                        }
+                    }
+                    & .timecontainer{
+                        
+                        & .time{
+                           
+                        }
+                        & .watchcontainer{
+                            
+                            & .previweimg{
+                                
+                            }
+                            & .watchtxt{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            & .colhead{
+               
+            }
+            & .divider{
+                
+            }
+            & .paramid{
+               
+                & .rytimg{
+                   
+                }
+                & .middtxt{
+    
+                }
+            }
+        }
+        & .tab3contentcontainer{
+            
+        }
+        & .tab4contentcontainer{
+            & .head{
+                
+            }
+            & .imgcontainer{
+                
+                & .teacherimg{
+                   
+                }
+            }
+            & .teachername{
+               
+            }
+            & .post{
+                
+            }
+            & .teacherul{
+                
+                & .teacherli{
+                    & span{
+                    
+                    }
+                    & .starimgg{
+                        
+                    }
+                    & .studentsicon{
+                        
+                    }
+                    & .studentsiconn{
+                       
+                    }
+                }
+            }
+            & .info{
+                
+            }
+            & .bottomcontainer{
+               
+            }
+        }
+        & .tab5contentcontainer{
+            & .reviewhead{
+                    
+                    font-weight: 700;
+            }
+            & .dividerr{
+                   
+            }
+            & .digit{
+                   
+            }
+            & .bg{
+                
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                          
+                        }
+                    }
+                }
+                & .txt{
+                    
+                }
+            }
+            & .progressbarcontainer{
+                & .progress{
+                
+                }
+                & .progress-bar{
+                    
+                }
+            }
+            & .reviewstarul{
+                
+                & .reviewstarli{
+                    & .starimage{
+                       
+                    }
+                }
+            }
+            & .percentage{
+                
+            }
+            & .puclicreviewscontainer{
+                & .userpiccontainer{
+                   
+                    & .userpic{
+                        
+                    }
+                }
+                & .username{
+                       
+                }
+                & .raingholdercontainer{
+                   
+                    & .imggggggg{
+                       
+                    }
+                }
+                & .hours{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .bottomline{
+               
+            }
+    
+        }
+        & .bottomlinee{
+            
+        }
+        & .topcoursescontainer{
+            & .heading{
+          
+            }
+            & .viewbtn{
+                
+            }
+        }
+        & .cardborder{
+           
+            & .lessonsandpeoplecontainer{
+               
+                & .lessons{
+                    
+                    & .bookicon{
+                        
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+                       
+                    }
+                }
+            }
+            & .cardimgcontainer{
+               
+                & .card-body{
+                   
+                    & .cardmainhead{
+                        
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                       
+                    }  
+                }
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                           
+                        }
+                    }
+                    & .people{
+                       
+                        & .peopleicon{
+                            
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                               
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                   
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin navtabs-mixin-min-xl(){
+    .navtabsfliud{
+        & .navtabscontainer{
+            & .ulofnavtabs{
+                &.nav-pills{
+                   
+                    
+                    & .navtabsli{
+                       
+                        & .nav-link {
+                           
+                            &.active {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabcontentcontainer{
+            
+            & .tab1contentcontainer{
+           
+                & .tab1mainhead{
+                    
+                    
+                }
+                & .paratop{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                        
+                    }
+                    & .middtxt{
+    
+                    }
+                }
+                & .parabottom{
+                    
+                }
+            }
+            & .tab2contentcontainer{
+                & .tab2head{
+                    
+                }
+                & .divider{
+                   
+                }
+                & .collapsebtn1{
+                    
+                    &.active{
+                        
+                    }
+                    &:not(.collapsed){
+                        
+                    }
+                    &.collapsed{
+                        
+                        
+                    }
+                }
+                & .collapsebody{
+                    
+                    & .coursedetaincontainercol{
+                        
+                        & .vedioimg{
+                           
+                        }
+                        & .imgtxt{
+                            
+                        }
+                    }
+                    & .timecontainer{
+                        
+                        & .time{
+                           
+                        }
+                        & .watchcontainer{
+                            
+                            & .previweimg{
+                                
+                            }
+                            & .watchtxt{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            & .colhead{
+               
+            }
+            & .divider{
+                
+            }
+            & .paramid{
+               
+                & .rytimg{
+                   
+                }
+                & .middtxt{
+    
+                }
+            }
+        }
+        & .tab3contentcontainer{
+            
+        }
+        & .tab4contentcontainer{
+            & .head{
+                
+            }
+            & .imgcontainer{
+                
+                & .teacherimg{
+                   
+                }
+            }
+            & .teachername{
+               
+            }
+            & .post{
+                
+            }
+            & .teacherul{
+                
+                & .teacherli{
+                    & span{
+                    
+                    }
+                    & .starimgg{
+                        
+                    }
+                    & .studentsicon{
+                        
+                    }
+                    & .studentsiconn{
+                       
+                    }
+                }
+            }
+            & .info{
+                
+            }
+            & .bottomcontainer{
+               
+            }
+        }
+        & .tab5contentcontainer{
+            & .reviewhead{
+                    
+                    font-weight: 700;
+            }
+            & .dividerr{
+                   
+            }
+            & .digit{
+                   
+            }
+            & .bg{
+                
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                          
+                        }
+                    }
+                }
+                & .txt{
+                    
+                }
+            }
+            & .progressbarcontainer{
+                & .progress{
+                
+                }
+                & .progress-bar{
+                    
+                }
+            }
+            & .reviewstarul{
+                
+                & .reviewstarli{
+                    & .starimage{
+                       
+                    }
+                }
+            }
+            & .percentage{
+                
+            }
+            & .puclicreviewscontainer{
+                & .userpiccontainer{
+                   
+                    & .userpic{
+                        
+                    }
+                }
+                & .username{
+                       
+                }
+                & .raingholdercontainer{
+                   
+                    & .imggggggg{
+                       
+                    }
+                }
+                & .hours{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .bottomline{
+               
+            }
+    
+        }
+        & .bottomlinee{
+            
+        }
+        & .topcoursescontainer{
+            & .heading{
+          
+            }
+            & .viewbtn{
+                
+            }
+        }
+        & .cardborder{
+           
+            & .lessonsandpeoplecontainer{
+               
+                & .lessons{
+                    
+                    & .bookicon{
+                        
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+                       
+                    }
+                }
+            }
+            & .cardimgcontainer{
+               
+                & .card-body{
+                   
+                    & .cardmainhead{
+                        
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                       
+                    }  
+                }
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                           
+                        }
+                    }
+                    & .people{
+                       
+                        & .peopleicon{
+                            
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                               
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                   
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin navtabs-mixin-min-xxl(){
+    .navtabsfliud{
+        & .navtabscontainer{
+            & .ulofnavtabs{
+                &.nav-pills{
+                   
+                    
+                    & .navtabsli{
+                       
+                        & .nav-link {
+                           
+                            &.active {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabcontentcontainer{
+            
+            & .tab1contentcontainer{
+           
+                & .tab1mainhead{
+                    
+                    
+                }
+                & .paratop{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                        
+                    }
+                    & .middtxt{
+    
+                    }
+                }
+                & .parabottom{
+                    
+                }
+            }
+            & .tab2contentcontainer{
+                & .tab2head{
+                    
+                }
+                & .divider{
+                   
+                }
+                & .collapsebtn1{
+                    
+                    &.active{
+                        
+                    }
+                    &:not(.collapsed){
+                        
+                    }
+                    &.collapsed{
+                        
+                        
+                    }
+                }
+                & .collapsebody{
+                    
+                    & .coursedetaincontainercol{
+                        
+                        & .vedioimg{
+                           
+                        }
+                        & .imgtxt{
+                            
+                        }
+                    }
+                    & .timecontainer{
+                        
+                        & .time{
+                           
+                        }
+                        & .watchcontainer{
+                            
+                            & .previweimg{
+                                
+                            }
+                            & .watchtxt{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            & .colhead{
+               
+            }
+            & .divider{
+                
+            }
+            & .paramid{
+               
+                & .rytimg{
+                   
+                }
+                & .middtxt{
+    
+                }
+            }
+        }
+        & .tab3contentcontainer{
+            
+        }
+        & .tab4contentcontainer{
+            & .head{
+                
+            }
+            & .imgcontainer{
+                
+                & .teacherimg{
+                   
+                }
+            }
+            & .teachername{
+               
+            }
+            & .post{
+                
+            }
+            & .teacherul{
+                
+                & .teacherli{
+                    & span{
+                    
+                    }
+                    & .starimgg{
+                        
+                    }
+                    & .studentsicon{
+                        
+                    }
+                    & .studentsiconn{
+                       
+                    }
+                }
+            }
+            & .info{
+                
+            }
+            & .bottomcontainer{
+               
+            }
+        }
+        & .tab5contentcontainer{
+            & .reviewhead{
+                    
+                    font-weight: 700;
+            }
+            & .dividerr{
+                   
+            }
+            & .digit{
+                   
+            }
+            & .bg{
+                
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                          
+                        }
+                    }
+                }
+                & .txt{
+                    
+                }
+            }
+            & .progressbarcontainer{
+                & .progress{
+                
+                }
+                & .progress-bar{
+                    
+                }
+            }
+            & .reviewstarul{
+                
+                & .reviewstarli{
+                    & .starimage{
+                       
+                    }
+                }
+            }
+            & .percentage{
+                
+            }
+            & .puclicreviewscontainer{
+                & .userpiccontainer{
+                   
+                    & .userpic{
+                        
+                    }
+                }
+                & .username{
+                       
+                }
+                & .raingholdercontainer{
+                   
+                    & .imggggggg{
+                       
+                    }
+                }
+                & .hours{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .bottomline{
+               
+            }
+    
+        }
+        & .bottomlinee{
+            
+        }
+        & .topcoursescontainer{
+            & .heading{
+          
+            }
+            & .viewbtn{
+                
+            }
+        }
+        & .cardborder{
+           
+            & .lessonsandpeoplecontainer{
+               
+                & .lessons{
+                    
+                    & .bookicon{
+                        
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+                       
+                    }
+                }
+            }
+            & .cardimgcontainer{
+               
+                & .card-body{
+                   
+                    & .cardmainhead{
+                        
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                       
+                    }  
+                }
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                           
+                        }
+                    }
+                    & .people{
+                       
+                        & .peopleicon{
+                            
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                               
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                   
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin navtabs-mixin-max-xl(){
+    .navtabsfliud{
+        & .navtabscontainer{
+            & .ulofnavtabs{
+                &.nav-pills{
+                   
+                    
+                    & .navtabsli{
+                       
+                        & .nav-link {
+                           
+                            &.active {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabcontentcontainer{
+            
+            & .tab1contentcontainer{
+           
+                & .tab1mainhead{
+                    
+                    
+                }
+                & .paratop{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                        
+                    }
+                    & .middtxt{
+    
+                    }
+                }
+                & .parabottom{
+                    
+                }
+            }
+            & .tab2contentcontainer{
+                & .tab2head{
+                    
+                }
+                & .divider{
+                   
+                }
+                & .collapsebtn1{
+                    
+                    &.active{
+                        
+                    }
+                    &:not(.collapsed){
+                        
+                    }
+                    &.collapsed{
+                        
+                        
+                    }
+                }
+                & .collapsebody{
+                    
+                    & .coursedetaincontainercol{
+                        
+                        & .vedioimg{
+                           
+                        }
+                        & .imgtxt{
+                            
+                        }
+                    }
+                    & .timecontainer{
+                        
+                        & .time{
+                           
+                        }
+                        & .watchcontainer{
+                            
+                            & .previweimg{
+                                
+                            }
+                            & .watchtxt{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            & .colhead{
+               
+            }
+            & .divider{
+                
+            }
+            & .paramid{
+               
+                & .rytimg{
+                   
+                }
+                & .middtxt{
+    
+                }
+            }
+        }
+        & .tab3contentcontainer{
+            
+        }
+        & .tab4contentcontainer{
+            & .head{
+                
+            }
+            & .imgcontainer{
+                
+                & .teacherimg{
+                   
+                }
+            }
+            & .teachername{
+               
+            }
+            & .post{
+                
+            }
+            & .teacherul{
+                
+                & .teacherli{
+                    & span{
+                    
+                    }
+                    & .starimgg{
+                        
+                    }
+                    & .studentsicon{
+                        
+                    }
+                    & .studentsiconn{
+                       
+                    }
+                }
+            }
+            & .info{
+                
+            }
+            & .bottomcontainer{
+               
+            }
+        }
+        & .tab5contentcontainer{
+            & .reviewhead{
+                    
+                    font-weight: 700;
+            }
+            & .dividerr{
+                   
+            }
+            & .digit{
+                   
+            }
+            & .bg{
+                
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                          
+                        }
+                    }
+                }
+                & .txt{
+                    
+                }
+            }
+            & .progressbarcontainer{
+                & .progress{
+                
+                }
+                & .progress-bar{
+                    
+                }
+            }
+            & .reviewstarul{
+                
+                & .reviewstarli{
+                    & .starimage{
+                       
+                    }
+                }
+            }
+            & .percentage{
+                
+            }
+            & .puclicreviewscontainer{
+                & .userpiccontainer{
+                   
+                    & .userpic{
+                        
+                    }
+                }
+                & .username{
+                       
+                }
+                & .raingholdercontainer{
+                   
+                    & .imggggggg{
+                       
+                    }
+                }
+                & .hours{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .bottomline{
+               
+            }
+    
+        }
+        & .bottomlinee{
+            
+        }
+        & .topcoursescontainer{
+            & .heading{
+          
+            }
+            & .viewbtn{
+                
+            }
+        }
+        & .cardborder{
+           
+            & .lessonsandpeoplecontainer{
+               
+                & .lessons{
+                    
+                    & .bookicon{
+                        
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+                       
+                    }
+                }
+            }
+            & .cardimgcontainer{
+               
+                & .card-body{
+                   
+                    & .cardmainhead{
+                        
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                       
+                    }  
+                }
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                           
+                        }
+                    }
+                    & .people{
+                       
+                        & .peopleicon{
+                            
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                               
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                   
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin navtabs-mixin-max-1300(){
+    .navtabsfliud{
+        & .navtabscontainer{
+            & .ulofnavtabs{
+                &.nav-pills{
+                   
+                    
+                    & .navtabsli{
+                       
+                        & .nav-link {
+                           
+                            &.active {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabcontentcontainer{
+            
+            & .tab1contentcontainer{
+           
+                & .tab1mainhead{
+                    
+                    
+                }
+                & .paratop{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                        
+                    }
+                    & .middtxt{
+    
+                    }
+                }
+                & .parabottom{
+                    
+                }
+            }
+            & .tab2contentcontainer{
+                & .tab2head{
+                    
+                }
+                & .divider{
+                   
+                }
+                & .collapsebtn1{
+                    
+                    &.active{
+                        
+                    }
+                    &:not(.collapsed){
+                        
+                    }
+                    &.collapsed{
+                        
+                        
+                    }
+                }
+                & .collapsebody{
+                    
+                    & .coursedetaincontainercol{
+                        
+                        & .vedioimg{
+                           
+                        }
+                        & .imgtxt{
+                            
+                        }
+                    }
+                    & .timecontainer{
+                        
+                        & .time{
+                           
+                        }
+                        & .watchcontainer{
+                            
+                            & .previweimg{
+                                
+                            }
+                            & .watchtxt{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            & .colhead{
+               
+            }
+            & .divider{
+                
+            }
+            & .paramid{
+               
+                & .rytimg{
+                   
+                }
+                & .middtxt{
+    
+                }
+            }
+        }
+        & .tab3contentcontainer{
+            
+        }
+        & .tab4contentcontainer{
+            & .head{
+                
+            }
+            & .imgcontainer{
+                
+                & .teacherimg{
+                   
+                }
+            }
+            & .teachername{
+               
+            }
+            & .post{
+                
+            }
+            & .teacherul{
+                
+                & .teacherli{
+                    & span{
+                    
+                    }
+                    & .starimgg{
+                        
+                    }
+                    & .studentsicon{
+                        
+                    }
+                    & .studentsiconn{
+                       
+                    }
+                }
+            }
+            & .info{
+                
+            }
+            & .bottomcontainer{
+               
+            }
+        }
+        & .tab5contentcontainer{
+            & .reviewhead{
+                    
+                    font-weight: 700;
+            }
+            & .dividerr{
+                   
+            }
+            & .digit{
+                   
+            }
+            & .bg{
+                
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                          
+                        }
+                    }
+                }
+                & .txt{
+                    
+                }
+            }
+            & .progressbarcontainer{
+                & .progress{
+                
+                }
+                & .progress-bar{
+                    
+                }
+            }
+            & .reviewstarul{
+                
+                & .reviewstarli{
+                    & .starimage{
+                       
+                    }
+                }
+            }
+            & .percentage{
+                
+            }
+            & .puclicreviewscontainer{
+                & .userpiccontainer{
+                   
+                    & .userpic{
+                        
+                    }
+                }
+                & .username{
+                       
+                }
+                & .raingholdercontainer{
+                   
+                    & .imggggggg{
+                       
+                    }
+                }
+                & .hours{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .bottomline{
+               
+            }
+    
+        }
+        & .bottomlinee{
+            
+        }
+        & .topcoursescontainer{
+            & .heading{
+          
+            }
+            & .viewbtn{
+                
+            }
+        }
+        & .cardborder{
+           
+            & .lessonsandpeoplecontainer{
+               
+                & .lessons{
+                    
+                    & .bookicon{
+                        
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+                       
+                    }
+                }
+            }
+            & .cardimgcontainer{
+               
+                & .card-body{
+                   
+                    & .cardmainhead{
+                        
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                       
+                    }  
+                }
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                           
+                        }
+                    }
+                    & .people{
+                       
+                        & .peopleicon{
+                            
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                               
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                   
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin navtabs-mixin-max-lg(){
+    .navtabsfliud{
+        & .navtabscontainer{
+            & .ulofnavtabs{
+                &.nav-pills{
+                   
+                    
+                    & .navtabsli{
+                       
+                        & .nav-link {
+                           
+                            &.active {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabcontentcontainer{
+            
+            & .tab1contentcontainer{
+           
+                & .tab1mainhead{
+                    
+                    
+                }
+                & .paratop{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                        
+                    }
+                    & .middtxt{
+    
+                    }
+                }
+                & .parabottom{
+                    
+                }
+            }
+            & .tab2contentcontainer{
+                & .tab2head{
+                    
+                }
+                & .divider{
+                   
+                }
+                & .collapsebtn1{
+                    
+                    &.active{
+                        
+                    }
+                    &:not(.collapsed){
+                        
+                    }
+                    &.collapsed{
+                        
+                        
+                    }
+                }
+                & .collapsebody{
+                    
+                    & .coursedetaincontainercol{
+                        
+                        & .vedioimg{
+                           
+                        }
+                        & .imgtxt{
+                            
+                        }
+                    }
+                    & .timecontainer{
+                        
+                        & .time{
+                           
+                        }
+                        & .watchcontainer{
+                            
+                            & .previweimg{
+                                
+                            }
+                            & .watchtxt{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            & .colhead{
+               
+            }
+            & .divider{
+                
+            }
+            & .paramid{
+               
+                & .rytimg{
+                   
+                }
+                & .middtxt{
+    
+                }
+            }
+        }
+        & .tab3contentcontainer{
+            
+        }
+        & .tab4contentcontainer{
+            & .head{
+                
+            }
+            & .imgcontainer{
+                
+                & .teacherimg{
+                   
+                }
+            }
+            & .teachername{
+               
+            }
+            & .post{
+                
+            }
+            & .teacherul{
+                
+                & .teacherli{
+                    & span{
+                    
+                    }
+                    & .starimgg{
+                        
+                    }
+                    & .studentsicon{
+                        
+                    }
+                    & .studentsiconn{
+                       
+                    }
+                }
+            }
+            & .info{
+                
+            }
+            & .bottomcontainer{
+               
+            }
+        }
+        & .tab5contentcontainer{
+            & .reviewhead{
+                    
+                    font-weight: 700;
+            }
+            & .dividerr{
+                   
+            }
+            & .digit{
+                   
+            }
+            & .bg{
+                
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                          
+                        }
+                    }
+                }
+                & .txt{
+                    
+                }
+            }
+            & .progressbarcontainer{
+                & .progress{
+                
+                }
+                & .progress-bar{
+                    
+                }
+            }
+            & .reviewstarul{
+                
+                & .reviewstarli{
+                    & .starimage{
+                       
+                    }
+                }
+            }
+            & .percentage{
+                
+            }
+            & .puclicreviewscontainer{
+                & .userpiccontainer{
+                   
+                    & .userpic{
+                        
+                    }
+                }
+                & .username{
+                       
+                }
+                & .raingholdercontainer{
+                   
+                    & .imggggggg{
+                       
+                    }
+                }
+                & .hours{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .bottomline{
+               
+            }
+    
+        }
+        & .bottomlinee{
+            
+        }
+        & .topcoursescontainer{
+            & .heading{
+          
+            }
+            & .viewbtn{
+                
+            }
+        }
+        & .cardborder{
+           
+            & .lessonsandpeoplecontainer{
+               
+                & .lessons{
+                    
+                    & .bookicon{
+                        
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+                       
+                    }
+                }
+            }
+            & .cardimgcontainer{
+               
+                & .card-body{
+                   
+                    & .cardmainhead{
+                        
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                       
+                    }  
+                }
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                           
+                        }
+                    }
+                    & .people{
+                       
+                        & .peopleicon{
+                            
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                               
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                   
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin navtabs-mixin-max-md(){
+    .navtabsfliud{
+        & .navtabscontainer{
+            & .ulofnavtabs{
+                overflow: auto hidden;
+                flex-wrap: nowrap;
+
+                &.nav-pills{
+                   
+                    
+                    & .navtabsli{
+                        & .nav-link {
+                           
+                            &.active {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabcontentcontainer{
+            
+            & .tab1contentcontainer{
+           
+                & .tab1mainhead{
+                    
+                    
+                }
+                & .paratop{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                        
+                    }
+                    & .middtxt{
+    
+                    }
+                }
+                & .parabottom{
+                    
+                }
+            }
+            & .tab2contentcontainer{
+                & .tab2head{
+                    
+                }
+                & .divider{
+                   
+                }
+                & .collapsebtn1{
+                    
+                    &.active{
+                        
+                    }
+                    &:not(.collapsed){
+                        
+                    }
+                    &.collapsed{
+                        
+                        
+                    }
+                }
+                & .collapsebody{
+                    
+                    & .coursedetaincontainercol{
+                        
+                        & .vedioimg{
+                           
+                        }
+                        & .imgtxt{
+                            
+                        }
+                    }
+                    & .timecontainer{
+                        
+                        & .time{
+                           
+                        }
+                        & .watchcontainer{
+                            
+                            & .previweimg{
+                                
+                            }
+                            & .watchtxt{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            & .colhead{
+               
+            }
+            & .divider{
+                
+            }
+            & .paramid{
+               
+                & .rytimg{
+                   
+                }
+                & .middtxt{
+    
+                }
+            }
+        }
+        & .tab3contentcontainer{
+            
+        }
+        & .tab4contentcontainer{
+            & .head{
+                
+            }
+            & .imgcontainer{
+                
+                & .teacherimg{
+                   
+                }
+            }
+            & .teachername{
+               
+            }
+            & .post{
+                
+            }
+            & .teacherul{
+                
+                & .teacherli{
+                    & span{
+                    
+                    }
+                    & .starimgg{
+                        
+                    }
+                    & .studentsicon{
+                        
+                    }
+                    & .studentsiconn{
+                       
+                    }
+                }
+            }
+            & .info{
+                
+            }
+            & .bottomcontainer{
+               
+            }
+        }
+        & .tab5contentcontainer{
+            & .reviewhead{
+                    
+                    font-weight: 700;
+            }
+            & .dividerr{
+                   
+            }
+            & .digit{
+                   
+            }
+            & .bg{
+                
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                          
+                        }
+                    }
+                }
+                & .txt{
+                    
+                }
+            }
+            & .progressbarcontainer{
+                & .progress{
+                
+                }
+                & .progress-bar{
+                    
+                }
+            }
+            & .reviewstarul{
+                
+                & .reviewstarli{
+                    & .starimage{
+                       
+                    }
+                }
+            }
+            & .percentage{
+                
+            }
+            & .puclicreviewscontainer{
+                & .userpiccontainer{
+                   
+                    & .userpic{
+                        
+                    }
+                }
+                & .username{
+                       
+                }
+                & .raingholdercontainer{
+                   
+                    & .imggggggg{
+                       
+                    }
+                }
+                & .hours{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .bottomline{
+               
+            }
+    
+        }
+        & .bottomlinee{
+            
+        }
+        & .topcoursescontainer{
+            & .heading{
+          
+            }
+            & .viewbtn{
+                
+            }
+        }
+        & .cardborder{
+           
+            & .lessonsandpeoplecontainer{
+               
+                & .lessons{
+                    
+                    & .bookicon{
+                        
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+                       
+                    }
+                }
+            }
+            & .cardimgcontainer{
+               
+                & .card-body{
+                   
+                    & .cardmainhead{
+                        
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                       
+                    }  
+                }
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                           
+                        }
+                    }
+                    & .people{
+                       
+                        & .peopleicon{
+                            
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                               
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                   
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin navtabs-mixin-max-sm(){
+    .navtabsfliud{
+        & .navtabsmaincontainer{
+            max-width: unset!important;
+            margin: 0 !important;
+            & .navtabscontainer{
+              
+                & .ulofnavtabs{
+                    &.nav-pills{
+                       
+                        
+                        & .navtabsli{
+                           
+                            & .nav-link {
+                               
+                                &.active {
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .tabcontentcontainer{
+                
+                & .tab1contentcontainer{
+               
+                    & .tab1mainhead{
+                        
+                        
+                    }
+                    & .paratop{
+                        
+                    }
+                    & .paramid{
+                       
+                        & .rytimg{
+                            
+                        }
+                        & .middtxt{
+        
+                        }
+                    }
+                    & .parabottom{
+                        
+                    }
+                }
+                & .tab2contentcontainer{
+                    & .tab2head{
+                        
+                    }
+                    & .divider{
+                       
+                    }
+                    & .collapsebtn1{
+                        
+                        &.active{
+                            
+                        }
+                        &:not(.collapsed){
+                            
+                        }
+                        &.collapsed{
+                            
+                            
+                        }
+                    }
+                    & .collapsebody{
+                        
+                        & .coursedetaincontainercol{
+                            
+                            & .vedioimg{
+                               
+                            }
+                            & .imgtxt{
+                                
+                            }
+                        }
+                        & .timecontainer{
+                            
+                            & .time{
+                               
+                            }
+                            & .watchcontainer{
+                                
+                                & .previweimg{
+                                    
+                                }
+                                & .watchtxt{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                & .colhead{
+                   
+                }
+                & .divider{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                       
+                    }
+                    & .middtxt{
+        
+                    }
+                }
+            }
+            & .tab3contentcontainer{
+                
+            }
+            & .tab4contentcontainer{
+                & .head{
+                    
+                }
+                & .imgcontainer{
+                    
+                    & .teacherimg{
+                       
+                    }
+                }
+                & .teachername{
+                   
+                }
+                & .post{
+                    
+                }
+                & .teacherul{
+                    
+                    & .teacherli{
+                        & span{
+                        
+                        }
+                        & .starimgg{
+                            
+                        }
+                        & .studentsicon{
+                            
+                        }
+                        & .studentsiconn{
+                           
+                        }
+                    }
+                }
+                & .info{
+                    
+                }
+                & .bottomcontainer{
+                   
+                }
+            }
+            & .tab5contentcontainer{
+                & .reviewhead{
+                        
+                        font-weight: 700;
+                }
+                & .dividerr{
+                       
+                }
+                & .digit{
+                       
+                }
+                & .bg{
+                    
+                    & .reviewstarul{
+                        
+                        & .reviewstarli{
+                            & .starimage{
+                              
+                            }
+                        }
+                    }
+                    & .txt{
+                        
+                    }
+                }
+                & .progressbarcontainer{
+                    & .progress{
+                    
+                    }
+                    & .progress-bar{
+                        
+                    }
+                }
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                           
+                        }
+                    }
+                }
+                & .percentage{
+                    
+                }
+                & .puclicreviewscontainer{
+                    & .userpiccontainer{
+                       
+                        & .userpic{
+                            
+                        }
+                    }
+                    & .username{
+                           
+                    }
+                    & .raingholdercontainer{
+                       
+                        & .imggggggg{
+                           
+                        }
+                    }
+                    & .hours{
+                        
+                    }
+                    & .para{
+                       
+                    }
+                }
+                & .bottomline{
+                   
+                }
+        
+            }
+            & .bottomlinee{
+                
+            }
+            & .topcoursescontainer{
+                & .heading{
+              
+                }
+                & .viewbtn{
+                    
+                }
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                            
+                        }
+                    }
+                    & .people{
+                        
+                        & .peopleicon{
+                           
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                                
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                    
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+            & .relatedcoursecontainer{
+                & .head{
+                    
+                }
+            }
+            & .relatedcoursecontainer{
+                & .head{
+                    
+                }
+                & .cardborder{
+                   
+                    & .lessonsandpeoplecontainer{
+                       
+                        & .lessons{
+                            
+                            & .bookicon{
+                               
+                            }
+                        }
+                        & .people{
+                           
+                            & .peopleicon{
+                                
+                            }
+                        }
+                    }
+                    & .cardimgcontainer{
+                       
+                        & .card-body{
+                           
+                            & .cardmainhead{
+                                
+                            }
+                            & .cardpara{
+                                
+                            }
+                            & .reviewscontainer{
+                                & .reviewul{
+                                   
+                                    & .reviewli{
+                                        & .starscontainer{
+                                            & .starimg{
+                                                
+                                            }
+                                            & .totalreview{
+                                                
+                                            }
+                                        }
+                                    }
+                                    & .bookmarkclass{
+                                       
+                                    }
+                                }   
+                            }
+                            & .bottomdata{
+                               
+                            }  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin navtabs-mixin-max-xs(){
+    .navtabsfliud{
+        & .navtabscontainer{
+            & .ulofnavtabs{
+                &.nav-pills{
+                   
+                    
+                    & .navtabsli{
+                       
+                        & .nav-link {
+                           
+                            &.active {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabcontentcontainer{
+            
+            & .tab1contentcontainer{
+           
+                & .tab1mainhead{
+                    
+                    
+                }
+                & .paratop{
+                    
+                }
+                & .paramid{
+                   
+                    & .rytimg{
+                        
+                    }
+                    & .middtxt{
+    
+                    }
+                }
+                & .parabottom{
+                    
+                }
+            }
+            & .tab2contentcontainer{
+                & .tab2head{
+                    
+                }
+                & .divider{
+                   
+                }
+                & .collapsebtn1{
+                    
+                    &.active{
+                        
+                    }
+                    &:not(.collapsed){
+                        
+                    }
+                    &.collapsed{
+                        
+                        
+                    }
+                }
+                & .collapsebody{
+                    
+                    & .coursedetaincontainercol{
+                        
+                        & .vedioimg{
+                           
+                        }
+                        & .imgtxt{
+                            
+                        }
+                    }
+                    & .timecontainer{
+                        
+                        & .time{
+                           
+                        }
+                        & .watchcontainer{
+                            
+                            & .previweimg{
+                                
+                            }
+                            & .watchtxt{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            & .colhead{
+               
+            }
+            & .divider{
+                
+            }
+            & .paramid{
+               
+                & .rytimg{
+                   
+                }
+                & .middtxt{
+    
+                }
+            }
+        }
+        & .tab3contentcontainer{
+            
+        }
+        & .tab4contentcontainer{
+            & .head{
+                
+            }
+            & .imgcontainer{
+                
+                & .teacherimg{
+                   
+                }
+            }
+            & .teachername{
+               
+            }
+            & .post{
+                
+            }
+            & .teacherul{
+                
+                & .teacherli{
+                    & span{
+                    
+                    }
+                    & .starimgg{
+                        
+                    }
+                    & .studentsicon{
+                        
+                    }
+                    & .studentsiconn{
+                       
+                    }
+                }
+            }
+            & .info{
+                
+            }
+            & .bottomcontainer{
+               
+            }
+        }
+        & .tab5contentcontainer{
+            & .reviewhead{
+                    
+                    font-weight: 700;
+            }
+            & .dividerr{
+                   
+            }
+            & .digit{
+                   
+            }
+            & .bg{
+                
+                & .reviewstarul{
+                    
+                    & .reviewstarli{
+                        & .starimage{
+                          
+                        }
+                    }
+                }
+                & .txt{
+                    
+                }
+            }
+            & .progressbarcontainer{
+                & .progress{
+                
+                }
+                & .progress-bar{
+                    
+                }
+            }
+            & .reviewstarul{
+                
+                & .reviewstarli{
+                    & .starimage{
+                       
+                    }
+                }
+            }
+            & .percentage{
+                
+            }
+            & .puclicreviewscontainer{
+                & .userpiccontainer{
+                   
+                    & .userpic{
+                        
+                    }
+                }
+                & .username{
+                       
+                }
+                & .raingholdercontainer{
+                   
+                    & .imggggggg{
+                       
+                    }
+                }
+                & .hours{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .bottomline{
+               
+            }
+    
+        }
+        & .bottomlinee{
+            
+        }
+        & .topcoursescontainer{
+            & .heading{
+          
+            }
+            & .viewbtn{
+                
+            }
+        }
+        & .cardborder{
+           
+            & .lessonsandpeoplecontainer{
+               
+                & .lessons{
+                    
+                    & .bookicon{
+                        
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+                       
+                    }
+                }
+            }
+            & .cardimgcontainer{
+               
+                & .card-body{
+                   
+                    & .cardmainhead{
+                        
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                                
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                       
+                    }  
+                }
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+        }
+        & .relatedcoursecontainer{
+            & .head{
+                
+            }
+            & .cardborder{
+               
+                & .lessonsandpeoplecontainer{
+                   
+                    & .lessons{
+                        
+                        & .bookicon{
+                           
+                        }
+                    }
+                    & .people{
+                       
+                        & .peopleicon{
+                            
+                        }
+                    }
+                }
+                & .cardimgcontainer{
+                   
+                    & .card-body{
+                       
+                        & .cardmainhead{
+                            
+                        }
+                        & .cardpara{
+                            
+                        }
+                        & .reviewscontainer{
+                            & .reviewul{
+                               
+                                & .reviewli{
+                                    & .starscontainer{
+                                        & .starimg{
+                                            
+                                        }
+                                        & .totalreview{
+                                            
+                                        }
+                                    }
+                                }
+                                & .bookmarkclass{
+                                   
+                                }
+                            }   
+                        }
+                        & .bottomdata{
+                           
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 

@@ -1,0 +1,2834 @@
+// aboutusherosection
+.blogherofluid{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0;
+    & .bannerimg{
+        object-fit: cover;
+    }
+    & .overlay{
+        background-color: rgba($black, 0.3);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        & .herotxtcontainer{
+            & .txt{
+                font-size: 40px;
+                font-weight: 700;
+                color: $white;
+                z-index: 9999;
+            }
+            & .btnnn{
+                color: $white;
+                background:linear-gradient(to right, $theme1, $theme2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px 30px;
+                border-radius: 5px;
+                font-size: 15px;
+                font-weight: 500;
+                &:hover .arrow{
+                    transform: translateX(10px);
+                }
+                & .arrow{
+                    width: 12px;
+                    height: 12px;
+                    // margin-left: 8px;
+                    transform: translateX(5px);
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// aboutusherosection
+@mixin aboutusherosection-mixin-min-sm(){
+    .blogherofluid{
+    
+        & .bannerimg{
+           
+        }
+        & .overlay{
+            
+            & .herotxtcontainer{
+                & .txt{
+                    
+                }
+                & .btnnn{
+                   
+                    & .arrow{
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin aboutusherosection-mixin-min-md(){
+    .blogherofluid{
+    
+        & .bannerimg{
+           
+        }
+        & .overlay{
+            
+            & .herotxtcontainer{
+                & .txt{
+                    
+                }
+                & .btnnn{
+                   
+                    & .arrow{
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin aboutusherosection-mixin-min-lg(){
+    .blogherofluid{
+    
+        & .bannerimg{
+           
+        }
+        & .overlay{
+            
+            & .herotxtcontainer{
+                & .txt{
+                    
+                }
+                & .btnnn{
+                   
+                    & .arrow{
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin aboutusherosection-mixin-min-xl(){
+    .blogherofluid{
+    
+        & .bannerimg{
+           
+        }
+        & .overlay{
+            
+            & .herotxtcontainer{
+                & .txt{
+                    
+                }
+                & .btnnn{
+                   
+                    & .arrow{
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin aboutusherosection-mixin-min-xxl(){
+    .blogherofluid{
+    
+        & .bannerimg{
+           
+        }
+        & .overlay{
+            
+            & .herotxtcontainer{
+                & .txt{
+                    
+                }
+                & .btnnn{
+                   
+                    & .arrow{
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin aboutusherosection-mixin-max-xl(){
+    .blogherofluid{
+    
+        & .bannerimg{
+           
+        }
+        & .overlay{
+            
+            & .herotxtcontainer{
+                & .txt{
+                    font-size: 34px;
+                }
+                & .btnnn{
+                   
+                    & .arrow{
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin aboutusherosection-mixin-max-1300(){
+    .blogherofluid{
+    
+        & .bannerimg{
+           
+        }
+        & .overlay{
+            
+            & .herotxtcontainer{
+                & .txt{
+                    font-size: 34px;
+                }
+                & .btnnn{
+                   
+                    & .arrow{
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin aboutusherosection-mixin-max-lg(){
+    .blogherofluid{
+    
+        & .bannerimg{
+           
+        }
+        & .overlay{
+            
+            & .herotxtcontainer{
+                & .txt{
+                    font-size: 28px;
+                }
+                & .btnnn{
+                   padding: 12px 20px;
+                    & .arrow{
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin aboutusherosection-mixin-max-md(){
+    .blogherofluid{
+    
+        & .bannerimg{
+           
+        }
+        & .overlay{
+            
+            & .herotxtcontainer{
+                & .txt{
+                    font-size: 24px;
+                }
+                & .btnnn{
+                   
+                    & .arrow{
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin aboutusherosection-mixin-max-sm(){
+    .blogherofluid{
+    
+        & .bannerimg{
+           
+        }
+        & .overlay{
+            
+            & .herotxtcontainer{
+                & .txt{
+                    font-size: 20px;
+                }
+                & .btnnn{
+                   
+                    & .arrow{
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin aboutusherosection-mixin-max-xs(){
+    .blogherofluid{
+            height: 80%;
+        & .bannerimg{
+            height: 80%;
+        }
+        & .herocontainer{
+            height: 60%;
+            & .overlay{
+                height: 80%;
+                & .herotxtcontainer{
+                    & .txt{
+                        font-size: 15px;
+                    }
+                    & .btnnn{
+                        padding: 12px 14px;
+                        & .arrow{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// homeweworksection
+.homeweworkfluid{
+    & .leftpartcontainer{
+        & .head1container{
+            background-color: lighten($color:$theme1, $amount: 30);
+            color: $theme1;
+            padding: 8px 16px;
+            display: inline-block !important;
+            border-radius: 5px;
+            & .headtxt{
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        & .head2{
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        & .para{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        & .bottombtn{
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 40px;
+            padding: 4px 8px;
+            & .btnarrow{
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+    & .rightpartcontainer{
+        & .playoverlay{
+            position: relative;
+            display: flex;
+            &::after{
+                content: "";
+                position: absolute;
+                background: black;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border-radius: 20px;
+                opacity: 0.2;
+            }
+        }
+        & .playbutton{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px;
+            background: white;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            @keyframes waves {
+                0% {
+                -webkit-transform: scale(0.2, 0.2);
+                transform: scale(0.2, 0.2);
+                opacity: 0;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                }
+                50% {
+                opacity: 0.9;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+                }
+                100% {
+                -webkit-transform: scale(0.9, 0.9);
+                transform: scale(0.9, 0.9);
+                opacity: 0;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                }
+            }
+            
+            .fa-play:before {
+                content: "\f04b";
+            }
+            
+            .waves {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background: $white;
+                opacity: 0;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                border-radius: 100%;
+                right: -50px;
+                bottom: -50px;
+                z-index: -1;
+                -webkit-animation: waves 3s ease-in-out infinite;
+                animation: waves 3s ease-in-out infinite;
+            }
+                    
+            .wave-1 {
+                -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+            }
+            
+            .wave-2 {
+                -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+            }
+            
+            .wave-3 {
+                -webkit-animation-delay: 2s;
+                animation-delay: 2s;
+            }
+            // background-color: lighten($color: $theme1, $amount: 30);
+        }
+    }
+}
+
+@mixin aboutushomeworkfluid-mixin-min-sm(){
+    .homeweworkfluid{
+        & .leftpartcontainer{
+            & .head1container{
+               
+                & .headtxt{
+                    
+                }
+            }
+            & .head2{
+                
+            }
+            & .para{
+                
+            }
+            & .bottombtn{
+              
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+@mixin aboutushomeworkfluid-mixin-min-md(){
+    .homeweworkfluid{
+        & .leftpartcontainer{
+            & .head1container{
+               
+                & .headtxt{
+                    
+                }
+            }
+            & .head2{
+                
+            }
+            & .para{
+                
+            }
+            & .bottombtn{
+              
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+@mixin aboutushomeworkfluid-mixin-min-lg(){
+    .homeweworkfluid{
+        & .leftpartcontainer{
+            & .head1container{
+               
+                & .headtxt{
+                    
+                }
+            }
+            & .head2{
+                
+            }
+            & .para{
+                
+            }
+            & .bottombtn{
+              
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+@mixin aboutushomeworkfluid-mixin-min-xl(){
+    .homeweworkfluid{
+        & .leftpartcontainer{
+            & .head1container{
+               
+                & .headtxt{
+                    
+                }
+            }
+            & .head2{
+                
+            }
+            & .para{
+                
+            }
+            & .bottombtn{
+              
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+@mixin aboutushomeworkfluid-mixin-min-xxl(){
+    .homeweworkfluid{
+        & .leftpartcontainer{
+            & .head1container{
+               
+                & .headtxt{
+                    
+                }
+            }
+            & .head2{
+                
+            }
+            & .para{
+                
+            }
+            & .bottombtn{
+              
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+@mixin aboutushomeworkfluid-mixin-max-xl(){
+    .homeweworkfluid{
+        & .leftpartcontainer{
+            & .head1container{
+               
+                & .headtxt{
+                    
+                }
+            }
+            & .head2{
+                font-size: 40px;
+                    margin-bottom: 20px;
+            }
+            & .para{
+                
+            }
+            & .bottombtn{
+              
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+@mixin aboutushomeworkfluid-mixin-max-1300(){
+    .homeweworkfluid{
+        & .leftpartcontainer{
+            & .head1container{
+               
+                & .headtxt{
+                    
+                }
+            }
+            & .head2{
+                
+            }
+            & .para{
+                
+            }
+            & .bottombtn{
+              
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+@mixin aboutushomeworkfluid-mixin-max-lg(){
+    .homeweworkfluid{
+        & .leftpartcontainer{
+            & .head1container{
+               
+                & .headtxt{
+                    font-size: 12px;
+                }
+            }
+            & .head2{
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+            & .para{
+                font-size: 16px;
+            }
+            & .bottombtn{
+                margin-top: 20px;
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+@mixin aboutushomeworkfluid-mixin-max-md(){
+    .homeweworkfluid{
+        & .leftpartcontainer{
+            & .head1container{
+               
+                & .headtxt{
+                   
+                }
+            }
+            & .head2{
+                font-size: 35px;
+            }
+            & .para{
+                font-size: 15px;
+            }
+            & .bottombtn{
+              margin-top: 15px;
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+@mixin aboutushomeworkfluid-mixin-max-sm(){
+
+
+.homeweworkfluid{
+        & .leftpartcontainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & .head1container{
+               
+                & .headtxt{
+                    font-size: 16px;
+                }
+            }
+            & .head2{
+                font-size: 32px;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            & .para{
+                font-size: 14px;
+                text-align: center;
+                margin-top: 8px;
+            }
+            & .bottombtn{
+              margin-bottom: 30px;
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+@mixin aboutushomeworkfluid-mixin-max-xs(){
+    .homeweworkfluid{
+        & .leftpartcontainer{
+            & .head1container{
+               
+                & .headtxt{
+                    
+                }
+            }
+            & .head2{
+                
+            }
+            & .para{
+                
+            }
+            & .bottombtn{
+              
+                & .btnarrow{
+                    
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .vedioimg{
+            
+            }
+            & .playbutton{
+               
+            }
+        }
+    }
+}
+
+// why learn with our courses
+.whylearnfluid{
+    // background: url(../img/homebackground.webp);
+    & .tophead{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    & .subhead{
+        font-size: 20px;
+        font-weight: 700;
+        color: $gray-500;
+        margin-top: 10px;
+    }
+    & .cardcontainerrr{
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: relative;
+        &:hover {
+            & .whyimggg{
+                // transform: translateY(-20px);
+                // transform: rotate(180deg);
+                animation: rotate 1s linear;
+            }
+        }
+
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        & span{
+            font-size: 100px;
+            font-weight: 800;
+            opacity: 0.08;
+            display: inline-block;
+            line-height: 100px;
+            position: absolute !important;
+            right: 15px !important;
+            top: 15px !important;
+            // z-index: -1;
+        }
+        & .whyimggg{
+            width: 70px;
+            height: 70px;
+            transform: translateY(0);
+            transition: 0.3s linear;
+        }
+        & .head{
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        & .para{
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+    }
+}
+
+@mixin aboutwhywelearnsection-mixin-min-sm(){
+    .whylearnfluid{
+   
+        & .tophead{
+            
+        }
+        & .subhead{
+           
+        }
+        & .cardcontainerrr{
+           
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+@mixin aboutwhywelearnsection-mixin-min-md(){
+    .whylearnfluid{
+   
+        & .tophead{
+            
+        }
+        & .subhead{
+           
+        }
+        & .cardcontainerrr{
+           
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+@mixin aboutwhywelearnsection-mixin-min-lg(){
+    .whylearnfluid{
+   
+        & .tophead{
+            
+        }
+        & .subhead{
+           
+        }
+        & .cardcontainerrr{
+           
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+@mixin aboutwhywelearnsection-mixin-min-xl(){
+    .whylearnfluid{
+   
+        & .tophead{
+            
+        }
+        & .subhead{
+           
+        }
+        & .cardcontainerrr{
+           
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+@mixin aboutwhywelearnsection-mixin-min-xxl(){
+    .whylearnfluid{
+   
+        & .tophead{
+            
+        }
+        & .subhead{
+           
+        }
+        & .cardcontainerrr{
+           
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+@mixin aboutwhywelearnsection-mixin-max-xl(){
+    .whylearnfluid{
+   
+        & .tophead{
+        
+        }
+        & .subhead{
+           
+        }
+        & .cardcontainerrr{
+           
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+@mixin aboutwhywelearnsection-mixin-max-1300(){
+    .whylearnfluid{
+   
+        & .tophead{
+
+        }
+        & .subhead{
+           
+        }
+        & .cardcontainerrr{
+           
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+@mixin aboutwhywelearnsection-mixin-max-lg(){
+    .whylearnfluid{
+   
+        & .tophead{
+            
+        }
+        & .subhead{
+           
+        }
+        & .cardcontainerrr{
+           
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+@mixin aboutwhywelearnsection-mixin-max-md(){
+    .whylearnfluid{
+   
+        & .tophead{
+            font-size: 38px;
+        }
+        & .subhead{
+           font-size: 18px;
+           margin-top: 5px;
+        }
+        & .cardcontainerrr{
+           
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+@mixin aboutwhywelearnsection-mixin-max-sm(){
+    .whylearnfluid{
+   
+        & .tophead{
+            font-size: 35px;
+        }
+        & .subhead{
+           font-size: 16px;
+           margin-top: 10px;
+        }
+        & .cardcontainerrr{
+           
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+@mixin aboutwhywelearnsection-mixin-max-xs(){
+    .whylearnfluid{
+   
+        & .tophead{
+            font-size: 33px;
+            font-weight: 700;
+            line-height: 1;
+        }
+        & .subhead{
+            font-size: 15px;
+            font-weight: 700;
+            color: #adb5bd;
+            margin-top: 12px;
+        }
+        & .cardcontainerrr{
+        
+            & .whyimggg{
+               
+            }
+            & .head{
+                
+            }
+            & .para{
+               
+            }
+        }
+    }
+}
+
+// brandfluid
+.brandfluid{
+    .services-ticker-block {
+        position: relative;
+        display:flex; 
+        align-items:center;
+        overflow-x: hidden;
+    }
+    
+    .stb_line_single {
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    will-change: transform;
+    }
+    .stb-item {
+    padding: 0;
+    font-size: 6.4rem;
+    display: inline-block;
+    // margin-right: 10rem;
+    
+    }
+    .stb-item:hover {
+        color: #C02534;
+    }
+    
+    // privacypolicy
+    .privacyfluid{
+        & .mainhead{
+            font-size: 30px;
+            font-weight: 700;
+            // line-height: 36px;
+            color: $black;
+        }
+        & .subhead{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            color: $black;
+            margin-bottom: 5px;
+        }
+        & .para{
+            font-size: 16px;
+            font-weight: 400;
+            // line-height: 30px;
+            color: $black;
+        }
+    }
+}
+
+// know about us
+.aboutAnimBox {
+    & .imgWrapper {
+        & .thumb1 {
+            left: -100px;
+            & img {}
+        }
+        & .thumb2 {
+            right: 0;
+            top: 0;
+            animation: upDown 5s linear infinite;
+            transition: 0.3s linear;
+            & img {}
+        }
+        & .thumb3 {
+            left: 150px;
+            top: 280px;
+            animation: upDown 5s linear infinite;
+            transition: 0.3s linear;
+            & img {}
+        }
+    }
+    & .rightpartcontainer{
+        & .topbuttonbg{
+            background-color: lighten($color: $orange, $amount: 40);
+            display: inline-block !important;
+            padding: 8px 16px;
+            margin-bottom: 10px;
+            & span{
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
+        & .mainhead{
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 1.1;
+                margin-bottom: 20px;
+        }
+        & .para{
+                font-size: 15px;
+                font-weight: 500;
+                margin-bottom: 25px;
+        }
+        & .imgbg{
+            background-color: lighten($color: $red, $amount: 40);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & .iconimg{
+
+            }
+        }
+        & .imgbg2{
+            background-color: lighten($color: $blue, $amount: 40);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & .iconimg2{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        & .imgbg3{
+            background-color: lighten($color: $orange, $amount: 40);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & .iconimg3{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        & .first{
+            font-size: 15px;
+            font-weight: 700;
+        }
+        & .second{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        & .bottombtn{
+            border: none;
+            background:linear-gradient(to right, $theme1, $theme2);
+            padding: 18px 28px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 500;
+            color: $white;
+            line-height: normal;
+            &:hover img{
+                transform: translateX(10px);
+            }
+            & img{
+                width: 12px;
+                height: 12px;
+                transform: translateX(0px);
+                transition: 0.3s linear;
+                text-align: center;
+            }
+        }
+    }
+}
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-8px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@mixin aboutAnimBox-mixin-min-sm(){
+    .aboutAnimBox {
+    & .imgWrapper {
+        & .thumb1 {
+            & img {}
+        }
+        & .thumb2 {
+            & img {}
+        }
+        & .thumb3 {
+            & img {}
+        }
+    }
+    & .rightpartcontainer{
+        & .topbuttonbg{
+            
+            & span{
+               
+            }
+        }
+        & .mainhead{
+               
+        }
+        & .para{
+               
+        }
+        & .imgbg{
+           
+            & .iconimg{
+    
+            }
+        }
+        & .imgbg2{
+           
+            & .iconimg2{
+                
+            }
+        }
+        & .imgbg3{
+            
+            & .iconimg3{
+                
+            }
+        }
+        & .first{
+            
+        }
+        & .second{
+          
+        }
+        & .bottombtn{
+            
+            &:hover img{
+               
+            }
+            & img{
+                
+            }
+        }
+    }
+}
+}
+@mixin aboutAnimBox-mixin-min-md(){
+    .aboutAnimBox {
+    & .imgWrapper {
+        & .thumb1 {
+            & img {}
+        }
+        & .thumb2 {
+            & img {}
+        }
+        & .thumb3 {
+            & img {}
+        }
+    }
+    & .rightpartcontainer{
+        & .topbuttonbg{
+            
+            & span{
+               
+            }
+        }
+        & .mainhead{
+               
+        }
+        & .para{
+               
+        }
+        & .imgbg{
+           
+            & .iconimg{
+    
+            }
+        }
+        & .imgbg2{
+           
+            & .iconimg2{
+                
+            }
+        }
+        & .imgbg3{
+            
+            & .iconimg3{
+                
+            }
+        }
+        & .first{
+            
+        }
+        & .second{
+          
+        }
+        & .bottombtn{
+            
+            &:hover img{
+               
+            }
+            & img{
+                
+            }
+        }
+    }
+}
+}
+@mixin aboutAnimBox-mixin-min-lg(){
+    .aboutAnimBox {
+    & .imgWrapper {
+        & .thumb1 {
+            & img {}
+        }
+        & .thumb2 {
+            & img {}
+        }
+        & .thumb3 {
+            & img {}
+        }
+    }
+    & .rightpartcontainer{
+        & .topbuttonbg{
+            
+            & span{
+               
+            }
+        }
+        & .mainhead{
+               
+        }
+        & .para{
+               
+        }
+        & .imgbg{
+           
+            & .iconimg{
+    
+            }
+        }
+        & .imgbg2{
+           
+            & .iconimg2{
+                
+            }
+        }
+        & .imgbg3{
+            
+            & .iconimg3{
+                
+            }
+        }
+        & .first{
+            
+        }
+        & .second{
+          
+        }
+        & .bottombtn{
+            
+            &:hover img{
+               
+            }
+            & img{
+                
+            }
+        }
+    }
+}
+}
+@mixin aboutAnimBox-mixin-min-xl(){
+    .aboutAnimBox {
+    & .imgWrapper {
+        & .thumb1 {
+            & img {}
+        }
+        & .thumb2 {
+            & img {}
+        }
+        & .thumb3 {
+            & img {}
+        }
+    }
+    & .rightpartcontainer{
+        & .topbuttonbg{
+            
+            & span{
+               
+            }
+        }
+        & .mainhead{
+               
+        }
+        & .para{
+               
+        }
+        & .imgbg{
+           
+            & .iconimg{
+    
+            }
+        }
+        & .imgbg2{
+           
+            & .iconimg2{
+                
+            }
+        }
+        & .imgbg3{
+            
+            & .iconimg3{
+                
+            }
+        }
+        & .first{
+            
+        }
+        & .second{
+          
+        }
+        & .bottombtn{
+            
+            &:hover img{
+               
+            }
+            & img{
+                
+            }
+        }
+    }
+}
+}
+@mixin aboutAnimBox-mixin-min-xxl(){
+
+    .aboutAnimBox {
+        & .imgWrapper {
+            padding-bottom: 150px;
+            & .thumb1 {
+                left: 0;
+                & img {
+                    width: 65%;
+                }
+            }
+            & .thumb2 {
+                text-align: end;
+                top: 25px;
+                & img {
+                    width: 95%;
+                }
+            }
+            & .thumb3 {
+                left: unset;
+                right: 30px;
+                top: 310px;
+                text-align: end;
+                & img {
+                    width: 83%;
+                }
+            }
+        }
+        & & .rightpartcontainer{
+            & .topbuttonbg{
+                
+                & span{
+                   
+                }
+            }
+            & .mainhead{
+                   
+            }
+            & .para{
+                   
+            }
+            & .imgbg{
+               
+                & .iconimg{
+        
+                }
+            }
+            & .imgbg2{
+               
+                & .iconimg2{
+                    
+                }
+            }
+            & .imgbg3{
+                
+                & .iconimg3{
+                    
+                }
+            }
+            & .first{
+                
+            }
+            & .second{
+              
+            }
+            & .bottombtn{
+                
+                &:hover img{
+                   
+                }
+                & img{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin aboutAnimBox-mixin-max-xl(){
+    .aboutAnimBox {
+        & .imgWrapper {
+            padding-bottom: 150px;
+            & .thumb1 {
+                left: 0;
+                & img {
+                    width: 65%;
+                }
+            }
+            & .thumb2 {
+                text-align: end;
+                top: 25px;
+                & img {
+                    width: 80%;
+                }
+            }
+            & .thumb3 {
+                left: unset;
+                right: 30px;
+                top: 250px;
+                text-align: end;
+                & img {
+                    width: 70%;
+                }
+            }
+        }
+        & & .rightpartcontainer{
+            & .topbuttonbg{
+                
+                & span{
+                   
+                }
+            }
+            & .mainhead{
+                   
+            }
+            & .para{
+                   
+            }
+            & .imgbg{
+               
+                & .iconimg{
+        
+                }
+            }
+            & .imgbg2{
+               
+                & .iconimg2{
+                    
+                }
+            }
+            & .imgbg3{
+                
+                & .iconimg3{
+                    
+                }
+            }
+            & .first{
+                
+            }
+            & .second{
+              
+            }
+            & .bottombtn{
+                
+                &:hover img{
+                   
+                }
+                & img{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin aboutAnimBox-mixin-max-1300(){
+    .aboutAnimBox {
+    & .imgWrapper {
+        & .thumb1 {
+            & img {}
+        }
+        & .thumb2 {
+            & img {}
+        }
+        & .thumb3 {
+            & img {}
+        }
+    }
+    & & .rightpartcontainer{
+        & .topbuttonbg{
+            
+            & span{
+               
+            }
+        }
+        & .mainhead{
+               
+        }
+        & .para{
+               
+        }
+        & .imgbg{
+           
+            & .iconimg{
+    
+            }
+        }
+        & .imgbg2{
+           
+            & .iconimg2{
+                
+            }
+        }
+        & .imgbg3{
+            
+            & .iconimg3{
+                
+            }
+        }
+        & .first{
+            
+        }
+        & .second{
+          
+        }
+        & .bottombtn{
+            
+            &:hover img{
+               
+            }
+            & img{
+                
+            }
+        }
+    }
+}
+}
+@mixin aboutAnimBox-mixin-max-lg(){
+    .aboutAnimBox {
+        & .imgWrapper {
+            padding-bottom: 150px;
+            & .thumb1 {
+                left: 0;
+                & img {
+                    width: 65%;
+                }
+            }
+            & .thumb2 {
+                text-align: end;
+                top: 25px;
+                & img {
+                    width: 75%;
+                }
+            }
+            & .thumb3 {
+                left: unset;
+                right: 30px;
+                top: 250px;
+                text-align: end;
+                & img {
+                    width: 65%;
+                }
+            }
+        }
+        & & .rightpartcontainer{
+            & .topbuttonbg{
+                
+                & span{
+                   
+                }
+            }
+            & .mainhead{
+                   
+            }
+            & .para{
+                   
+            }
+            & .imgbg{
+               
+                & .iconimg{
+        
+                }
+            }
+            & .imgbg2{
+               
+                & .iconimg2{
+                    
+                }
+            }
+            & .imgbg3{
+                
+                & .iconimg3{
+                    
+                }
+            }
+            & .first{
+                
+            }
+            & .second{
+              
+            }
+            & .bottombtn{
+                
+                &:hover img{
+                   
+                }
+                & img{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin aboutAnimBox-mixin-max-md(){
+
+    .aboutAnimBox {
+        & .imgWrapper {
+            padding-bottom: 150px;
+            & .thumb1 {
+                left: 0;
+                & img {
+                    width: 65%;
+                }
+            }
+            & .thumb2 {
+                text-align: end;
+                top: 25px;
+                & img {
+                    width: 100%;
+                }
+            }
+            & .thumb3 {
+                left: unset;
+                right: 30px;
+                top: 310px;
+                text-align: end;
+                & img {
+                    width: 85%;
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topbuttonbg{
+                
+                & span{
+                   
+                }
+            }
+            & .mainhead{
+                font-size: 38px !important;
+            }
+            & .para{
+                   
+            }
+            & .imgbg{
+               
+                & .iconimg{
+        
+                }
+            }
+            & .imgbg2{
+               
+                & .iconimg2{
+                    
+                }
+            }
+            & .imgbg3{
+                
+                & .iconimg3{
+                    
+                }
+            }
+            & .first{
+                
+            }
+            & .second{
+              
+            }
+            & .bottombtn{
+                
+                &:hover img{
+                   
+                }
+                & img{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin aboutAnimBox-mixin-max-sm(){
+
+    .aboutAnimBox {
+        & .imgWrapper {
+            padding-bottom: 170px;
+            & .thumb1 {
+                left: 0;
+                & img {
+                    width: 65%;
+                }
+            }
+            & .thumb2 {
+                text-align: end;
+                top: 25px;
+                & img {
+                    width: 65%;
+                }
+            }
+            & .thumb3 {
+                left: unset;
+                right: 30px;
+                top: 210px;
+                text-align: end;
+                & img {
+                    width: 75%;
+                }
+            }
+        }
+        & .rightpartcontainer{
+            & .topbuttonbg{
+                
+                & span{
+                   
+                }
+            }
+            & .mainhead{
+                font-size: 32px;
+            }
+            & .para{
+                   
+            }
+            & .imgbg{
+               
+                & .iconimg{
+        
+                }
+            }
+            & .imgbg2{
+               
+                & .iconimg2{
+                    
+                }
+            }
+            & .imgbg3{
+                
+                & .iconimg3{
+                    
+                }
+            }
+            & .first{
+                
+            }
+            & .second{
+              
+            }
+            & .bottombtn{
+                
+                &:hover img{
+                   
+                }
+                & img{
+                    
+                }
+            }
+        }
+    }
+}
+@mixin aboutAnimBox-mixin-max-xs(){
+    .aboutAnimBox {
+    & .imgWrapper {
+        padding-bottom: 210px;
+        & .thumb1 {
+            left: 0;
+            & img {
+                width: 65%;
+            }
+        }
+        & .thumb2 {
+            text-align: end;
+            top: 25px;
+            & img {
+                width: 65%;
+            }
+        }
+        & .thumb3 {
+            left: unset;
+            right: 30px;
+            top: 210px;
+            text-align: end;
+            & img {
+                width: 75%;
+            }
+        }
+    }
+    & .rightpartcontainer{
+        & .topbuttonbg{
+            
+            & span{
+               
+            }
+        }
+        & .mainhead{
+            font-size: 32px;
+        }
+        & .para{
+               
+        }
+        & .imgbg{
+           
+            & .iconimg{
+    
+            }
+        }
+        & .imgbg2{
+           
+            & .iconimg2{
+                
+            }
+        }
+        & .imgbg3{
+            
+            & .iconimg3{
+                
+            }
+        }
+        & .first{
+            
+        }
+        & .second{
+          
+        }
+        & .bottombtn{
+            
+            &:hover img{
+               
+            }
+            & img{
+                
+            }
+        }
+    }
+}
+}
+
+// FAQ
+.FAQfluid{
+    & .mainhead{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    & .accordiancontainer{
+        & .accordion{
+            & .accordion-item{
+                margin-bottom: 20px;
+                border: 1px solid $gray-200 !important;
+                border-radius: 5px;
+                & .accordion-header{
+                    & .accordion-button{
+                        border-radius: 5px; 
+                        font-weight: 600;
+                        &:not(.collapsed){
+                            background-color: white !important;
+                            box-shadow: none !important;
+                            color: $black;
+                        }
+                        &:focus{
+                            border-color: none !important;
+                            box-shadow: none !important;
+                        }
+                            &::after{
+                                content: '';
+                                background-image: url(../img/minus.svg) !important;
+                                background-repeat: no-repeat;
+                                background-size: 16px;
+                                // width: 10px;
+                                // height: 10px;
+                                margin-left: auto;
+                                transition: none !important;
+                            }
+                            &.collapsed{
+                                &::after{
+                                    content: '';
+                                    background-image: url(../img/plus.svg) !important;
+                                    background-repeat: no-repeat;
+                                    background-size: 16px;
+                                    // width: 10px;
+                                    // height: 10px;
+                                    margin-left: auto;
+                                    transition: none !important;
+                                }
+                            }
+                    }   
+                }
+            }
+            & .accordion-body{
+                padding-top: 0 !important;
+            }
+        }
+    }
+}
+
+
+@mixin footer-mixin-min-sm(){}
+@mixin footer-mixin-min-md(){}
+@mixin footer-mixin-min-lg(){}
+@mixin footer-mixin-min-xl(){}
+@mixin footer-mixin-min-xxl(){}
+@mixin footer-mixin-max-xl(){}
+@mixin footer-mixin-max-1300(){}
+@mixin footer-mixin-max-lg(){}
+@mixin footer-mixin-max-md(){}
+@mixin footer-mixin-max-sm(){}
+@mixin footer-mixin-max-xs(){}
+
+
+// Related course page
+.heading{
+    font-size: 25px;
+    font-weight: 700;
+}
+.Relatedcoursefluid{
+    & .searchkaro{
+            &::after{
+                background: $gray-300;
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                right:15px;
+                top:14px;
+                transition: 0.4s;
+                opacity: 0;
+                transform: scale(0.8);
+                border-radius: 100%;
+                z-index: -1;
+            }
+        & .searchf{
+            font-size: 15px;
+            font-weight: 500;
+            padding: 8px 18px;
+            padding-right: 40px;
+            // margin-bottom: 20px;
+        }
+        & .searchicon{
+            position: absolute;
+            right:15px;
+            top:14px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+    & .col4container{
+        border: 1px solid $gray-300;
+        padding: 20px;
+        border-radius: 6px;
+        & .mainhead{
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            padding-top: 10px;
+        }
+        & .form-check{
+            padding-top: 2px;
+            padding-bottom: 2px;
+            & .form-check-input{
+
+            }
+            & .form-check-label{
+                font-size: 12px;
+                font-weight: 500;
+                color: $gray-600;
+                // margin-bottom: 10px;
+                cursor: pointer;
+                & .numberbg{
+                    background-color: $gray-200;
+                    border-radius: 5px;
+                    padding: 5px;
+                    font-size: 10px;
+                }
+            }
+            
+        }
+    }
+    & .topcoursesbg {
+        background-image: none !important;
+    }
+    & .filterBarContainer {
+        width: 280px;
+        & .mainTop {
+            margin-bottom: 10px;
+            border-bottom: 1px solid $gray-300;
+            padding-bottom: 15px;
+            & .filterHeading {
+                font-size: 22px;
+                color: $black;
+                font-weight: 600;
+            }
+            & .clearFilter {
+                font-size: 13px;
+                color: $blue;
+                text-decoration: none;
+                font-weight: 600;
+            }
+        }
+    }
+    & .filterSectionContainer {
+        width: calc(100% - 280px);
+    }
+}
+
+
+@mixin retatedCoursePage-mixin-min-sm(){
+    .Relatedcoursefluid{
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+            
+        }
+    }
+}
+@mixin retatedCoursePage-mixin-min-md(){
+    .Relatedcoursefluid{
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+            
+        }
+    }
+}
+@mixin retatedCoursePage-mixin-min-lg(){
+    .Relatedcoursefluid{
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+            
+        }
+    }
+}
+@mixin retatedCoursePage-mixin-min-xl(){
+    .Relatedcoursefluid{
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+            
+        }
+    }
+}
+@mixin retatedCoursePage-mixin-min-xxl(){
+    .Relatedcoursefluid{
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+            
+        }
+    }
+}
+@mixin retatedCoursePage-mixin-max-xl(){
+    .Relatedcoursefluid{
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+            
+        }
+    }
+}
+@mixin retatedCoursePage-mixin-max-1300(){
+    .Relatedcoursefluid{
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+            
+        }
+    }
+}
+@mixin retatedCoursePage-mixin-max-lg(){
+    .Relatedcoursefluid{
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+            
+        }
+    }
+}
+@mixin retatedCoursePage-mixin-max-md(){
+    .Relatedcoursefluid{
+        position: relative;
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            border: none !important;
+            border-radius: 0 !important;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           position: absolute;
+           top: 0;
+           left: -100%;
+           background-color: $white;
+           z-index: 99;
+           padding: 0;
+           transition: 0.4s ease-in-out;
+           height: 100%;
+           &.show {
+            left: 0 !important;
+           }
+           & .filterScrollBody {
+                flex: 1 1 auto;
+                height: 100%;
+                overflow-y: auto;
+                &::-webkit-scrollbar {
+                    display: none !important;
+                }
+           }
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+           width: 100%; 
+        }
+    }
+}
+@mixin retatedCoursePage-mixin-max-sm(){
+    .Relatedcoursefluid{
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+            
+        }
+    }
+}
+@mixin retatedCoursePage-mixin-max-xs(){
+    .Relatedcoursefluid{
+        & .searchkaro{
+                &::after{
+                   
+                }
+            & .searchf{
+               
+            }
+            & .searchicon{
+              
+            }
+        }
+        & .col4container{
+            
+            & .mainhead{
+               
+            }
+            & .form-check{
+               
+                & .form-check-input{
+    
+                }
+                & .form-check-label{
+                    
+                    & .numberbg{
+                       
+                    }
+                }
+                
+            }
+        }
+        & .topcoursesbg {
+           
+        }
+        & .filterBarContainer {
+           
+            & .mainTop {
+               
+                & .filterHeading {
+                    
+                }
+                & .clearFilter {
+                   
+                }
+            }
+        }
+        & .filterSectionContainer {
+            
+        }
+    }
+}
+

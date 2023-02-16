@@ -2,6 +2,7 @@
     background-color: $white;
     // box-shadow: 0px 20px 34px lighten($black, 96);
     position: relative;
+    padding: 0.75rem 1rem !important;
     & .studylogoanchor{
         & .studylogo{
             width: 150px;
@@ -60,6 +61,9 @@
                             color: $gray-700;
                             font-weight: 600;
                             padding: 10px 0px;
+                            & a {
+                                color: $gray-700 !important;
+                            }
                             &.space{
                                 padding: 10px 100px 10px 10px ;
                             }
@@ -302,7 +306,7 @@
     
 }
 .mymodal{
-    width: 300px !important;
+    width: 350px !important;
     & .contentt{
         & .modal-header{
             display: flex !important;
@@ -310,11 +314,15 @@
             // justify-content: center !important;
             align-items: center !important;
             &.headerr{
-                display: flex !important;
-                justify-content: center !important;
+                // display: flex !important;
+                // justify-content: center !important;
                 & .formhead{
                     font-size: 25px;
                     font-weight: 700;
+                }
+                & .closebtnn{
+                    width: 18px;
+                    height: 18px;
                 }
                 & .modalhone{
                     & .mytabs{
@@ -331,6 +339,8 @@
         }
         
         & .bodayofmodal{
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
             & .form-label{
                 margin-bottom: 0 !important;
             }
@@ -341,19 +351,24 @@
             }
             
             & .modalinp{
-                margin-bottom: 20px;
+                // margin-bottom: 15px  ;
                 font-size: 14px;
                 color: $gray-700;
-                margin-bottom: 20px;
+                // margin-bottom: 12px;
                 padding-left: 30px;
+                height: 40px;
             }
             & .mailll{
                 position: absolute;
-                top: 10px;
+                top: 14px;
                 left: 8px;
                 /* width: 40px; */
-                height: 16px;
+                height: 14px;
                 z-index: 7;
+                &.passMaill {
+                    height: 17px !important;
+                    top: 13px !important;
+                }
 
             }
             & .holder{
@@ -371,8 +386,8 @@
             }
             & .rememberanchor{
                 font-size: 14px;
-                margin-bottom: 20px;
-                // text-decoration: none;
+                margin-bottom: 15px;
+                text-decoration: none;
             }
             & .regbtn{
                 background-image: linear-gradient(to right, $theme1, $theme2);
@@ -382,22 +397,66 @@
                 border-radius: 5px;
                 padding: 7px 8px;
                 width: 100%;
-                margin-bottom: 0;
+                margin: 0;
             }
             & .loginwith{
-                font-size: 14px;
+                font-size: 15px;
                 font-weight: 300;
                 text-align: center;
-                margin-top: 20px;
+                margin-top: 8px;
             }
             & .btncontainer{
                 margin-top: 10px;
-                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                
+        
                 & .facebookbtn{
-                    border:1px solid $black;
+                    border:1px solid $gray-200;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                    text-align: center;
+                    background-color: transparent;
+                    width: 100%;
+                    padding: 6px;
+                    border-radius: 3px;
+                    // background: linear-gradient(to right, $theme1, $theme2);
+                    & .btnnn{
+                        font-size: 14px;
+                        margin-left: 4px;
+                    }
+                    &:hover{
+                        background-color: $gray-100;
+                    }
+                    // width: 30px;
+                    // height: 30px;
+                    // border-radius: 50%;
+                    // background-color: $theme1;
                 }
                 & .googlebtn{
-                    border:1px solid $black;
+                    border:1px solid $gray-200;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background-color: transparent;
+                    width: 100%;
+                    padding: 6px;
+                    border-radius: 3px;
+                    & .btnnn{
+                        font-size: 14px;
+                        margin-left: 4px;
+                    }
+                    &:hover{
+                        background-color: $gray-100;
+                    }
+                    // width: 50px;
+                    // height: 50px;
+                    // border-radius: 50%;
                 }
             }
             & .member{
@@ -405,10 +464,12 @@
                 font-size: 14px;
                 font-weight: 400;
                 text-align: center;
-                margin-bottom: 40px;
+                margin-bottom: 20px;
+                
                 & .signanchor{
                     text-decoration: none;
                     font-size: 14px;
+                    margin-left: 10px;
                 }
             }
             & .modal-footer{
@@ -419,10 +480,136 @@
     }
 }
 .secondmodal{
-    width: 300px !important;
-    & .modal-content{
-        & .modal-header{
-            border-top: none;
+    width: 350px !important;
+    & .modal-header{
+        border-bottom: none !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .closebtnn{
+            width: 18px;
+            height: 18px;
+        }
+        & .formhead{
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+    & .modal-footer{
+        border-top: none !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 5px;
+    }
+    & .bodayofmodall{
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+        & .form-label{
+            margin-bottom: 0 !important;
+        }
+        & .modallabel{
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px!important;
+        }
+        
+        & .modalinp{
+            // margin-bottom: 20px;
+            font-size: 14px;
+            color: $gray-700;
+            // margin-bottom: 12px;
+            padding-left: 30px;
+            height: 40px;
+        }
+        & .mailll{
+            position: absolute;
+            top: 14px;
+            left: 8px;
+            /* width: 40px; */
+            height: 14px;
+            z-index: 7;
+    
+        }
+
+    }
+    
+    & .loginwith{
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 8px;
+    }
+    & .btncontainer{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+
+        & .facebookbtn{
+            border:1px solid $gray-200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            text-align: center;
+            background-color: transparent;
+            width: 100%;
+            padding: 6px;
+            border-radius: 3px;
+            // background: linear-gradient(to right, $theme1, $theme2);
+            & .btnnn{
+                font-size: 14px;
+                margin-left: 4px;
+            }
+            &:hover{
+                background-color: $gray-100;
+            }
+            // width: 30px;
+            // height: 30px;
+            // border-radius: 50%;
+            // background-color: $theme1;
+        }
+        & .googlebtn{
+            border:1px solid $gray-200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: transparent;
+            width: 100%;
+            padding: 6px;
+            border-radius: 3px;
+            & .btnnn{
+                font-size: 14px;
+                margin-left: 4px;
+            }
+            &:hover{
+                background-color: $gray-100;
+            }
+            // width: 50px;
+            // height: 50px;
+            // border-radius: 50%;
+        }
+    }
+    & .registerbtn{
+        width: 100%;
+        background:linear-gradient(to right, $theme1, $theme2);
+        border: none;
+    }
+    & .bottomtxtofcontainer{
+        & .r1{
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        & .l1{
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 10px;
+            margin-bottom: 15px;
+            text-decoration: none;
         }
     }
 }

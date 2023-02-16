@@ -1,0 +1,1010 @@
+.adminfluid{
+    background-color: $gray-200;
+    & .leftpartcontainer{
+        background-color: $white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px;
+        & .lefttopcontainer{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            & .adminprofilecontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .adminname{
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: $gray-600;
+            }
+            & .admincontact{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $gray-600;
+                }
+            }
+            & .adminmail{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                    color: $gray-600;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+        & .listcontainer{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            & .leftpartul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                margin-top: 10px;
+                & .leftpartli{
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    padding: 4px;
+                    position: relative;
+                    transition: 0.3s ease;
+                    &.active, &:hover{
+                        & .adminleftanchor{
+                            & span{
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 35px;
+                                    left: -20px;
+                                    border-left: 3px solid $theme1;
+                                }
+                                color: $theme1 !important;
+                            }
+                        }
+                    }
+                    & .adminleftanchor{
+                        text-decoration: none;
+                        & img{
+                            height: 20px;
+                            margin-right: 10px;
+                            filter: brightness(0);
+                        }
+                        & span{
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: $gray-600;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .rightpartcontainer{
+        & .personal{
+            font-size: 25px;
+            font-weight: 700;
+        }
+        & .progressheading{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        & .mybar{
+            height: 5px !important;
+            margin-top: 8px;
+        }
+        & .textareacontainer{
+            border-radius: 5px;
+            & .txtclass{
+                width: 100%;
+                height: 200px;
+                margin-top: 10px;
+                padding-left: 10px;
+                border-color: $gray-200;
+                font-size: 15px;
+                font-weight: 500;
+                color: $gray-600;
+            }
+        }
+        & .inputcontainer{  
+            width: 100%;
+            height: 200px;
+            background-color: $white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin-top: 10px;
+            border-radius: 5px;
+            & .inpclass{
+                border: 2px solid $gray-200;
+                border-color: $gray-200;
+            }
+            & .inplabel{
+                font-size: 15px;
+                font-weight: 500;
+                color: $gray-600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                & img{
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+        & .formcontainer{
+            border: 2px solid $gray-200;
+            background-color: $white;
+            border-radius: 5px ;
+            margin-top: 10px;
+            padding: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            & .toptxt{
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            & .bottomtxt{
+                font-size: 14px;
+                font-weight: 500;
+            }
+            & .editicon{
+                height: 20px;
+                margin-top: 10px;
+            }
+            & .mycollapse{
+                & .mycardbody{
+                    & .form-control{
+                        box-shadow: none !important;
+                        border-color: $gray-200 !important;
+                    }
+                }
+            }
+        }
+        & .socialheading{
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        & .socialcontainer{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            & .socialiconscontainer{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: $white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & img{
+             
+                }
+            }
+            & .form-control{
+                box-shadow: none !important;
+                border-color: $gray-200;
+            }
+        }
+        & .adminbottombtncontainer{
+            margin-top: 20px;
+            & .savebtn{
+                & .savebtnnnn{
+                    background: linear-gradient(to right, $theme1, $theme2);
+                    border: none;
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    border-radius: 5px;
+                }
+            }
+            & .deletebtn{
+                display: flex;
+                justify-content: end;
+                & .deletebtnnnn{
+                    background: linear-gradient(to right, $theme1, $theme2);
+                    border: none;
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+    .adminoffcanvaasmain{
+    width: 260px !important;
+    & .offcanvas-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0 !important;
+        & .lefttopcontainer{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            & .adminprofilecontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .adminname{
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: $gray-600;
+            }
+            & .admincontact{
+                & img{
+                    height: 13px;
+                    margin-right: 5px;
+                }
+                & span{
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: $gray-600;
+                }
+            }
+            & .adminmail{
+                & img{
+                    height: 14px;
+                    margin-right: 5px;
+                }
+                & span{
+                    color: $gray-600;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+            }
+        }
+        & .closebtnnnn{
+            position: absolute;
+            right: 10px;
+            top: 12px;
+            & img{
+                height: 16px;
+            }
+        }
+    }
+    & .adminoffcanvas{
+        padding-top: 0 !important;
+        & .leftpartcontainer{
+            background-color: $white;
+            padding: 0px 20p 20px 20px;
+            // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            & .listcontainer{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                & .leftpartul{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 10px;
+                    & .leftpartli{
+                        text-decoration: none;
+                        margin-bottom: 6px;
+                        padding: 4px;
+                        position: relative;
+                        transition: 0.3s ease;
+                        &.active, &:hover{
+                            & .adminleftanchor{
+                                & span{
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        width: 2px;
+                                        height: 35px;
+                                        left: -20px;
+                                        border-left: 3px solid $theme1;
+                                    }
+                                    color: $theme1 !important;
+                                }
+                            }
+                        }
+                        & .adminleftanchor{
+                            text-decoration: none;
+                            & img{
+                                height: 16px;
+                                margin-right: 10px;
+                                filter: brightness(0);
+                            }
+                            & span{
+                                font-size: 13px;
+                                font-weight: 500;
+                                color: $gray-600;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer{
+        padding: 10px;
+        border-top: 1px solid $gray-200;
+        & .leftpartli{
+            text-decoration: none;
+            padding: 4px;
+            position: relative;
+            transition: 0.3s ease;
+            &.active, &:hover{
+                & .adminleftanchor{
+                    & span{
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 2px;
+                            height: 35px;
+                            left: -20px;
+                            border-left: 3px solid $theme1;
+                        }
+                        color: $theme1 !important;
+                    }
+                }
+            }
+            & .adminleftanchor{
+                text-decoration: none;
+                & img{
+                    height: 16px;
+                    margin-right: 10px;
+                    filter: brightness(0);
+                }
+                & span{
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: $gray-600;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+// 
+.adminfluidforpasswordsecurity{
+    & .leftpartcontainer{
+        background-color: $white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px;
+        & .lefttopcontainer{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            & .adminprofilecontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .adminname{
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: $gray-600;
+            }
+            & .admincontact{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $gray-600;
+                }
+            }
+            & .adminmail{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                    color: $gray-600;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+        & .listcontainer{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            & .leftpartul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                margin-top: 10px;
+                & .leftpartli{
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    padding: 4px;
+                    position: relative;
+                    transition: 0.3s ease;
+                    &.active, &:hover{
+                        & .adminleftanchor{
+                            & span{
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 35px;
+                                    left: -20px;
+                                    border-left: 3px solid $theme1;
+                                }
+                                color: $theme1 !important;
+                            }
+                        }
+                    }
+                    & .adminleftanchor{
+                        text-decoration: none;
+                        & img{
+                            height: 20px;
+                            margin-right: 10px;
+                            filter: brightness(0);
+                        }
+                        & span{
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: $gray-600;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+& .rightpartcontainer{
+    & .passwordheading{
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    & .passwordsubheading{
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    & .thirdheading{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    & .form-label{
+        font-size: 15px;
+        font-weight: 500;
+        & img{
+            position: absolute;
+            top:50%;
+            right: 53%;
+        }
+        & .eyeimg1{
+            position: absolute;
+            top:68%;
+            right: 53%;
+        }
+        & .eyeimg2{
+            position: absolute;
+            top:68%;
+            right: 53%;
+        }
+        & .eyeimg3{
+            position: absolute;
+            top:68%;
+            right: 5%;
+        }
+    }
+    & .form-control{
+        box-shadow: none !important;
+        border-color: $gray-200;
+    }
+    & .updatebtn{
+        color: $white;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 5px;
+        border: none;
+        background: linear-gradient(to right, $theme1, $theme2);
+        padding: 10px 16px;
+        margin-top: 20px;
+    }
+}
+}
+
+.adminfluidofmycourses{
+    & .leftpartcontainer{
+        background-color: $white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px;
+        & .lefttopcontainer{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            & .adminprofilecontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    aspect-ratio: 10/10;
+                    object-position: top center;
+                }
+            }
+            & .adminname{
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: $gray-600;
+            }
+            & .admincontact{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $gray-600;
+                }
+            }
+            & .adminmail{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                    color: $gray-600;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+        & .listcontainer{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            & .leftpartul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                margin-top: 10px;
+                & .leftpartli{
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    padding: 4px;
+                    position: relative;
+                    transition: 0.3s ease;
+                    &.active, &:hover{
+                        & .adminleftanchor{
+                            & span{
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 35px;
+                                    left: -20px;
+                                    border-left: 3px solid $theme1;
+                                }
+                                color: $theme1 !important;
+                            }
+                        }
+                    }
+                    & .adminleftanchor{
+                        text-decoration: none;
+                        & img{
+                            height: 20px;
+                            margin-right: 10px;
+                            filter: brightness(0);
+                        }
+                        & span{
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: $gray-600;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .rightpartcontainer{
+        & .passwordheading{
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        & .passwordsubheading{
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        & .cardbackground{
+            padding: 10px;
+            border: 1px solid $gray-600;
+            border-radius: 5px;
+            & .imagecontainer{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 5px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    aspect-ratio: 10/10;
+                    object-position: top center;
+                }
+            }
+            & .carddetailcontainer{
+                & .coursename{
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                }
+                & .para{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                & .teacherconainer{
+                    margin-top: 8px;
+                    & .teachimg{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            aspect-ratio: 10/10;
+                        }
+                    }
+                    & .teachername{
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    & .teacherreview{
+
+                    }
+                    & .reviewul{
+                        list-style: none;
+                        display: flex;
+                        margin: 0;
+                        padding: 0;
+                        & .reviewli{
+                            & img{
+                                width: 15px;
+                                height: 15px;
+                                margin: 1px;
+                            }
+                        }
+                    }
+                }
+                & .lessoncontainer{
+                    margin-top: 8px;
+                    & .lesson{
+                        font-size: 15px;
+                        font-weight: 500;
+                        & img{
+                            width: 25px;
+                            height: 25ox;
+                        }
+                    }
+                    & .people{
+                        font-size: 15px;
+                        font-weight: 500;
+                        & img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+                & .bottompartcontainer{
+                    margin-top: 8px;
+                    & .hour{
+                        font-size: 15px;
+                        font-weight: 500;
+                        & img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    & .cart{
+                        font-size: 15px;
+                        font-weight: 500;
+                        & img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        & .bottombtnn{
+            & .showbtn{
+                border: none;
+                background: linear-gradient(to right, $theme1, $theme2);
+                color: $white;
+                font-size: 15px;
+                font-weight: 500;
+                padding: 15px 25px;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+}
+
+.adminfluidreviews{
+    & .leftpartcontainer{
+        background-color: $white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px;
+        & .lefttopcontainer{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            & .adminprofilecontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .adminname{
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: $gray-600;
+            }
+            & .admincontact{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $gray-600;
+                }
+            }
+            & .adminmail{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                    color: $gray-600;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+        & .listcontainer{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            & .leftpartul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                margin-top: 10px;
+                & .leftpartli{
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    padding: 4px;
+                    position: relative;
+                    transition: 0.3s ease;
+                    &.active, &:hover{
+                        & .adminleftanchor{
+                            & span{
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 35px;
+                                    left: -20px;
+                                    border-left: 3px solid $theme1;
+                                }
+                                color: $theme1 !important;
+                            }
+                        }
+                    }
+                    & .adminleftanchor{
+                        text-decoration: none;
+                        & img{
+                            height: 20px;
+                            margin-right: 10px;
+                            filter: brightness(0);
+                        }
+                        & span{
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: $gray-600;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .rightpartcontainer{
+        & .passwordheading{
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        & .passwordsubheading{
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        & .divider{
+            width: 100%;
+            height: 1px;
+            background-color: $gray-500;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        & .topheadreviewcontainer{
+            & img{
+                height: 20px;
+            }
+            & span{
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.1;
+            }
+        }
+        & .reviewimggcontainer{
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50%;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        & .reviewername{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        & .teacherreview{
+
+            }
+            & .reviewul{
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                & .reviewli{
+                    & img{
+                        width: 15px;
+                        height: 15px;
+                        margin: 1px;
+                    }
+                }
+            }
+            & .reviewdate{
+                font-size: 13px;
+                font-weight: 500;
+                color: $gray-600;
+            }
+            & .paragrapgh{
+                margin-top: 15px;
+                font-size: 14px;
+                font-weight: 500;
+                color: $gray-600;
+            }
+            & .likedislikecontainer{
+                margin-top: 10px;
+                & .like{
+                    display: inline-flex;
+                    align-items: center;
+                    transition: color .25s ease-in-out;
+                    border: 0;
+                    background: none !important;
+                    color: $gray-600;
+                    font-size: .875rem;
+                    & img{
+                        height: 20px;
+                        margin-right: 5px;
+                    }
+                    & span{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $gray-600;
+                    }
+                }
+                & .dislike{ 
+                    display: inline-flex;
+                    align-items: center;
+                    transition: color .25s ease-in-out;
+                    border: 0;
+                    background: none !important;
+                    color: $gray-600;
+                    font-size: .875rem;
+                    margin-left: 5px;
+                    & img{
+                        height: 20px;
+                        margin-left: 8px;
+                        margin-right: 5px;
+                    }
+                    & span{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $gray-600;
+                    }
+                }
+            }
+            & .divider{
+                width: 100%;
+                height: 1px;
+                background-color: $gray-200;
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+        }
+    }
