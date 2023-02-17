@@ -31,6 +31,10 @@
                 border-radius: 5px;
                 font-size: 15px;
                 font-weight: 500;
+                &:hover{
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
                 &:hover .arrow{
                     transform: translateX(10px);
                 }
@@ -297,7 +301,7 @@
 }
 
 
-// homeweworksection
+// how we worksection
 .homeweworkfluid{
     & .leftpartcontainer{
         & .head1container{
@@ -328,9 +332,22 @@
             font-weight: 500;
             margin-top: 40px;
             padding: 4px 8px;
+            background: linear-gradient(to right, $theme1, $theme2);
+            color: $white;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 5px;
+            padding: 18px 26px;
+            &:hover{
+                opacity: 0.9;
+            }
+            &:hover .btnarrow{
+                transform: translateX(8px);
+            }
             & .btnarrow{
-                width: 12px;
                 height: 12px;
+                margin-top: -3px;
+                transition: 0.3s linear;
             }
         }
     }
@@ -1266,11 +1283,14 @@
             font-weight: 500;
             color: $white;
             line-height: normal;
+            margin-top: -3px;
+            &:hover{
+                opacity: 0.9;
+            }
             &:hover img{
                 transform: translateX(10px);
             }
             & img{
-                width: 12px;
                 height: 12px;
                 transform: translateX(0px);
                 transition: 0.3s linear;

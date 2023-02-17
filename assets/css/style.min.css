@@ -1,3 +1,73 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+.preloader {
+  display: none;
+}
+.preloader.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.preloader.active img {
+  width: 40%;
+}
+
+@media (max-width: 575px) {
+  .preloader.active img {
+    width: 60%;
+  }
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
 ::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -79,7 +149,7 @@
   top: 100%;
   left: 50%;
   transform: translatex(-50%);
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
 }
 .navbar .webnavbar .navbar-nav .nav-item.dropdown .dropdown-menu .drophead1 {
   font-size: 15px;
@@ -140,6 +210,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.navbar .webnavbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropbottom:hover {
+  opacity: 0.9;
 }
 .navbar .webnavbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropbottom .dropbottomtxt {
   color: #fff;
@@ -608,6 +681,7 @@
 }
 .cartoffcanvas .cartoffcanvasbody .courseimgcontainer:hover {
   cursor: pointer;
+  filter: brightness(1.1);
 }
 .cartoffcanvas .cartoffcanvasbody .courseimgcontainer .courseimg {
   width: 100%;
@@ -653,10 +727,14 @@
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 20px;
+  line-height: normal;
+}
+.cartoffcanvas .cartoffcanvasbtn:hover {
+  opacity: 0.9;
 }
 .cartoffcanvas .cartoffcanvasbtn .cartarrowcontainer .cartarrow {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   margin-left: 5px;
   transform: translateX(0);
   transition: 0.3s ease-in-out;
@@ -818,6 +896,10 @@
   font-weight: 600;
   padding: 13px 33px;
   margin-top: 20px;
+  transition: 0.5 ease-in-out;
+}
+.herobackground .heropagelftside .heroleftbtncontainer .heroleftbtn:hover {
+  background-color: rgba(47, 87, 239, 0.8);
 }
 
 .categoriescontainer {
@@ -848,6 +930,9 @@
   justify-content: center;
   align-items: center;
   padding: 50px 40px;
+}
+.cardcontainer:hover {
+  box-shadow: none;
 }
 .cardcontainer .cardanchor {
   text-decoration: none;
@@ -1471,6 +1556,9 @@
   width: 100%;
   border-radius: 5px;
 }
+.topteachersfluid .rightpartteamcontainer .rightteampic:hover {
+  filter: brightness(1.1);
+}
 .topteachersfluid .teachername {
   font-size: 30px;
   font-weight: 700;
@@ -1603,37 +1691,40 @@
 .testimonialsfluid {
   background-image: url(../img/homebackground.webp);
 }
-.testimonialsfluid .testimonialscontainer {
+.testimonialsfluid .test:hover .owl-nav .owl-prev {
+  transform: translateX(-50%);
+}
+.testimonialsfluid .test:hover .owl-nav .owl-next {
+  transform: translateX(50%);
+}
+.testimonialsfluid .test .testimonialscontainer {
   background-color: #fff;
   padding: 30px;
   border-radius: 50px 5px 50px 5px;
 }
-.testimonialsfluid .testimonialscontainer:hover .owl-prev {
-  transform: translateX(-50%);
-}
-.testimonialsfluid .testimonialscontainer .testimonialspara {
+.testimonialsfluid .test .testimonialscontainer .testimonialspara {
   text-align: center;
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 600;
 }
-.testimonialsfluid .testimonialscontainer .userpiccontainer {
+.testimonialsfluid .test .testimonialscontainer .userpiccontainer {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 20px;
 }
-.testimonialsfluid .testimonialscontainer .userpiccontainer .userpic {
+.testimonialsfluid .test .testimonialscontainer .userpiccontainer .userpic {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.testimonialsfluid .testimonialscontainer .username {
+.testimonialsfluid .test .testimonialscontainer .username {
   font-size: 15x;
   font-weight: 500;
 }
-.testimonialsfluid .owl-nav .owl-prev {
+.testimonialsfluid .test .owl-nav .owl-prev {
   position: absolute !important;
   top: 45% !important;
   left: -1% !important;
@@ -1642,10 +1733,9 @@
   width: 50px;
   height: 50px;
   border-radius: 5px;
-  transform: translateX(-1%);
   transition: 0.3s linear;
 }
-.testimonialsfluid .owl-nav .owl-next {
+.testimonialsfluid .test .owl-nav .owl-next {
   position: absolute !important;
   top: 45% !important;
   right: -2% !important;
@@ -1654,6 +1744,7 @@
   width: 50px;
   height: 50px;
   border-radius: 5px;
+  transition: 0.3s linear;
 }
 
 .newsletterfluid {
@@ -1672,6 +1763,9 @@
   padding-left: 20px;
   border: none;
 }
+.newsletterfluid .letterinp.form-control {
+  box-shadow: none !important;
+}
 .newsletterfluid .newsbtn {
   background-color: #2f57ef;
   border: 1px solid #e9ecef;
@@ -1679,6 +1773,9 @@
   color: #fff;
   border-radius: 5px;
   margin-top: 20px;
+}
+.newsletterfluid .newsbtn:hover {
+  background-color: rgba(47, 87, 239, 0.9);
 }
 .newsletterfluid label {
   display: inline-block;
@@ -1695,6 +1792,7 @@
   width: 100px;
   height: 50px;
   margin-left: 10px;
+  opacity: 0.6;
 }
 .footerfluid .footerfirstsection {
   background-repeat: no-repeat;
@@ -1755,12 +1853,6 @@
 .footerfluid .footerfirstsection .contactno span {
   font-weight: 700;
 }
-.footerfluid .footerfirstsection .copyryt {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
 .footerfluid .footerhead {
   font-size: 20px;
   font-weight: 700;
@@ -1795,6 +1887,19 @@
 .footerfluid .book2 {
   width: 200px;
   height: 150px;
+}
+.footerfluid .copyryt {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.footerfluid .copyryt .copyrightImg {
+  height: 30px;
+}
+.footerfluid .copyryt .copyrightImg .logoclass {
+  width: 100%;
+  height: 100%;
 }
 
 .coursedetailherosection {
@@ -2347,7 +2452,7 @@
 }
 .navtabsfliud .tab5contentcontainer .puclicreviewscontainer .raingholdercontainer {
   background-color: #8ea4f6;
-  width: 50px;
+  width: 55px;
   height: 20px;
   border-radius: 5px;
   padding: 15px 5px;
@@ -2575,6 +2680,10 @@
   font-size: 15px;
   font-weight: 500;
 }
+.blogherofluid .overlay .herotxtcontainer .btnnn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 .blogherofluid .overlay .herotxtcontainer .btnnn:hover .arrow {
   transform: translateX(10px);
 }
@@ -2613,10 +2722,23 @@
   font-weight: 500;
   margin-top: 40px;
   padding: 4px 8px;
+  background: linear-gradient(to right, #2f57ef, #b966e7);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 18px 26px;
+}
+.homeweworkfluid .leftpartcontainer .bottombtn:hover {
+  opacity: 0.9;
+}
+.homeweworkfluid .leftpartcontainer .bottombtn:hover .btnarrow {
+  transform: translateX(8px);
 }
 .homeweworkfluid .leftpartcontainer .bottombtn .btnarrow {
-  width: 12px;
   height: 12px;
+  margin-top: -3px;
+  transition: 0.3s linear;
 }
 .homeweworkfluid .rightpartcontainer .playoverlay {
   position: relative;
@@ -2881,12 +3003,15 @@
   font-weight: 500;
   color: #fff;
   line-height: normal;
+  margin-top: -3px;
+}
+.aboutAnimBox .rightpartcontainer .bottombtn:hover {
+  opacity: 0.9;
 }
 .aboutAnimBox .rightpartcontainer .bottombtn:hover img {
   transform: translateX(10px);
 }
 .aboutAnimBox .rightpartcontainer .bottombtn img {
-  width: 12px;
   height: 12px;
   transform: translateX(0px);
   transition: 0.3s linear;
@@ -3164,6 +3289,9 @@
   object-fit: cover;
   border-radius: 8px 8px 8px 8px;
 }
+.blogfluid .sidecontainer .sideimgcontainer img:hover {
+  filter: brightness(1.1);
+}
 .blogfluid .sidecontainer .head1 {
   font-size: 16px;
   font-weight: 700;
@@ -3215,6 +3343,9 @@
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+.blogfluid .sidecontainer .instaimgcontainer img:hover {
+  filter: brightness(1.1);
 }
 
 .blogdetailfluid {
@@ -3317,6 +3448,9 @@
   object-fit: cover;
   border-radius: 8px 8px 8px 8px;
 }
+.blogdetailfluid .sidecontainer .sideimgcontainer img:hover {
+  filter: brightness(1.1);
+}
 .blogdetailfluid .sidecontainer .head1 {
   font-size: 16px;
   font-weight: 700;
@@ -3369,10 +3503,14 @@
   object-fit: cover;
   border-radius: 5px;
 }
+.blogdetailfluid .sidecontainer .instaimgcontainer img:hover {
+  filter: brightness(1.1);
+}
 .blogdetailfluid .paragraph1 {
   font-size: 15px;
   font-weight: 500;
   color: #6c757d;
+  text-align: justify;
 }
 .blogdetailfluid blockquote {
   border-left: 2px solid;
@@ -3441,8 +3579,6 @@
   font-size: 14px;
   font-weight: 500;
   height: 200px !important;
-  margin-top: 10px;
-  margin-bottom: 10px;
   border-radius: 5px;
   padding-left: 10px;
 }
@@ -4450,11 +4586,17 @@
   color: #fff;
   font-size: 15px;
 }
+.productlistingfluid .herocontainer .myform .searchbtn:hover {
+  opacity: 0.9;
+}
 
 .cardlistfluid .rowanchor {
   text-decoration: none;
   color: #000;
   border-radius: 5px;
+}
+.cardlistfluid .rowanchor:hover {
+  opacity: 0.6;
 }
 .cardlistfluid .rowanchor .listimgcontainer img {
   border-radius: 5px 5px 0 0;
@@ -4529,6 +4671,9 @@
   padding: 8px 16px;
   border-radius: 5px;
 }
+.bottomfluid .bottomrowbg .buybtnnn:hover {
+  opacity: 0.9;
+}
 .bottomfluid .bottomrowbgg {
   background: #bdcafa;
   padding: 40px;
@@ -4573,6 +4718,9 @@
   font-weight: 500;
   padding: 8px 16px;
   border-radius: 5px;
+}
+.bottomfluid .bottomrowbgg .buybtnnnn:hover {
+  opacity: 0.8;
 }
 
 .productdetailfluid .leftpartcontainer {
@@ -4864,6 +5012,13 @@
   font-size: 12px;
   border-radius: 5px;
   padding: 8px 16px;
+}
+.productdetailfluid .rightpartcontainer .postbtn:hover {
+  opacity: 0.9;
+}
+.productdetailfluid .fixedside {
+  position: sticky;
+  top: 0;
 }
 
 @media (min-width: 992px) {

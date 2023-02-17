@@ -133,6 +133,9 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 8px 8px 8px 8px;
+                &:hover{
+                    filter: brightness(1.1);
+                }
             }
         }
         & .head1{
@@ -186,6 +189,9 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 5px;
+                &:hover{
+                    filter: brightness(1.1);
+                }
             }
         }
     }
@@ -301,6 +307,9 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 8px 8px 8px 8px;
+                &:hover {
+                    filter: brightness(1.1);
+                }
             }
         }
         & .head1{
@@ -354,6 +363,9 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 5px;
+                &:hover {
+                    filter: brightness(1.1);
+                }
             }
         }
     }
@@ -361,6 +373,7 @@
         font-size: 15px;
         font-weight: 500;
         color: $gray-600;
+        text-align: justify;
     }
     & blockquote{
         border-left: 2px solid;
@@ -431,8 +444,6 @@
         font-size: 14px;
         font-weight: 500;
         height: 200px !important;
-        margin-top: 10px;
-        margin-bottom: 10px;
         border-radius: 5px;
         padding-left: 10px;
     }

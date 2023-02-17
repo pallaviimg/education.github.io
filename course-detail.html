@@ -72,6 +72,9 @@
 
 <body>
     <div class="vh-100 overflow-hidden d-flex flex-column">
+        <div class="preloader active">
+            <img src="assets/img/preloader.gif" alt="">
+        </div>
         <div id="header"></div>
         <!-- herosection -->
         <div class="container-fluid px-0 flex-fill h-100 bodyScrollPart ">
@@ -1099,7 +1102,7 @@
                                                     </ul>
                                                     <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat facere accusantium inventore maxime at incidunt nobis nostrum, nam vitae asperiores!</div>
                                                     <div class="bottomcontainer">
-                                                        <img class="iconssss pe-3"src="assets/img/facebook.svg" alt="" srcset="">
+                                                        <img class="iconssss pe-3"src="assets/img/face.svg" alt="" srcset="">
                                                         <img class="iconssss px-3"src="assets/img/twitter.svg" alt="" srcset="">
                                                         <img class="iconssss px-3"src="assets/img/linkedin.svg" alt="" srcset="">
                                                         <img class="iconssss px-3"src="assets/img/pinterest.svg" alt="" srcset="">
@@ -1466,7 +1469,7 @@
                                     <div class="row mx-0 px-1">
                                         <div class="col-12">
                                             <div class="imgbottomcontainer d-flex justify-content-center align-items-center m-2">
-                                                <img class="p-3" src="assets/img/facebookGrey.svg" alt="" srcset="">
+                                                <img class="p-3" src="assets/img/face.svg" alt="" srcset="">
                                                 <img class="p-3" src="assets/img/twitter.svg" alt="" srcset="">
                                                 <img class="p-3" src="assets/img/linkedin.svg" alt="" srcset="">
                                                 <img class="p-3" src="assets/img/pinterest.svg" alt="" srcset="">
@@ -1483,9 +1486,9 @@
                                 <div class="col">
                                     <div class="heading">More course by Angela</div>
                                 </div>
-                                <div class="col-auto">
+                                <a href="course-detail.html" class="col-auto">
                                     <button class="viewbtn">View all</button>
-                                </div>
+                                </a>
                             </div>
                             <div class="row my-2 pb-4 gy-4">
                                 <div class="col-lg-4 col-xl-3 col-md-6 ">
@@ -2043,19 +2046,107 @@
                     </div>
                 </div>
             </div>
+             <!-- footer -->
+ <div class="container-fluid footerfluid">
+    <div class="container pb-4">
+        <div class="row mb-5">
         </div>
-
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-12 footerfirstsection">
+                <a class="footerhead"><img class="footerheadd"src="assets/img/logo (1).png" alt="" srcset=""><img class="bookimg"src="assets/img/footerbook.png" alt="" srcset=""></a>
+                <div class="discription mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur ullam sunt quae rem neque, nostrum, minima repellendus </div>
+                <a href ="javascript:;"class="emailcontainer">Email:<span class="infoclass">info@example.com</span></a>
+                <div class="office"><span>Address:</span> 123 6th. melbourn, fl 326589 </div>
+                <div class="contactno"><span>Contact no:</span> 9856321547</div>
+            </div>
+                <div class="col-md-8 col-sm-12 col-12">
+                    <div class="row">
+                        <div class="col-md-4 col-12 mt-2 mt-md-0">
+                            <div class="footerhead mb-2">Category</div>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">All Courses</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center"href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Education</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Geography</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Math</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Science</span>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-12 mt-2 mt-md-0">
+                            <div class="footerhead mb-2">Support</div>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">All Courses</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Event</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Digital Marketing</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Design & Branding</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Storytelling</span>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-12 mt-2 mt-md-0">
+                            <div class="footerhead mb-2">Support</div>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">All Courses</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Event</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Digital Marketing</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Design & Branding</span>
+                            </a>
+                            <a class="categoryanchor d-flex justify-content-start align-items-center" href="javascript:;">  
+                                <img class="chevanclass"src="assets/img/angleRight.png" alt="" srcset=""><span class="details">Storytelling</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+        
+        
+    </div>
+    <div class="container py-4 border-top border-secondary">
+        <div class="row">
+            <div class="col-12">
+                <div class="copyryt text-white text-center d-flex justify-content-center align-items-center">
+                    © 2023 | Designed & Developed by 
+                    <a href="https://www.imgglobalinfotech.com/" class="copyrightImg">
+                        <img class="logoclass" src="assets/img/imglogo.png" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
         <!-- Modal -->
         <!-- Bootstrap Js -->
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js?v=1.0.0"></script>
         <!-- Custom Js -->
-        <script src="assets/js/index.js"></script>
+        <script src="assets/js/index.js?v=1.0.0?v=1.0.0"></script>
         <!-- owl -->
-        <script src="assets/libs/owl/owl.carousel.min.js"></script>
+        <script src="assets/libs/owl/owl.carousel.min.js?v=1.0.0?v=1.0.0"></script>
         <!-- glighbox -->
-        <script src="assets/libs/glightbox/glightbox.min.js"></script>
+        <script src="assets/libs/glightbox/glightbox.min.js?v=1.0.0"></script>
         <!-- owl carousel js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js?v=1.0.0"></script> -->
         <script>
             $('.demo').owlCarousel({
                 loop: true,

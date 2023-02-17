@@ -1,0 +1,28 @@
+.preloader {
+    display: none;
+    &.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        & img {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .preloader {
+        &.active {
+            & img {
+                width: 60%;
+            }
+        }
+    }
+}

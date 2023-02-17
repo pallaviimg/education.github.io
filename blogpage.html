@@ -71,6 +71,9 @@
 
 <body>
     <div class="vh-100 overflow-hidden d-flex flex-column">
+        <div class="preloader active">
+            <img src="assets/img/preloader.gif" alt="">
+        </div>
         <div id="header"></div>
         <div class="container-fluid px-0 flex-fill h-100 bodyScrollPart">
             <div class="container-fluid blogfluid">
@@ -253,7 +256,7 @@
                         <div class="col-md-4 col-sm-12">
                             <div class="sidecontainer">
                                 <div class="row">
-                                    <div class="col-12 ps-0">
+                                    <div class="col-12 ps-0 d-none d-lg-block">
                                         <form class="position-relative formclass">
                                             <input class="form-control forminp" type="text" placeholder="Write Your Keywords">
                                             <img class="searchimg" src="assets/img/icons8-search-30.png" alt="" srcset="">
@@ -261,7 +264,7 @@
                                     </div>
                                 </div>
                                 <div class="row py-3">
-                                    <div class="col-12 ps-0">
+                                    <div class="col-12 ">
                                         <div class="sideheading">Recent Blog</div>
                                     </div>
                                 </div>
@@ -314,12 +317,12 @@
                                 </a>
                                 <div class="border"></div>
                                 <div class="row py-3">
-                                    <div class="col-12 ps-0">
+                                    <div class="col-12">
                                         <div class="sideheading">Popular Blogs</div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 ps-0">
+                                    <div class="col-12">
                                         <ul class="popul">
                                             <li class=" popli">
                                                 <a  href="javascript:;"class="popanchor">Business</a>
@@ -482,7 +485,12 @@
                 <div class="container py-4 border-top border-secondary">
                     <div class="row">
                         <div class="col-12">
-                            <div class="copyryt text-white text-center">© 2023 | Designed & Developed by IMG Global Infotech.</div>
+                            <div class="copyryt text-white text-center d-flex justify-content-center align-items-center">
+                                © 2023 | Designed & Developed by 
+                                <a href="https://www.imgglobalinfotech.com/" class="copyrightImg">
+                                    <img class="logoclass" src="assets/img/imglogo.png" alt="" srcset="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -493,11 +501,11 @@
 
     <!-- Modal -->
         <!-- Bootstrap Js -->
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js?v=1.0.0"></script>
         <!-- Custom Js -->
-        <script src="assets/js/index.js"></script>
+        <script src="assets/js/index.js?v=1.0.0"></script>
         <!-- owl -->
-        <script src="assets/libs/owl/owl.carousel.min.js"></script>
+        <script src="assets/libs/owl/owl.carousel.min.js?v=1.0.0"></script>
         <!-- owl carousel js -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
             <script>

@@ -43,7 +43,7 @@
                         top:100%;
                         left: 50%;
                         transform: translatex(-50%);
-                        padding: 20px;
+                        padding: 10px 20px 10px 20px;
                         & .drophead1{
                             font-size: 15px;
                             color: $gray-700;
@@ -104,6 +104,9 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            &:hover{
+                                opacity: 0.9;
+                            }
                             & .dropbottomtxt{
                             color: $white;
                             font-size: 20px;
@@ -639,6 +642,7 @@
                 background-color: $white;
                 &:hover{
                     cursor: pointer;
+                    filter: brightness(1.1);
                 }
                 // box-shadow:0px 0px 11px 0px $theme1;
                 & .courseimg{
@@ -694,11 +698,14 @@
         font-size: 15px;
         font-weight: 700;
         margin-bottom: 20px;
-        
+        line-height: normal;
+        &:hover{
+            opacity: 0.9;
+        }
         & .cartarrowcontainer{
             & .cartarrow{
-                width: 15px;
-                height: 15px;
+                width: 12px;
+                height: 12px;
                 margin-left: 5px;
                 transform: translateX(0);
                 transition: 0.3s ease-in-out;
@@ -708,7 +715,6 @@
             &:hover { 
                 & .cartarrow{
                     transform: translateX(16px);
-                    
                 }
             }
         }

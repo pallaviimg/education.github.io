@@ -36,6 +36,9 @@
                 border-radius: 5px;
                 color: $white;
                 font-size: 15px;
+                &:hover{
+                    opacity: 0.9;
+                }
             }
         }
     }
@@ -45,6 +48,9 @@
         text-decoration: none;
         color: $black;
         border-radius: 5px;
+        &:hover{
+            opacity: 0.6;
+        }
         & .listimgcontainer{
             & img{
                 border-radius: 5px 5px 0 0;
@@ -126,6 +132,9 @@
             font-weight: 500;
             padding: 8px 16px;
             border-radius: 5px;
+            &:hover{
+                opacity: 0.9;
+            }
         }
     }
     & .bottomrowbgg{
@@ -175,6 +184,9 @@
                 font-weight: 500;
                 padding: 8px 16px;
                 border-radius: 5px;
+                &:hover{
+                    opacity: 0.8;
+                }
             }
     }
 }
@@ -782,7 +794,15 @@
                 font-size: 12px;
                 border-radius: 5px;
                 padding: 8px 16px;
+                &:hover{
+                    opacity: 0.9;
+                }
             }
+    }
+    
+    & .fixedside {
+        position: sticky;
+        top: 0;
     }
 }
 
